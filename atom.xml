@@ -3,11 +3,11 @@
   <title>mendax1234&#39;s blog</title>
   
   
-  <link href="https://mendax1234.github.io/atom.xml" rel="self"/>
+  <link href="https://mendax1234.vercel.app/atom.xml" rel="self"/>
   
-  <link href="https://mendax1234.github.io/"/>
-  <updated>2021-06-11T14:37:20.755Z</updated>
-  <id>https://mendax1234.github.io/</id>
+  <link href="https://mendax1234.vercel.app/"/>
+  <updated>2022-06-01T12:28:40.282Z</updated>
+  <id>https://mendax1234.vercel.app/</id>
   
   <author>
     <name>mendax1234</name>
@@ -17,9 +17,30 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>My New Post</title>
+    <link href="https://mendax1234.vercel.app/2022/06/01/My-New-Post/"/>
+    <id>https://mendax1234.vercel.app/2022/06/01/My-New-Post/</id>
+    <published>2022-06-01T12:25:23.000Z</published>
+    <updated>2022-06-01T12:28:40.282Z</updated>
+    
+    <content type="html"><![CDATA[<p>l just want to announce that the blog will restart from now on!</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;l just want to announce that the blog will restart from now on!&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>macOS 12 Monterey</title>
-    <link href="https://mendax1234.github.io/2021/06/11/macOS-12-Monterey/"/>
-    <id>https://mendax1234.github.io/2021/06/11/macOS-12-Monterey/</id>
+    <link href="https://mendax1234.vercel.app/2021/06/11/macOS-12-Monterey/"/>
+    <id>https://mendax1234.vercel.app/2021/06/11/macOS-12-Monterey/</id>
     <published>2021-06-11T14:29:36.000Z</published>
     <updated>2021-06-11T14:37:20.755Z</updated>
     
@@ -39,8 +60,8 @@
   
   <entry>
     <title>Hello world</title>
-    <link href="https://mendax1234.github.io/2021/06/11/Hello-world-0/"/>
-    <id>https://mendax1234.github.io/2021/06/11/Hello-world-0/</id>
+    <link href="https://mendax1234.vercel.app/2021/06/11/Hello-world-0/"/>
+    <id>https://mendax1234.vercel.app/2021/06/11/Hello-world-0/</id>
     <published>2021-06-11T13:33:34.000Z</published>
     <updated>2021-06-11T13:47:08.724Z</updated>
     
@@ -60,8 +81,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="https://mendax1234.github.io/2021/06/04/hello-world/"/>
-    <id>https://mendax1234.github.io/2021/06/04/hello-world/</id>
+    <link href="https://mendax1234.vercel.app/2021/06/04/hello-world/"/>
+    <id>https://mendax1234.vercel.app/2021/06/04/hello-world/</id>
     <published>2021-06-04T10:14:33.345Z</published>
     <updated>2021-06-04T10:14:33.345Z</updated>
     
