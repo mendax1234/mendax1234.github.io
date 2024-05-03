@@ -21,7 +21,7 @@ repository               : "mendax1234/mendax1234.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.jpg"
+  avatar           : "profile.png"
   name             : "Wenbo (Daniel) Zhu"
   pronouns         : # example: "she/her"  
   bio              : "First year Computer Engineering at Nanyang Technological University"
