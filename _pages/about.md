@@ -7,8 +7,13 @@ redirect_from:
   - /about.html
 ---
 
+I am currently a first-year student at [Nanyang Technological University](https://www.ntu.edu.sg/), majoring in [Computer Engineering](https://www.ntu.edu.sg/education/undergraduate-programme/bachelor-of-engineering-in-computer-engineering).
+
 Education
 ------
+Nanyang Technological University
+July 2023 - July 2027
+B.E. at College of Computing and Data Science
 
 Honors & Awards
 ------
