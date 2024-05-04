@@ -11,6 +11,7 @@ I am currently a first-year student at [Nanyang Technological University](https:
 
 Education
 ------
+
 <div style="display:flex; align-items:center;">
     <div>
         ![Institute Logo](/images/education/NTU.png)
@@ -21,5 +22,6 @@ Education
         B.E. at College of Computing and Data Science
     </div>
 </div>
+
 Honors & Awards
 ------
