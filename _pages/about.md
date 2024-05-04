@@ -11,10 +11,15 @@ I am currently a first-year student at [Nanyang Technological University](https:
 
 Education
 ------
-![NTU.png](/images/education/NTU.png)
-Nanyang Technological University \
-July 2023 - July 2027 \
-B.E. at College of Computing and Data Science 
-
+<div style="display:flex; align-items:center;">
+    <div>
+        ![Institute Logo](/images/education/NTU.png)
+    </div>
+    <div style="margin-left:20px;">
+        # Nanyang Technologcical University
+        July 2023 - July 2027
+        B.E. at College of Computing and Data Science
+    </div>
+</div>
 Honors & Awards
 ------
