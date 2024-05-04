@@ -12,6 +12,15 @@ I am currently a first-year student at [Nanyang Technological University](https:
 Education
 ------
 
+<!--
+<dl>
+    <dt><img style="float: left; margin:5px 10px" width="160" height="140" hspace="10" src="/images/education/NTU.png"></dt>
+    <dt>Nanyang Technological University</dt>
+    <dd>July 2023 - July 2027</dd>
+    <dd>B.E. at [College of Computing and Data Science](https://www.ntu.edu.sg/computing)</dd>
+</dl>
+-->
+
 <img style="float: left; margin:5px 10px" src="/images/education/NTU.png" width="160" height="140">
 ### Nanyang Technological University
 <p style="line-height:1.0">
