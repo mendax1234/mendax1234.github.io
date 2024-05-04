@@ -15,7 +15,7 @@ Education
     <dt><img align="left" width="80" height="80" hspace="10" src="/images/education/NTU.png"></dt>
     <dt>Nanyang Technological University</dt>
     <dd>July 2023 - July 2027</dd>
-    <dd>B.E. at [College of Computing and Data Science](https://www.ntu.edu.sg/computing)</dd>
+    <dd>B.E. at <a href="https://www.ntu.edu.sg/computing">College of Computing and Data Science</a></dd>
 </dl>
 
 Honors & Awards
