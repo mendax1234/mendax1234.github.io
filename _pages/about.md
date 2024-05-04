@@ -12,7 +12,7 @@ I am currently a first-year student at [Nanyang Technological University](https:
 Education
 ------
 
-<img style="float: left; margin:5px 10px" src="/images/education/NTU_logo.png" width="160" height="140">
+<img style="float: left; margin:5px 10px" src="/images/education/NTU.png" width="160" height="140">
 ### Nanyang Technological University
 <p style="line-height:1.0">
 <font size="2">
