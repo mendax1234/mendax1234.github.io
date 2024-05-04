@@ -14,17 +14,17 @@ Education
 **Nanyang Technological University, Singapore** \
 Bachelor of Engineering (Computer Engineering) 
 - Current CGPA: 4.75/5.00
-- Relevant Coursework: Relevant Coursework - High-Performance Computing, Digital Logic, Computer Organization & Architecture, Data Structures and Algorithms in C, Data Science & Artificial Intelligence in Python \
+- Relevant Coursework: Relevant Coursework - High-Performance Computing, Digital Logic, Computer Organization & Architecture, Data Structures and Algorithms in C, Data Science & Artificial Intelligence in Python
 
 Academic Project
 ------
 **FIRST Robotics Competition** \
 *Project Title: 2022 RapidReact Robotics Project* 
-- Wrote the whole code for Team6940′s 2022 robot in Java. Developed the set of Swerve code for the first time. Came up with three sets of shooting while moving algorithms and an easy-to-use autonomous program structure for swerve drive. \
+- Wrote the whole code for Team6940′s 2022 robot in Java. Developed the set of Swerve code for the first time. Came up with three sets of shooting while moving algorithms and an easy-to-use autonomous program structure for swerve drive.
 
 **Shanghai Jiao Tong University** \
 *Project Title: Cybersecurity project* 
-- Developed an e-voting system based on Blockchain technology by Python. \
+- Developed an e-voting system based on Blockchain technology by Python.
 
 Leadership Experience
 ------
@@ -34,7 +34,7 @@ Leadership Experience
 **FIRST Robotics Competition Team 6940** \
 **Program & Software Lead**
 
-**NTU High-Performance Computing Club** \ 
+**NTU High-Performance Computing Club** \
 **Team member**
 
 Honours
