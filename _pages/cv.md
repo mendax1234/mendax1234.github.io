@@ -12,30 +12,30 @@ redirect_from:
 Education
 ------
 **Nanyang Technological University, Singapore** \
-Bachelor of Engineering (Computer Engineering) \
+Bachelor of Engineering (Computer Engineering) 
 - Current CGPA: 4.75/5.00
 - Relevant Coursework: Relevant Coursework - High-Performance Computing, Digital Logic, Computer Organization & Architecture, Data Structures and Algorithms in C, Data Science & Artificial Intelligence in Python \
 
 Academic Project
 ------
 **FIRST Robotics Competition** \
-*Project Title: 2022 RapidReact Robotics Project* \
+*Project Title: 2022 RapidReact Robotics Project* 
 - Wrote the whole code for Team6940′s 2022 robot in Java. Developed the set of Swerve code for the first time. Came up with three sets of shooting while moving algorithms and an easy-to-use autonomous program structure for swerve drive. \
 
 **Shanghai Jiao Tong University** \
-*Project Title: Cybersecurity project* \
+*Project Title: Cybersecurity project* 
 - Developed an e-voting system based on Blockchain technology by Python. \
 
 Leadership Experience
 ------
 **Google Developer Student Club** \
-**Tech Lead (Robotics)** \
+**Tech Lead (Robotics)**
 
 **FIRST Robotics Competition Team 6940** \
-**Program & Software Lead** \
+**Program & Software Lead**
 
 **NTU High-Performance Computing Club** \ 
-**Team member** \
+**Team member**
 
 Honours
 ------
@@ -44,7 +44,7 @@ Honours
 
 Open-Source Contribution
 ------
-**Personal Projects** [github.com/mendax1234](https://github.com/mendax1234) \
+**Personal Projects** [github.com/mendax1234](https://github.com/mendax1234)
 - [2022RapidReact](Wrote Team 6940′s 2022 FRC robot code.)
 - [ThinkpadX390-Opencore-EFI](https://github.com/mendax1234/ThinkpadX390-Opencore-EFI)(1.8k downloads) Built boot files that allow ThinkpadX390 users to run macOS
 12.0+ smoothly on their Non-Apple laptops.
@@ -58,4 +58,4 @@ Skills
 ------
 **Programming Languages**: Python, C, Java, Verilog HDL, Vim, Markdown, Linux CLI \
 **Tech Skills**: ROS, FIRST Robotics Programming, Robotics Control Algorithm, 3D Modeling with CAD Tools, Linux, Windows and macOS \
-**Languages**: Proficient in English and Chinese \
+**Languages**: Proficient in English and Chinese
