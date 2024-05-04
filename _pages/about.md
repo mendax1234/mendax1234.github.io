@@ -11,9 +11,9 @@ I am currently a first-year student at [Nanyang Technological University](https:
 
 Education
 ------
-Nanyang Technological University
-July 2023 - July 2027
-B.E. at College of Computing and Data Science
+Nanyang Technological University \
+July 2023 - July 2027 \
+B.E. at College of Computing and Data Science \
 
 Honors & Awards
 ------
