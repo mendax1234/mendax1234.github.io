@@ -13,7 +13,7 @@ Education
 ------
 Nanyang Technological University \
 July 2023 - July 2027 \
-B.E. at College of Computing and Data Science \
+B.E. at College of Computing and Data Science 
 
 Honors & Awards
 ------
