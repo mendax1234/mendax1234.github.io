@@ -28,7 +28,7 @@ Organization (<strong>iiii</strong>), 2024 <span style="color:red">hightlight</s
 </font>
 </p>
 ---
-<img style="float: left; margin:5px 10px" src="/images/posts/Harvard-CS50" width="160" height="140">
+<img style="float: left; margin:5px 10px" src="/images/posts/Harvard-CS50.png" width="160" height="140">
 ### VBench: Comprehensive Benchmark Suite for Video Generative Models
 <p style="line-height:1.0">
 <font size="2">
