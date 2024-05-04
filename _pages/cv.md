@@ -10,55 +10,52 @@ redirect_from:
 {% include base_path %}
 
 Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+------
+**Nanyang Technological University, Singapore** \
+Bachelor of Engineering (Computer Engineering) \
+- Current CGPA: 4.75/5.00
+- Relevant Coursework: Relevant Coursework - High-Performance Computing, Digital Logic, Computer Organization & Architecture, Data Structures and Algorithms in C, Data Science & Artificial Intelligence in Python \
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+Academic Project
+------
+**FIRST Robotics Competition** \
+*Project Title: 2022 RapidReact Robotics Project* \
+- Wrote the whole code for Team6940′s 2022 robot in Java. Developed the set of Swerve code for the first time. Came up with three sets of shooting while moving algorithms and an easy-to-use autonomous program structure for swerve drive. \
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+**Shanghai Jiao Tong University** \
+*Project Title: Cybersecurity project* \
+- Developed an e-voting system based on Blockchain technology by Python. \
 
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
+Leadership Experience
+------
+**Google Developer Student Club** \
+**Tech Lead (Robotics)** \
+
+**FIRST Robotics Competition Team 6940** \
+**Program & Software Lead** \
+
+**NTU High-Performance Computing Club** \ 
+**Team member** \
+
+Honours
+------
+- **Dean's List Award** in the 2022 FIRST Robotics Competition.
+- The **Outstanding Student** of 2021 in the Cyberspace Security Workstation of Shanghai Jiao Tong University.
+
+Open-Source Contribution
+------
+**Personal Projects** [github.com/mendax1234](https://github.com/mendax1234) \
+- [2022RapidReact](Wrote Team 6940′s 2022 FRC robot code.)
+- [ThinkpadX390-Opencore-EFI](https://github.com/mendax1234/ThinkpadX390-Opencore-EFI)(1.8k downloads) Built boot files that allow ThinkpadX390 users to run macOS
+12.0+ smoothly on their Non-Apple laptops.
+- [ThinkpadE40-Clover-EFI](https://github.com/mendax1234/ThinkPadE40-Clover-EFI) Built boot files that first allow macOS 10.14+ to be run on old computers with MBR
+partition.
+- [Logseq-cusgit-theme](https://github.com/mendax1234/logseq-cusgit-theme) (11k+ downloads) Developed a clean, GitHub style theme for Logseq, focusing on bullet journal and long-time writing experience.
+- [6940Swerve-docs](https://github.com/mendax1234/6940Swerve-docs) Built a multilingual whitepaper site aiming to help more FIRST Robotics teams become
+experts at swerve. Used Transifex and GitHub workflow to update translations automatically
+
 Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
-
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+------
+**Programming Languages**: Python, C, Java, Verilog HDL, Vim, Markdown, Linux CLI \
+**Tech Skills**: ROS, FIRST Robotics Programming, Robotics Control Algorithm, 3D Modeling with CAD Tools, Linux, Windows and macOS \
+**Languages**: Proficient in English and Chinese \
