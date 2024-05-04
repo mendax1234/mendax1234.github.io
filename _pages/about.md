@@ -11,6 +11,7 @@ I am currently a first-year student at [Nanyang Technological University](https:
 
 Education
 ------
+
 <dl>
     <dt><img align="left" width="80" height="80" hspace="10" src="/images/education/NTU.png"></dt>
     <dt>Nanyang Technological University</dt>

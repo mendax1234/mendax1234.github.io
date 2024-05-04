@@ -2,9 +2,11 @@
 layout: single
 title:  "Harvard CS50 Week2 Summary"
 header:
-  teaser: "unsplash-gallery-image-2-th.jpg"
+  teaser: "/images/posts/Harvard-CS50.png"
 categories: 
   - Harvard CS50
 tags:
   - C
 ---
+
+This is CS50!
