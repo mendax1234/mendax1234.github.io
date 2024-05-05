@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am currently a first-year student at [Nanyang Technological University](https://www.ntu.edu.sg/), majoring in [Computer Engineering](https://www.ntu.edu.sg/education/undergraduate-programme/bachelor-of-engineering-in-computer-engineering).
+I am currently a first-year undergraduate at [the College of Computing and Data Science](https://www.ntu.edu.sg/computing), [Nanyang Technological University](https://www.ntu.edu.sg/), majoring in [Computer Engineering](https://www.ntu.edu.sg/education/undergraduate-programme/bachelor-of-engineering-in-computer-engineering).
 
 Education
 ------
