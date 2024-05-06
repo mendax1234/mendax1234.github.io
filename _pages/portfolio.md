@@ -14,17 +14,52 @@ author_profile: true
 -->
 
 <img style="float: left; margin:5px 10px" src="/images/posts/Harvard-CS50.png" width="170" height="160">
-### Title
+### Team 6940 Robot Code for 2022 RapidReact
 <p style="line-height:1.0">
 <font size="2">
-<strong>Wenbo Zhu*</strong>, others* <br />
-Organization (<strong>iiii</strong>), 2024 <span style="color:red">hightlight</span><br />
-<a href="https://www.google.com">Paper</a> | 
+Coding for the fully functional <strong>the Swerve Chassis</strong>. Designing and implementing three sets of <strong> shooting while moving algorithm</strong>. Using <strong>Pathplanner</strong> to plan paths in autonomous period.<br />
+2022 <br />
 <a href="https://www.google.com">Video</a> |
-<a href="https://www.google.com">Code</a> |
-<a href="https://www.google.com">Project Page</a> |
-<a href="https://www.google.com">Demo</a>
+<a href="https://github.com/Team6940/2022RapidReact">Code</a>
 <br />
 </font>
 </p>
 ---
+
+<img style="float: left; margin:5px 10px" src="/images/posts/Harvard-CS50.png" width="170" height="160">
+### An e-voting system based on Blockchain Technology
+<p style="line-height:1.0">
+<font size="2">
+Designing an e-voting system based on Blockchain Technology using Python Django.<br />
+2021 <br />
+<a href="https://mendax1234.github.io/files/pdf/an_electronic_voting_system_based_on_blockchain.pdf">Paper</a> |
+<a href="https://github.com/mendax1234/Blockchain-based-E-Voting-Simulation">Code</a>
+<br />
+</font>
+</p>
+---
+
+<img style="float: left; margin:5px 10px" src="/images/posts/Harvard-CS50.png" width="170" height="160">
+### Hackintosh on Thinkpad X390
+<p style="line-height:1.0">
+<font size="2">
+EFI boot files using Opencore for installing Hackintosh on Thinkpad X390. <br />
+2020 <br />
+<a href="https://github.com/mendax1234/ThinkpadX390-Opencore-EFI">Code</a>
+<br />
+</font>
+</p>
+---
+
+<img style="float: left; margin:5px 10px" src="/images/posts/Harvard-CS50.png" width="170" height="160">
+### Hackintosh on Thinkpad E40
+<p style="line-height:1.0">
+<font size="2">
+EFI boot files using Clover for installing Hackintosh on Thinkpad E40. First time installing Hackintosh on laptops that only support MBR partition. <br />
+2020 <br />
+<a href="https://github.com/mendax1234/ThinkPadE40-Clover-EFI">Code</a>
+<br />
+</font>
+</p>
+---
+
