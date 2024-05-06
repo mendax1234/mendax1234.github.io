@@ -19,7 +19,7 @@ author_profile: true
 
 <img style="float: left; margin:5px 10px" src="/images/posts/Harvard-CS50.png" width="170" height="160">
 ### Title
-<p style="line-height:1.0">
+<p style="line-height:1.0; margin-top: 5px">
 <font size="2">
 <strong>Wenbo Zhu*</strong>, others* <br />
 Organization (<strong>iiii</strong>), 2024 <span style="color:red">hightlight</span><br />

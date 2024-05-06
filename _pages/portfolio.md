@@ -15,7 +15,7 @@ author_profile: true
 
 <img style="float: left; margin:5px 10px" src="/images/portfolio/rapidreact_logo.png" width="160" height="140">
 ### FRC Team 6940 Robot Code for 2022 RapidReact
-<p style="line-height:1.0">
+<p style="line-height:1.0; margin-top: 5px">
 <font size="2">
 ∙ Coding for the fully functional <strong>Swerve Chassis</strong>. <br />
 ∙ Designing and implementing three sets of <strong> shooting while moving algorithm</strong>. <br />
@@ -42,7 +42,7 @@ author_profile: true
 
 <img style="float: left; margin:5px 10px" src="/images/portfolio/hackintosh.png" width="160" height="140">
 ### Hackintosh on Thinkpad X390
-<p style="line-height:1.0">
+<p style="line-height:1.0; margin-top: 5px">
 <font size="2">
 ∙ EFI boot files using Opencore for installing Hackintosh on Thinkpad X390. <br />
 ∙ Perfect support for all the drivers.<br />
@@ -59,7 +59,7 @@ author_profile: true
 
 <img style="float: left; margin:5px 10px" src="/images/portfolio/hackintosh.png" width="160" height="140">
 ### Hackintosh on Thinkpad E40
-<p style="line-height:1.0">
+<p style="line-height:1.0; margin-top: 5px">
 <font size="2">
 ∙ EFI boot files using Clover for installing Hackintosh on Thinkpad E40. <br />
 ∙ First time to install Hackintosh on laptops that only support MBR partition. <br />
