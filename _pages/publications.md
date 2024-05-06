@@ -17,7 +17,7 @@ author_profile: true
 {% endfor %}
 -->
 
-<img style="float: left; margin:5px 10px" src="/images/posts/Harvard-CS50.png" width="170" height="160">
+<img style="float: left; margin:5px 10px" src="/images/posts/Harvard-CS50.png" width="160" height="140">
 ### Title
 <p style="line-height:1.0; margin-top: 5px">
 <font size="2">
@@ -31,3 +31,4 @@ Organization (<strong>iiii</strong>), 2024 <span style="color:red">hightlight</s
 <br />
 </font>
 </p>
+---
