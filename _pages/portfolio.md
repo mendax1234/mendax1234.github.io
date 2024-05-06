@@ -14,7 +14,7 @@ author_profile: true
 -->
 
 <img style="float: left; margin:5px 10px" src="/images/portfolio/rapidreact_logo.png" width="170" height="160">
-### Team 6940 Robot Code for 2022 RapidReact
+### FRC Team 6940 Robot Code for 2022 RapidReact
 <p style="line-height:1.0">
 <font size="2">
 Coding for the fully functional <strong>Swerve Chassis</strong>. Designing and implementing three sets of <strong> shooting while moving algorithm</strong>. Using <strong>Pathplanner</strong> to plan paths in autonomous period.<br />
