@@ -43,8 +43,8 @@ Designing an e-voting system based on Blockchain Technology using Python Django.
 ### Hackintosh on Thinkpad X390
 <p style="line-height:1.0">
 <font size="2">
-EFI boot files using Opencore for installing Hackintosh on Thinkpad X390. <br />
-Perfect support for all the drivers.<br />
+∙ EFI boot files using Opencore for installing Hackintosh on Thinkpad X390. <br />
+∙ Perfect support for all the drivers.<br />
 2020 <br />
 <a href="https://github.com/mendax1234/ThinkpadX390-Opencore-EFI">Code</a>
 <br />
@@ -60,8 +60,8 @@ Perfect support for all the drivers.<br />
 ### Hackintosh on Thinkpad E40
 <p style="line-height:1.0">
 <font size="2">
-EFI boot files using Clover for installing Hackintosh on Thinkpad E40. <br />
-First time to install Hackintosh on laptops that only support MBR partition. <br />
+∙ EFI boot files using Clover for installing Hackintosh on Thinkpad E40. <br />
+∙ First time to install Hackintosh on laptops that only support MBR partition. <br />
 2020 <br />
 <a href="https://github.com/mendax1234/ThinkPadE40-Clover-EFI">Code</a>
 <br />
