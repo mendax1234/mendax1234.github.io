@@ -17,7 +17,9 @@ author_profile: true
 ### FRC Team 6940 Robot Code for 2022 RapidReact
 <p style="line-height:1.0">
 <font size="2">
-Coding for the fully functional <strong>Swerve Chassis</strong>. Designing and implementing three sets of <strong> shooting while moving algorithm</strong>. Using <strong>Pathplanner</strong> to plan paths in autonomous period.<br />
+∙ Coding for the fully functional <strong>Swerve Chassis</strong>.
+∙ Designing and implementing three sets of <strong> shooting while moving algorithm</strong>.
+∙ Using <strong>Pathplanner</strong> to plan paths in autonomous period.<br />
 2022 <br />
 <a href="https://www.google.com">Video</a> |
 <a href="https://github.com/Team6940/2022RapidReact">Code</a>
@@ -30,7 +32,7 @@ Coding for the fully functional <strong>Swerve Chassis</strong>. Designing and i
 ### An e-voting system based on Blockchain Technology
 <p style="line-height:1.0">
 <font size="2">
-Designing an e-voting system based on Blockchain Technology using Python Django.<br />
+∙ Designing an e-voting system based on Blockchain Technology using Python Django.<br />
 2021 <br />
 <a href="https://mendax1234.github.io/files/pdf/an_electronic_voting_system_based_on_blockchain.pdf">Paper</a> |
 <a href="https://github.com/mendax1234/Blockchain-based-E-Voting-Simulation">Code</a>
