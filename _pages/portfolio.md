@@ -13,7 +13,7 @@ author_profile: true
 {% endfor %}
 -->
 
-<img style="float: left; margin:5px 10px" src="/images/portfolio/rapidreact_logo.png" width="170" height="160">
+<img style="float: left; margin:5px 10px" src="/images/portfolio/rapidreact_logo.png" width="160" height="140">
 ### FRC Team 6940 Robot Code for 2022 RapidReact
 <p style="line-height:1.0">
 <font size="2">
@@ -27,7 +27,7 @@ author_profile: true
 </p>
 ---
 
-<img style="float: left; margin:5px 10px" src="/images/portfolio/e_voting_blockchain.png" width="170" height="160">
+<img style="float: left; margin:5px 10px" src="/images/portfolio/e_voting_blockchain.png" width="160" height="140">
 ### An e-voting system based on Blockchain Technology
 <p style="line-height:1.0">
 <font size="2">
@@ -40,7 +40,7 @@ author_profile: true
 </p>
 ---
 
-<img style="float: left; margin:5px 10px" src="/images/portfolio/hackintosh.png" width="170" height="160">
+<img style="float: left; margin:5px 10px" src="/images/portfolio/hackintosh.png" width="160" height="140">
 ### Hackintosh on Thinkpad X390
 <p style="line-height:1.0">
 <font size="2">
@@ -57,7 +57,7 @@ author_profile: true
 </p>
 ---
 
-<img style="float: left; margin:5px 10px" src="/images/portfolio/hackintosh.png" width="170" height="160">
+<img style="float: left; margin:5px 10px" src="/images/portfolio/hackintosh.png" width="160" height="140">
 ### Hackintosh on Thinkpad E40
 <p style="line-height:1.0">
 <font size="2">
