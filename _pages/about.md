@@ -23,3 +23,5 @@ B.E. in Computer Engineering<br />
 
 Honors & Awards
 ------
+- Dean's List Finalist in the 2022 FIRST Robotics Competition, 2022.
+- Outstanding Student of the Cyber Security Workstation of Shanghai Jiao Tong University, 2021
