@@ -17,8 +17,8 @@ author_profile: true
 ### FRC Team 6940 Robot Code for 2022 RapidReact
 <p style="line-height:1.0">
 <font size="2">
-∙ Coding for the fully functional <strong>Swerve Chassis</strong>.
-∙ Designing and implementing three sets of <strong> shooting while moving algorithm</strong>.
+∙ Coding for the fully functional <strong>Swerve Chassis</strong>. <br />
+∙ Designing and implementing three sets of <strong> shooting while moving algorithm</strong>. <br />
 ∙ Using <strong>Pathplanner</strong> to plan paths in autonomous period.<br />
 2022 <br />
 <a href="https://www.google.com">Video</a> |
