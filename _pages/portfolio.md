@@ -47,7 +47,9 @@ EFI boot files using Opencore for installing Hackintosh on Thinkpad X390. With p
 2020 <br />
 <a href="https://github.com/mendax1234/ThinkpadX390-Opencore-EFI">Code</a>
 <br />
-<br>
+<a href="https://github.com/mendax955/ThinkpadX390-Opencore-EFI/releases">
+  <img src="https://img.shields.io/github/downloads/mendax955/ThinkpadX390-Opencore-EFI/total?label=Download"/>
+</a> <br />
 <br>
 <br>
 </font>
