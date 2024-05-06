@@ -19,7 +19,6 @@ author_profile: true
 <font size="2">
 ∙ Coding for the fully functional <strong>Swerve Chassis</strong>. <br />
 ∙ Designing and implementing three sets of <strong> shooting while moving algorithm</strong>. <br />
-∙ Using <strong>Pathplanner</strong> to plan paths in autonomous period.<br />
 2022 <br />
 <a href="https://www.google.com">Video</a> |
 <a href="https://github.com/Team6940/2022RapidReact">Code</a>
