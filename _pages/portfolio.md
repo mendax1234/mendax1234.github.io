@@ -28,10 +28,8 @@ author_profile: true
 ---
 
 <img style="float: left; margin:5px 10px" src="/images/portfolio/e_voting_blockchain.png" width="160" height="140">
-<font size="3">
-<strong>An e-voting system based on Blockchain Technology</strong> <br />
-</font>
-<p style="line-height:1.0">
+### An e-voting system based on Blockchain Technology
+<p style="line-height:1.0; margin-top: 5px">
 <font size="2">
 ∙ Designing an e-voting system based on Blockchain Technology using Python Django.<br />
 2021 <br />
