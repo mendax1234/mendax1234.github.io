@@ -20,7 +20,7 @@ author_profile: true
 ∙ Coding for the fully functional <strong>Swerve Chassis</strong>. <br />
 ∙ Designing and implementing three sets of <strong> shooting while moving algorithm</strong>. <br />
 2022 <br />
-<a href="https://www.google.com">Video</a> |
+<a href="https://www.youtube.com/watch?v=DXP7FiZtLeo">Video</a> |
 <a href="https://github.com/Team6940/2022RapidReact">Code</a>
 <br />
 </font>
