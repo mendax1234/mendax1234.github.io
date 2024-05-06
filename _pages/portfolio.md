@@ -28,7 +28,7 @@ author_profile: true
 ---
 
 <img style="float: left; margin:5px 10px" src="/images/portfolio/e_voting_blockchain.png" width="160" height="140">
-<font size="4">
+<font size="3">
 <strong>An e-voting system based on Blockchain Technology</strong> <br />
 </font>
 <p style="line-height:1.0">
