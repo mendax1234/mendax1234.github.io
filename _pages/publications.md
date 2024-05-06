@@ -18,7 +18,7 @@ author_profile: true
 -->
 
 <img style="float: left; margin:5px 10px" src="/images/posts/Harvard-CS50.png" width="170" height="160">
-### Title
+#### Title
 <p style="line-height:1.0">
 <font size="2">
 <strong>Wenbo Zhu*</strong>, others* <br />
