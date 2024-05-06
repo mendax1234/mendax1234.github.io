@@ -27,8 +27,7 @@ Coding for the fully functional <strong>Swerve Chassis</strong>. Designing and i
 ---
 
 <img style="float: left; margin:5px 10px" src="/images/portfolio/e_voting_blockchain.png" width="170" height="160">
-#### An e-voting system based on Blockchain Technology
-<br>
+### An e-voting system based on Blockchain Technology
 <p style="line-height:1.0">
 <font size="2">
 Designing an e-voting system based on Blockchain Technology using Python Django.<br />
@@ -48,7 +47,6 @@ EFI boot files using Opencore for installing Hackintosh on Thinkpad X390. With p
 2020 <br />
 <a href="https://github.com/mendax1234/ThinkpadX390-Opencore-EFI">Code</a>
 <br />
-<br>
 <br>
 </font>
 </p>
