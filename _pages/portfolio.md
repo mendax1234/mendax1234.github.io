@@ -15,7 +15,7 @@ author_profile: true
 
 <img style="float: left; margin:5px 10px" src="/images/portfolio/rapidreact_logo.png" width="170" height="160">
 ### Team 6940 Robot Code for 2022 RapidReact
-<p style="line-height:0.5">
+<p style="line-height:1.0">
 <font size="2">
 Coding for the fully functional <strong>Swerve Chassis</strong>. Designing and implementing three sets of <strong> shooting while moving algorithm</strong>. Using <strong>Pathplanner</strong> to plan paths in autonomous period.<br />
 2022 <br />
@@ -28,7 +28,7 @@ Coding for the fully functional <strong>Swerve Chassis</strong>. Designing and i
 
 <img style="float: left; margin:5px 10px" src="/images/portfolio/e_voting_blockchain.png" width="170" height="160">
 ### An e-voting system based on Blockchain Technology
-<p style="line-height:0.5">
+<p style="line-height:1.0">
 <font size="2">
 Designing an e-voting system based on Blockchain Technology using Python Django.<br />
 2021 <br />
@@ -41,7 +41,7 @@ Designing an e-voting system based on Blockchain Technology using Python Django.
 
 <img style="float: left; margin:5px 10px" src="/images/portfolio/hackintosh.png" width="170" height="160">
 ### Hackintosh on Thinkpad X390
-<p style="line-height:0.5">
+<p style="line-height:1.0">
 <font size="2">
 EFI boot files using Opencore for installing Hackintosh on Thinkpad X390. <br />
 2020 <br />
@@ -53,7 +53,7 @@ EFI boot files using Opencore for installing Hackintosh on Thinkpad X390. <br />
 
 <img style="float: left; margin:5px 10px" src="/images/portfolio/hackintosh.png" width="170" height="160">
 ### Hackintosh on Thinkpad E40
-<p style="line-height:0.5">
+<p style="line-height:1.0">
 <font size="2">
 EFI boot files using Clover for installing Hackintosh on Thinkpad E40. First time installing Hackintosh on laptops that only support MBR partition. <br />
 2020 <br />
