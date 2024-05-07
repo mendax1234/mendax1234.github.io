@@ -13,6 +13,21 @@ author_profile: true
 {% endfor %}
 -->
 
+<img style="float: left; margin:5px 10px" src="/images/portfolio/logseq_cusgit.png" width="160" height="140">
+### Logseq cusgit theme
+<p style="line-height:1.0; margin-top: 5px">
+<font size="2">
+∙ Designing a clean theme for Logseq, which focuses on bullet journal and long time writing experience.<br />
+∙ More than 14k downloads. <br />
+2022 <br />
+<a href="https://github.com/logseq/awesome-logseq?tab=readme-ov-file#-css-themes">Website</a> |
+<a href="https://github.com/mendax1234/logseq-cusgit-theme">Code</a>
+<br />
+<br>
+</font>
+</p>
+---
+
 <img style="float: left; margin:5px 10px" src="/images/portfolio/swerve.png" width="160" height="140">
 ### FRC Team 6940 Swerve Chassis Whitepaper
 <p style="line-height:1.0; margin-top: 5px">
