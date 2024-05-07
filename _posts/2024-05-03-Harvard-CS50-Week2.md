@@ -2,8 +2,8 @@
 layout: single
 title:  "Harvard CS50 Week2 Summary"
 header:
-  image: posts/Harvard-CS50.jpg
-  teaser: posts/Harvard-CS50.png
+  image: posts/Harvard_CS50.jpg
+  teaser: posts/Harvard_CS50.jpg
 categories: 
   - Harvard CS50
 tags:
