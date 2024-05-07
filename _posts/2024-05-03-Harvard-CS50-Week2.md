@@ -10,4 +10,4 @@ tags:
   - C
 ---
 
-This is CS50!
+This is CS50!!
