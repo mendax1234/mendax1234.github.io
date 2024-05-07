@@ -40,6 +40,19 @@ author_profile: true
 </p>
 ---
 
+<img style="float: left; margin:5px 10px" src="/images/portfolio/infiniterecharge_logo.png" width="160" height="140">
+### FRC Team 6940 Robot Code for 2021 Infinite Recharge
+<p style="line-height:1.0; margin-top: 5px">
+<font size="2">
+∙ My first time to code for a simple but efficient competition robot.<br />
+2021 <br />
+<a href="https://www.youtube.com/watch?v=DXP7FiZtLeo">Video</a> |
+<a href="https://github.com/Team6940/2021FRC">Code</a>
+<br />
+</font>
+</p>
+---
+
 <img style="float: left; margin:5px 10px" src="/images/portfolio/hackintosh.png" width="160" height="140">
 ### Hackintosh on Thinkpad X390
 <p style="line-height:1.0; margin-top: 5px">
