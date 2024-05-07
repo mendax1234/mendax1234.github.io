@@ -103,7 +103,7 @@ author_profile: true
 </p>
 ---
 
-<img style="float: left; margin:5px 10px" src="/images/portfolio/hackintosh2.png" width="120" height="120">
+<img style="float: left; margin:5px 10px" src="/images/portfolio/hackintosh2.png" width="160" height="140">
 ### Hackintosh on Thinkpad E40
 <p style="line-height:1.0; margin-top: 5px">
 <font size="2">
