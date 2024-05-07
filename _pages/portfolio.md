@@ -115,6 +115,7 @@ author_profile: true
 <a href="https://github.com/mendax1234/ThinkPadE40-Clover-EFI/releases">
   <img src="https://img.shields.io/github/downloads/mendax1234/ThinkPadE40-Clover-EFI/total?label=Download"/>
 </a> <br />
+<br>
 </font>
 </p>
 ---
