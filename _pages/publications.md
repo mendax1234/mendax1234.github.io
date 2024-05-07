@@ -17,7 +17,7 @@ author_profile: true
 {% endfor %}
 -->
 
-<img style="float: left; margin:5px 10px" src="/images/posts/Harvard-CS50.png" width="160" height="140">
+<img style="float: left; margin:5px 10px" src="/images/posts/Harvard_CS50.png" width="160" height="140">
 ### Hope that I can publish one paper soon!
 <p style="line-height:1.0; margin-top: 5px">
 <font size="2">
