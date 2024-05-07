@@ -19,6 +19,7 @@ author_profile: true
 <font size="2">
 ∙ Document the whitepaper using readthedocs to help other teams quickly get started and mastered Swerve Drive Technique in FRC. <br />
 ∙ Fully automative translation workflow using Transifex. <br />
+∙ Practice Gracious Professionalism in FRC. <br />
 2022 <br />
 <a href="https://6940swerve-docs.readthedocs.io/en/latest/">Website</a> |
 <a href="https://github.com/mendax1234/6940Swerve-docs">Code</a>
