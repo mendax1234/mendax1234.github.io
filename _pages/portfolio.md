@@ -61,6 +61,7 @@ author_profile: true
 <p style="line-height:1.0; margin-top: 5px">
 <font size="2">
 ∙ My first time to code for a simple but efficient competition robot.<br />
+∙ Auto aiming using Limelight. <br />
 2021 <br />
 <a href="https://www.youtube.com/watch?v=DXP7FiZtLeo">Video</a> |
 <a href="https://github.com/Team6940/2021FRC">Code</a>
