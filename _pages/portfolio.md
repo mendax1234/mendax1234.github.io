@@ -18,7 +18,7 @@ author_profile: true
 <p style="line-height:1.0; margin-top: 5px">
 <font size="2">
 ∙ Designing a clean theme for Logseq, which focuses on bullet journal and long time writing experience.<br />
-∙ More than 14k downloads. <br />
+∙ Top 10 most popular theme in Logseq. <br />
 2022 <br />
 <a href="https://github.com/logseq/awesome-logseq?tab=readme-ov-file#-css-themes">Website</a> |
 <a href="https://github.com/mendax1234/logseq-cusgit-theme">Code</a>
@@ -102,7 +102,7 @@ author_profile: true
 </p>
 ---
 
-<img style="float: left; margin:5px 10px" src="/images/portfolio/hackintosh2.png" width="160" height="140">
+<img style="float: left; margin:5px 10px" src="/images/portfolio/hackintosh2.png" width="140" height="120">
 ### Hackintosh on Thinkpad E40
 <p style="line-height:1.0; margin-top: 5px">
 <font size="2">
