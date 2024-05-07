@@ -17,12 +17,13 @@ author_profile: true
 ### FRC Team 6940 Swerve Chassis Whitepaper
 <p style="line-height:1.0; margin-top: 5px">
 <font size="2">
-∙ Document the whitepaper using readthedocs to help others teams quickly get started and mastered Swerve Drive Technique in FRC. <br />
+∙ Document the whitepaper using readthedocs to help other teams quickly get started and mastered Swerve Drive Technique in FRC. <br />
 ∙ Fully automative translation workflow using Transifex. <br />
 2022 <br />
 <a href="https://6940swerve-docs.readthedocs.io/en/latest/">Website</a> |
 <a href="https://github.com/mendax1234/6940Swerve-docs">Code</a>
 <br />
+<br>
 </font>
 </p>
 ---
