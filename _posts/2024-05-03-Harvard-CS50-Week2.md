@@ -1,4 +1,6 @@
 ---
+toc: true
+toc_sticky: true
 layout: single
 title:  "Harvard CS50 Week2 Summary"
 header:
@@ -8,8 +10,6 @@ categories:
   - Harvard-CS50
 tags:
   - C
-toc: true
-toc_sticky: true
 ---
 
 This is CS50!
