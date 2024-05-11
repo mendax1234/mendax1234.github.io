@@ -33,4 +33,7 @@ Isaacson has put some food for thought inside some paragraph in some chapters. B
 
     When talking about standing on the shoulders of giants, one thing we can't miss is **Open-source**. This kind of open-source free software, like Linux and free collaborative projects, like Wikipedia, are dubbed as *"commons-based peer production"* by Professor Yochai Benkler from Harvard. I would say it's true, especially for those who have participated in some open-source projects. I beleve the thrill of seeing your code being added to a large project will definitely make you want to contribute more to that project, making it robust and well-maintained.
 
-There are many other take-aways in the book, but among these, the above two resonates with me most. 
+There are many other take-aways in the book, but among these, the above two resonates with me most.
+
+## Summary
+As a book focusing on the innovation in tech world, this book is good to read after the finals or during the spare time. If you is interested in the history of the tech world, this book is also a not-bad choice.
