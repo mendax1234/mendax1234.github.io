@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "Book Review-The Innovators"
+title:  "Book Review: The Innovators"
 header:
   image: posts/Innovators_book_cover.jpg
   teaser: posts/Innovators_book_cover.jpg
