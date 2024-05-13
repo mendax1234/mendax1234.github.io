@@ -451,14 +451,19 @@
    ========================================================================== */
 
 .page__related {
+  @include clearfix();
+  float: left;
   margin-top: 2em;
   padding-top: 1em;
   border-top: 1px solid $border-color;
-  @include clearfix();
-  float: left;
 
   @include breakpoint($large) {
-    @include pre(2.5 of 12);
+    float: right;
+    width: calc(100% - #{$right-sidebar-width-narrow});
+  }
+
+  @include breakpoint($x-large) {
+    width: calc(100% - #{$right-sidebar-width});
   }
 
   a {
@@ -471,4 +476,30 @@
   margin-bottom: 10px;
   font-size: $type-size-6;
   text-transform: uppercase;
+}
+
+/*
+   Wide Pages
+   ========================================================================== */
+
+.wide {
+  .page {
+    @include breakpoint($large) {
+      padding-right: 0;
+    }
+
+    @include breakpoint($x-large) {
+      padding-right: 0;
+    }
+  }
+
+  .page__related {
+    @include breakpoint($large) {
+      padding-right: 0;
+    }
+
+    @include breakpoint($x-large) {
+      padding-right: 0;
+    }
+  }
 }
