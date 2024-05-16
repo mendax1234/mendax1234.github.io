@@ -152,4 +152,64 @@ Notice that sometimes hackers will take use of this property, so we still need t
 1. The input should be `long`
 
 **Divide and Conquer**
+```
+For each digit in the number
+    calculate the checksum and get the length of the number
+Calculate the first and second digit
+Decide the type of the credit card
+```
 
+**Useful Snippets**
+1. One `while` loop version
+    ```
+    // Define and Initialize the variables
+    long num_copy = num;
+    int digit, sum1, indicator, length;
+
+    indicator = 0;
+    length = 0;
+    sum1 = 0;
+
+    // Calculate sum and length
+    while (num != 0) {
+            digit = num % 10;
+            if (indicator) {
+                    int temp = digit * 2;
+                    if (temp >= 10) {
+                            while (temp) {
+                                    sum1 += temp % 10;
+                                    temp /= 10;
+                            }
+                    }
+                    else {
+                            sum1 += temp;
+                    }
+                    indicator = 0;
+            }
+            else {
+                    sum1 += digit;
+                    indicator = 1;
+            }
+            length++;
+            num /= 10;
+    }
+    ```
+2. Calculate the first and second digit
+    1. Method 1
+    ```
+    int first_digit = num_copy / pow(10, length - 1);
+    int second_digit = (num_copy - first_digit * pow(10, length - 1)) / pow(10, length - 2);
+    ```
+        In this method, we will use the length of the number.
+    2. Method 2
+    ```
+    while (num < 100) {
+            num /= 10;
+    }
+    first_digit = num / 10;
+    second_digit = num % 10;
+    ```
+        In this method, we divide the number until the num is smaller than 100. And the remaining number is composed by the first and second digit.
+
+**Take-aways**
+1. `num % 10` will get the last digit of a number. `num / 10` will discard the last digit if num is an integer(including `int` and `long`).
