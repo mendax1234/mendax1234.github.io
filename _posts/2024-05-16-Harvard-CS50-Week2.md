@@ -92,7 +92,7 @@ int count_sentences(string text)
 ```
 
 **Take-aways**
-1. To round a result (usually in float or double) to the nearest whole number, we can used the `round()` declared in `math.h`.
+1. To round a result (usually in float or double) to the nearest whole number, we can use the `round()` declared in `math.h`.
 
 ## 03 Caesar - Easy
 **Before the problem**
