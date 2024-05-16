@@ -156,4 +156,4 @@ char rotate(char c, int key)
     We can divide the `rotate()` into two parts, that is `offset + base`.
 
 **Take-aways**
-1. The `get_string()` provided in the `<cs50.h>` won't truncate the extra white space behind. For example, if you input `123     `, the extra white space behind `3` will also be counted into the string. 
+1. The `get_string()` provided in the `<cs50.h>` won't truncate the extra white space behind. For example, if you input `123     `, the extra white space behind `3` will also be counted into the string. But in this problem, because of the use of `string argv[]`, it will use white space to seperate between strings, so the extra white space won't be counted to `argv[1]`, and it will only contain `123\0`.
