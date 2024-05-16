@@ -96,7 +96,7 @@ int count_sentences(string text)
 
 ## 03 Caesar - Easy
 **Before the problem**
-1. Caesar's algorithm encrypts messages by "rotating" each letter by $k$ positions.
+1. Caesar's algorithm encrypts messages by "rotating" each letter by $$k$$ positions.
 
 **Things to notice in the problem statement**
 1. The program should only accept **only a single** command-line argument, a **non-negative integer**. Otherwise, the program should output `Usage: ./caesar key` and return form `main` a value of `1`.
@@ -157,3 +157,88 @@ char rotate(char c, int key)
 
 **Take-aways**
 1. The `get_string()` provided in the `<cs50.h>` won't truncate the extra white space behind. For example, if you input `123     `, the extra white space behind `3` will also be counted into the string. But in this problem, because of the use of `string argv[]`, it will use white space to seperate between strings, so the extra white space won't be counted to `argv[1]`, and it will only contain `123\0`.
+
+## 03 Subtitution - Hard
+**Things to notice in the problem statement**
+1. Every character in the key must be alphabetical, case-sensitive and appear only once, which means `c` and `C` can not appear in the key at the same time.
+
+**Dividie and Conquer**
+```
+Make sure program was run with just one command-line argument
+Make sure the key(argv[1]) is valid
+Convert argv[1] from a `string` to an `int`
+Prompt user for plaintext
+For each character in the plaintext:
+    Find the corresponding encrypted character if it's a letter
+```
+
+**Useful Snippets**
+1. Validate the `key`
+    1. $$O(n^2)$$ method.
+    ```
+    int validate_key(string key)
+    {
+        int i, l, j;
+
+        for (i = 0, l = strlen(key); i < l; i++) {
+                if (!isalpha(key[i]))
+                        return 1;
+                for (j = i+1; j < l; j++) {
+                        if (toupper(key[j]) == toupper(key[i]))
+                                return 1;
+                }
+        }
+
+        return 0;
+    }
+    ```
+    2. $$O(n)$$ method
+    ```
+    int validate_key(string key)
+    {
+            int record[26] = {0};
+
+            for (int i = 0, l = strlen(key); i < l; i++) {
+                    int index = toupper(key[i]) - 'A';
+                    if (!isalpha(key[i]))
+                            return 1;
+                    else if (record[index] == 1)
+                            return 1;
+                    else
+                            record[index] = 1;
+            }
+            return 0;
+    }
+    ```
+        The idea here is to keep track of the appearance of each letter.
+2. Encrypt the alphabetical character
+```
+char encrypt(char c, string key)
+{
+        int index;
+        int case_indicator = 0;
+
+        if (!isalpha(c))
+                return c;
+        else {
+                // calculate the index and record the case_indicator
+                if (isupper(c)) {
+                        index = (int) c - 'A';
+                        case_indicator = 1;
+                }
+                else if (islower(c)) {
+                        index = (int) c - 'a';
+                        case_indicator = 0;
+                }
+
+                if (case_indicator)
+                        return toupper(key[index]);
+                else
+                        return tolower(key[index]);
+        }
+}
+```
+
+**Take-aways**
+1. In the validation part, the idea of *keep tracking* is important and will decrease the time compelxity tremendously.
+2. The idea of *index* in the letter and array problem is important also. If it is case-sensitive in the problem, we can use `toupper()` or `tolower()` to map the letter to its index.
