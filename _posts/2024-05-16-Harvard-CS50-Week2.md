@@ -9,7 +9,7 @@ tags:
   - C
 ---
 
-Welcome to CS50 Week 2! As normal, I will be going throught my summary of Week 1's content.
+Welcome to CS50 Week 2! As normal, I will be going through my summary of Week 1's content.
 
 # Problem Set 2
 ## 01 Scrabble
