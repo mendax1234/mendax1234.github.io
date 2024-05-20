@@ -77,3 +77,31 @@ This is CS50 Week 3. I will go through my summary of Week 3's content.
 </div>
 
 - The `return` inside a function call **only** ends the given function call only. It won't terminate the whole program.
+
+# Problem Set 3
+## 01 Sort
+Just keep in mind the best and worst case time complexity of these three sort algorithms. That's enough.
+
+## 02 Plurality
+**Things to notice in the problem statement**
+1. If the user inputs an invalid input, the vote will be wasted.
+2. We must print out all the candidates with `max` votes.
+
+**Divide and Conquer**
+1. `vote()`
+```
+    Iterate over each candidate
+        Check if candidate's name matches given name
+            If yes, increment candidate's votes and return true
+    If no matches after checking each candidate, return false 
+```
+
+2. `print_winners()`
+```
+    Find the maximum number of votes
+
+    Print the candidate (or candidates) with maximum votes
+```
+
+**Take-aways**
+1. In the `print_winners()`, we need two loops, one for finding the max votes and another for printing all the candidates with that max votes if we don't want to increase the space complexity, like using an array to record the index of the candidates with max votes.
