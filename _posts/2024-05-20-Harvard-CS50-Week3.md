@@ -12,8 +12,8 @@ tags:
 This is CS50 Week 3. I will go through my summary of Week 3's content.
 
 # Lecture
-1. Three methods to sort
-    1. Selection sort \
+- Three methods to sort
+    - Selection sort \
     Basically, this method starts at the beginning and select the smallest till the end and then swap it with the current selection.
     ```
         For i from 0 to n-1
@@ -22,7 +22,7 @@ This is CS50 Week 3. I will go through my summary of Week 3's content.
     ```
     Its time complexity is $$O(n^2)$$.
 
-    2. Bubble sort \
+    - Bubble sort \
     This method sorts the largest number to the end until the beginning.
     ```
         Repeat n-1 times
@@ -32,9 +32,20 @@ This is CS50 Week 3. I will go through my summary of Week 3's content.
             If no swaps
                 Quit
     ```
-    Its time complexity is $$O(n^2)$$ also.
+    Its time complexity is $$O(n^2)$$ also. \
+    **Inspiration from shorts:**
+        - The idea behind bubble sort: \
+        The idea of bubble sort is to **move higher valued elements generally towards the right and lower value elements generally towards the left**.
+        - In pseudocode:
+        ```
+            Set swap counter to a non-zero value (-1)
+            Repeat until the swap counter is 0:
+                Reset swap counter to 0
+                Look at each adjacent pair
+                    If two adjacent elements are not in order, swap them and add one to the swap counter
+        ```
 
-    3. Merge sort \
+    - Merge sort \
     This method takes twice the memory space.
     ```
         If only one number
