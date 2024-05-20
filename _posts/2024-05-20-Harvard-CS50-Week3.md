@@ -20,7 +20,16 @@ This is CS50 Week 3. I will go through my summary of Week 3's content.
             Find smallest number between numbers[i] and numbers[n-1]
             Swap smallest number with numbers[i]
     ```
-    Its time complexity is $$O(n^2)$$.
+    Its time complexity is $$O(n^2)$$. <br><br>
+    **Inspiration from shorts:**
+        - The idea behind selection sort: \
+        The idea of selection sort is to **find the smallest unsorted element and add it to the end of the sorted list.**
+        - In pseudocode:
+        ```
+            Repeat until no sorted elements remain:
+                Search the unsorted part of the data to find the smallest value
+                Swap the smallest found value with the firts element of the unsorted part
+        ```
 
     - Bubble sort \
     This method sorts the largest number to the end until the beginning.
@@ -32,7 +41,7 @@ This is CS50 Week 3. I will go through my summary of Week 3's content.
             If no swaps
                 Quit
     ```
-    Its time complexity is $$O(n^2)$$ also. \
+    Its time complexity is $$O(n^2)$$ also. <br><br>
     **Inspiration from shorts:**
         - The idea behind bubble sort: \
         The idea of bubble sort is to **move higher valued elements generally towards the right and lower value elements generally towards the left**.
