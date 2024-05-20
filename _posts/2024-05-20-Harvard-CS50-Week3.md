@@ -105,3 +105,67 @@ Just keep in mind the best and worst case time complexity of these three sort al
 
 **Take-aways**
 1. In the `print_winners()`, we need two loops, one for finding the max votes and another for printing all the candidates with that max votes if we don't want to increase the space complexity, like using an array to record the index of the candidates with max votes.
+
+## 03 Runoff - Easy
+**Before the problem**
+1. In the second problem about plurality, we may face a problem that there may be several winners. To deal with that problem, we assign the rank to each candidate the voter votes to. 
+
+**Things to notice in the problem statement**
+1. `preferences[i][j]` indicates that voter `i`'s `rank`th choice is the value of `preferences[i][j]`th candidate. (We assume that `preferences[i][0]` is the first choice).
+2. Thanks to the introduction of `rank`, our election may have only one winner. If not, we need to do the elimination.
+
+**Divide and Conquer**
+1. Record preference if vote is valid (`bool vote(int voter, int rank, string name)`)
+```
+    Iterate through all the candidates
+        If candidate's name == name
+            record the candidate's index as preference[voter][rank]
+            return true
+    return false
+```
+
+2. Tabulate votes for non-eliminated candidates (`void tabulate(void)`)
+```
+    Iterate through each voter
+        Iterate through each rank
+            If this candidate is not eliminated and is the voter's toppest choice
+                Increment this candidate's votes
+                break from the rank loop
+```
+
+3. Print the winner of the election, if there is one (`bool print_winner(void)`)
+```
+    Define winning indicator as voter count divides 2
+    Iterate through each candidate
+        if candidate's votes > winning indicator
+            print
+            return true
+    return false
+```
+
+4. Return the minimum number of votes any remaining candidate has (`int find_min(void)`)
+```
+    Initialize the variable min to MAX_VOTERS + 1
+    Iterate through each candidate
+        If candidate's votes < min
+            Update min
+    return min
+```
+
+5. Decide whether the election is a tie (`bool is_tie(int min)`)
+```
+    Iterate through each candidate
+        If candidate's votes is greater than min
+            return false
+    return true
+```
+
+6. Eliminate the candidate (or candidates) in last place (`void eliminate(int min)`)
+```
+    Iterate through each candidate
+        If candidate's votes is equal to min
+            set this candidate's eliminated to be true
+```
+
+**Take-aways**
+1. Nothing much to take away since it is a very specific probelm. What I want to say is to follow the problem instructions carefully!
