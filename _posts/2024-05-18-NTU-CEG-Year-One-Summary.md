@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "My Year One at NTU CCDS Summary"
+title:  "NTU Computer Engineering Year One Summary"
 header:
   teaser: posts/NTU_CCDS.png
 categories: 
