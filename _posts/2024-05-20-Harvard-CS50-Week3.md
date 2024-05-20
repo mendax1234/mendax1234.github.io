@@ -64,7 +64,10 @@ This is CS50 Week 3. I will go through my summary of Week 3's content.
             Sort right half of numbers
             Merge sorted halves.
     ```
-    Its time complexity is $$O(nlogn)$$.
+    Its time complexity is $$O(nlogn)$$.<br><br>
+    **Inspiration from shorts:**
+        - The idea behind merge sort: \
+        The idea of merge sort is to **sort smaller arrays and then combine those arrays together (merge them) in sorted order.
 
 # Section
 - To debug recursive function more effectively, there is a field called **Call Stack**.
