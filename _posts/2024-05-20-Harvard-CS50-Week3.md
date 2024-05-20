@@ -73,7 +73,7 @@ This is CS50 Week 3. I will go through my summary of Week 3's content.
 - To debug recursive function more effectively, there is a field called **Call Stack**.
 
 <div style="text-align: center;">
-    <img src="/images/posts/Call_Stack.png" width="160" height="140">
+    <img src="/images/posts/Call_Stack.png" width="240" height="210">
 </div>
 
 - The `return` inside a function call **only** ends the given function call only. It won't terminate the whole program.
