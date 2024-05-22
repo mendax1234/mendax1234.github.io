@@ -1,7 +1,7 @@
 ---
 layout: single
-title:  "NTU Computer Engineering Year One Summary"
-excerpt: NTU Computer Engineering Year One Summary
+title:  "NTU Computer Engineering Year One Review"
+excerpt: NTU Computer Engineering Year One Review
 header:
   teaser: posts/NTU_CCDS.png
 categories: 
