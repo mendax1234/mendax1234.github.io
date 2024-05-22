@@ -170,3 +170,6 @@ Just keep in mind the best and worst case time complexity of these three sort al
 
 **Take-aways**
 1. Nothing much to take away since it is a very specific probelm. What I want to say is to follow the problem instructions carefully!
+
+## 03 Tideman - Very Very Very Hard
+
