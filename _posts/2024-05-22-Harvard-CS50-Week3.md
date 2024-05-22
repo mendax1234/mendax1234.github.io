@@ -172,4 +172,39 @@ Just keep in mind the best and worst case time complexity of these three sort al
 1. Nothing much to take away since it is a very specific probelm. What I want to say is to follow the problem instructions carefully!
 
 ## 03 Tideman - Very Very Very Hard
+**Things to notice in the problem statement**
+1. The integer `preferences[i][j]` will represent the number of voters who prefer candidate `i` over candidate `j`.
+2. The file also defines another two-dimensional array, called `locked`, which will represent the candidate graph. `locked` is a boolean array, so `locked[i][j]` being true represents the existence of an edge pointing from candidate `i` to candidate `j`; false means there is no edge. (If curious, this representation of a graph is known as an “adjacency matrix”).
+3. The `struct` called `pair` is used to represent a pair of candidates: each pair includes the `winner`'s candidate index and the `loser`'s candidate index. (Both of the index are integer)
+4. There is an array called `ranks`, where `ranks[i]` is the index of the candidate who is the `i`th preference for the voter. (We will update the rank at each iteration of a new voter)
 
+**Divide and Conquer**
+1. Update ranks given a new vote (`bool vote(int rank, string name, int ranks[])`)
+```
+    
+```
+
+2. Update preferences given one voter's ranks (`void record_preferences(int ranks[])`)
+```
+    
+```
+
+3. Record pairs of candidates where one is preferred over the other (`void add_pairs(void)`)
+```
+    
+```
+
+4. Sort pairs in decreasing order by strength of victory (`void sort_pairs(void)`)
+```
+    
+```
+
+5. Lock pairs into the candidate graph in order, without creating cycles (`void lock_pairs(void)`)
+```
+    
+```
+
+6. Print the winner of the election (`void print_winner(void)`)
+```
+    
+```
