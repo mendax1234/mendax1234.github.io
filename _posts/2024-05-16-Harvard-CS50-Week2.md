@@ -1,6 +1,7 @@
 ---
 layout: single
 title:  "Harvard CS50 Week2 Summary"
+excerpt: Harvard CS50 Week2 Summary
 header:
   teaser: posts/Harvard_CS50.png
 categories: 
