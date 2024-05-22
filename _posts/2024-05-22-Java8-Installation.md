@@ -53,3 +53,4 @@ Note that `x64` can be replaced to your architecture.
 # References
 1. <https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html#A1097144>
 2. <https://docs.oracle.com/cd/E19215-01/820-2215/6ndr6ai1m/index.html>
+3. <https://media.pearsoncmg.com/ph/esm/ecs_liang_ijp_11/cw/content/supplements/Supplement1bInstallingJDK8.pdf>
