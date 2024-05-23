@@ -181,30 +181,86 @@ Just keep in mind the best and worst case time complexity of these three sort al
 **Divide and Conquer**
 1. Update ranks given a new vote (`bool vote(int rank, string name, int ranks[])`)
 ```
-    
+    Iterate through each candidate
+        if the current candidate name equals to the parameter name
+            ranks[rank] = the index of the current candidate
+            return true
+    return false
 ```
 
 2. Update preferences given one voter's ranks (`void record_preferences(int ranks[])`)
 ```
-    
+    Use a for loop to get the candidate from top rank to the lowest
+        // Update the preferences
+        denote index as ranks[i]
+        Use another for loop to increment the preferences[index][j]
+        // Deal with the Duplicate case
+        denote temp as i
+        while temp is greater than 0
+            preferences[index][rank[temp]]--
+            temp--
+    return
 ```
 
 3. Record pairs of candidates where one is preferred over the other (`void add_pairs(void)`)
 ```
-    
+    Use two for loops to iterate through each element in preferences[][]
+        if preferences[i][j] is greater than preferences[j][i]
+            Add i and j to a new pair
 ```
+Note that the condition to add a new pair is not `preferences[i][j]` greater than 0. It must be as stated in the pseudocode since only greater than 0 doesn't necessarily mean `i` is preferred over `j`.
 
-4. Sort pairs in decreasing order by strength of victory (`void sort_pairs(void)`)
-```
-    
-```
+4. Sort pairs in decreasing order by strength of victory (`void sort_pairs(void)`) \
+The criteria for comparison is `preferences[i][j]`, which is also the strength of victory.
+- Bubble sort
+    Just a normal Buuble sort implementation would be okie but remember that in this problem, we need to move the smallest number towards the right.
 
-5. Lock pairs into the candidate graph in order, without creating cycles (`void lock_pairs(void)`)
-```
-    
-```
+5. Lock pairs into the candidate graph in order, without creating cycles (`void lock_pairs(void)`) \
+This problem can be regarded as a very classic problem: determine whether there is a cycle in a directed graph. But in this probelm it's a little different, there is only one edge between two vertices.
+- Method 1 \
+    This method will use DFS and Recursion to judge the cycle in the graph. (Note that this method may not apply to general directed graph).
+        1. `...lock_pairs(...)`
+        ```
+            Iterate through each pair
+                lock it first
+                if loop_check() returns true
+                    unlock the previous locked pair
+        ```
+        2. `loop_check(int start)`
+        ```
+            Update the visited array
+            Termination check (If a vertex is visited twice, return true)
+            Recursion part
+        ```
 
 6. Print the winner of the election (`void print_winner(void)`)
+For a specific candidate `j`, if with all the other candidates (iterating from `i`), the `locked[j][i]` is false, then candidate `j` is the winner. Otherwise, there is no winner.
+
+**Useful Snippets**
+1. `loop_check()`
 ```
-    
+bool loop_check(int start)
+{
+    visited[start]++;
+
+    // Termination check
+    for (int i = 0; i < candidate_count; i++)
+    {
+        if (visited[i] == 2)
+            return true;
+    }
+
+    for (int j = 0; j < candidate_count; j++)
+    {
+        if (locked[start][j] == true && (visited[j] == 0 || visited[j] == 1))
+        {
+            if (loop_check(j))
+                return true;
+        }
+    }
+    return false;
+}
 ```
+
+**Take-aways**
+1. If a recursion function, if you want to return true after reaching a specific requirement, you must return true from all the calls. That means you must add a line `if (recursion_function_call) return true`. This is very important. 
