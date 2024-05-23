@@ -13,11 +13,11 @@ tags:
 Welcome to CS50! This is Week 1 and I will be going to talk about my summary of Week 1's content.
 
 # Problem Set 1
-## 01 Hello, It's me
+## [01 Hello, It's me](https://cs50.harvard.edu/x/2024/psets/1/me/)
 This problem serves as the beginning of this course. Welcome to CS50!
 
 ## 02 Mario
-### Easy Version
+### [Easy Version](https://cs50.harvard.edu/x/2024/psets/1/mario/less/)
 **Things to notice in the problem statement**:
 1. *"Re-prompt the user, again and again as needed, if their input is not greater than 0 or not an int altogether."*
 
@@ -63,7 +63,7 @@ print_row(int bricks, int total)
 1. Use `do-while loop` to prompt until the input is valid.
 2. Divide the problem into smaller parts by **finding the patterns**, just keep in mind if something is duplicate in your program, then it's likely to have a more compact way to do that.
 
-### Hard Version
+### [Hard Version](https://cs50.harvard.edu/x/2024/psets/1/mario/more/)
 Using the same settings from the problem above, now the bricks pattern we want to print is different. But, we can still using the design structure and the only thing we need to change is the `print_row()` function.
 
 **Useful Snippets**
@@ -92,7 +92,7 @@ print_row(int bricks, int total)
 **Take-aways**:
 1. In this hard version of Mario, we can clearly see the importance of finding a good "structure" to solve a problem. Since this good structure can be reused, which will make our code flexible. And one way to make your code flexible is to write good functions.
 
-## 03 Cash - Easy
+## [03 Cash - Easy](https://cs50.harvard.edu/x/2024/psets/1/cash/)
 **Before the problem**
 1. There are only **four** types of cents: `1(pennies)`, `5(nickles)`, `10(dimes)`, `25(quarters)`
 2. Introduction to Greedy Algorithm \
@@ -140,7 +140,7 @@ int calculate_quarters(int cents)
 1. The idea of greedy algorithm and its application.
 2. If we use greedy algorith, we must update our parameter for the next greedy use.
 
-## 03 Credit - Hard
+## [03 Credit - Hard](https://cs50.harvard.edu/x/2024/psets/1/credit/)
 **Before the problem**
 1. Luhn's Algorithm \
 This algorithm is used to check whether a credit card is valid or not by using a *checksum*. The procedure of this algorithm is below:

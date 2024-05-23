@@ -13,7 +13,7 @@ tags:
 Welcome to CS50 Week 2! As normal, I will be going through my summary of Week 1's content.
 
 # Problem Set 2
-## 01 Scrabble
+## [01 Scrabble](https://cs50.harvard.edu/x/2024/psets/2/scrabble/)
 **Things to notice in the problem statement**
 1. It is not case-sensitive, which means for example 'c' and 'C' carry the same point.
 2. Every letter that is not alpha carries 0 point.
@@ -53,7 +53,7 @@ int compute_score(string word)
 **Take-aways**
 1. In the snippet, we can learn the style of traversing through a string in C, that's `for (int i, len = strlen(word); i < l; i++)`, then we can use `word[i]` to represent each letter in the word in the loop.
 
-## 02 Readability
+## [02 Readability](https://cs50.harvard.edu/x/2024/psets/2/readability/)
 **Before the problem**
 1. To compute the reading level of a text, we will use *Coleman-Liau index*, whose formula is `index = 0.0588 * L - 0.296 * S - 15.8`, where `L` is the average number of lettes per 100 words, and `S` is the average number of sentences per 100 words in the text.
     - Notice that this formula may output "wrongly" if you only input one word, like `hello`, in this case, what you will get is `Grade 14`, since `sentence` is 0. However, if we add a termination signal at the end, we will get the reasonable output. This is one disadvantage of this formula.
@@ -95,7 +95,7 @@ int count_sentences(string text)
 **Take-aways**
 1. To round a result (usually in float or double) to the nearest whole number, we can use the `round()` declared in `math.h`.
 
-## 03 Caesar - Easy
+## [03 Caesar - Easy](https://cs50.harvard.edu/x/2024/psets/2/caesar/)
 **Before the problem**
 1. Caesar's algorithm encrypts messages by "rotating" each letter by $$k$$ positions.
 
@@ -159,7 +159,7 @@ char rotate(char c, int key)
 **Take-aways**
 1. The `get_string()` provided in the `<cs50.h>` won't truncate the extra white space behind. For example, if you input `123     `, the extra white space behind `3` will also be counted into the string. But in this problem, because of the use of `string argv[]`, it will use white space to seperate between strings, so the extra white space won't be counted to `argv[1]`, and it will only contain `123\0`.
 
-## 03 Subtitution - Hard
+## [03 Subtitution - Hard](https://cs50.harvard.edu/x/2024/psets/2/substitution/)
 **Things to notice in the problem statement**
 1. Every character in the key must be alphabetical, case-sensitive and appear only once, which means `c` and `C` can not appear in the key at the same time.
 

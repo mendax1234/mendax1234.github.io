@@ -80,10 +80,10 @@ This is CS50 Week 3. I will go through my summary of Week 3's content.
 - The `return` inside a function call **only** ends the given function call only. It won't terminate the whole program.
 
 # Problem Set 3
-## 01 Sort
+## [01 Sort](https://cs50.harvard.edu/x/2024/psets/3/sort/)
 Just keep in mind the best and worst case time complexity of these three sort algorithms. That's enough.
 
-## 02 Plurality
+## [02 Plurality](https://cs50.harvard.edu/x/2024/psets/3/plurality/)
 **Things to notice in the problem statement**
 1. If the user inputs an invalid input, the vote will be wasted.
 2. We must print out all the candidates with `max` votes.
@@ -107,7 +107,7 @@ Just keep in mind the best and worst case time complexity of these three sort al
 **Take-aways**
 1. In the `print_winners()`, we need two loops, one for finding the max votes and another for printing all the candidates with that max votes if we don't want to increase the space complexity, like using an array to record the index of the candidates with max votes.
 
-## 03 Runoff - Easy
+## [03 Runoff - Easy](https://cs50.harvard.edu/x/2024/psets/3/runoff/)
 **Before the problem**
 1. In the second problem about plurality, we may face a problem that there may be several winners. To deal with that problem, we assign the rank to each candidate the voter votes to. 
 
@@ -171,7 +171,7 @@ Just keep in mind the best and worst case time complexity of these three sort al
 **Take-aways**
 1. Nothing much to take away since it is a very specific probelm. What I want to say is to follow the problem instructions carefully!
 
-## 03 Tideman - Very Very Very Hard
+## [03 Tideman - Very Very Very Hard](https://cs50.harvard.edu/x/2024/psets/3/tideman/)
 **Things to notice in the problem statement**
 1. The integer `preferences[i][j]` will represent the number of voters who prefer candidate `i` over candidate `j`.
 2. The file also defines another two-dimensional array, called `locked`, which will represent the candidate graph. `locked` is a boolean array, so `locked[i][j]` being true represents the existence of an edge pointing from candidate `i` to candidate `j`; false means there is no edge. (If curious, this representation of a graph is known as an “adjacency matrix”).
