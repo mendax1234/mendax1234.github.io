@@ -1,7 +1,7 @@
 ---
 layout: single
-title:  "Harvard CS50 Week3 Summary"
-excerpt: Harvard CS50 Week3 Summary
+title:  "Harvard CS50 Week3 Review"
+excerpt: Harvard CS50 Week3 Review
 header:
   teaser: posts/Harvard_CS50.png
 categories: 
