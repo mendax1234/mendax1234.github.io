@@ -46,7 +46,9 @@ Note that `x64` can be replaced to your architecture.
 
 ## Set Path
 1. Add this line to your `~/.bashrc` (Note to change the directory to yours) \
-    ```export PATH=/usr/lib/jvm/JDK-directory/bin:$PATH```
+    ```bash
+    export PATH=/usr/lib/jvm/JDK-directory/bin:$PATH
+    ```
 
 2. Reload using `source ~/.bashrc`
 
