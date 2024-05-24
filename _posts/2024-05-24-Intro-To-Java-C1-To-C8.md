@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "Introduction to Java Programming Chapter 1 Review"
+title:  "Introduction to Java Programming Chapter 1 to 8 Review"
 header:
   teaser: posts/Intro_To_Java_Prog_Head.jpg
 categories: 
@@ -43,3 +43,58 @@ Now, you may use the JVM, which is an **interpreter** to execute the bytecode.
 
 ## 1.9 - 1.12
 Nothing important.
+
+# Chapter 2
+1. The plus sign `+` can also be a *string concatenation operator*. e.g.
+```java
+    System.out.println("1 + 1 = " + 2);
+```
+2. To read in Java, we can use
+```java
+    import java.util.Scanner;
+
+    // ...
+    Scanner input = new Scanner (System.in);
+    double radius = input.nextDouble();
+```
+    **Note that** `.nextDouble()` method can be changed to other types, like `.nextInt()`.
+3. To name a constant in Java, we can use the keyword `final`
+```java
+    //...
+    final double PI = 3.14159;
+```
+    **Note that** a constant must be declared and initialized in the same statement.
+
+# Chapter 3
+1. In Java, there is a `boolean` datatype and the boolean variable can be either `true` or `false`.
+```java
+    boolean lightsOn = true;
+```
+2. In Java, we also have *dangling `else` ambiguity* problem, which is very similar to C. That is the `else` clause will always match **the most recent unmatched `if` clause** in the same block.
+```java
+    //...
+    int i = 1, j = 2, k = 3;
+
+    if (i > j)
+        if (i > k)
+            System.out.println("A");
+    else
+        System.out.println("B");
+```
+    This code snippet is equivalent the code below
+```java
+    // ...
+    int i = 1, j = 2, k = 3;
+    if (i > j)
+        if (i > k)
+            System.out.println("A");
+        else
+            System.out.println("B");
+```
+3. In Java, we must also pay attention to the **equality test of two floating-point values**. For example,
+```java
+    // ...
+    double x = 1 - 0.1 - 0.1 - 0.1 - 0.1 - 0.1;
+    System.out.println(x == 0.5);
+```
+    In this code snippet, the final output is `false` since x actually is `0.50000001`. To avoid this problem, we can set $$\lvert x - y\rvert < \epsilon$$, where $$\epsilon$$ is a very small value, to test that whehter x is approximate to 0.5
