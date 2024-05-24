@@ -23,11 +23,11 @@ author_profile: true
 <font size="2">
 <strong>Wenbo Zhu*</strong>, others* <br />
 Organization (<strong>iiii</strong>), 2024 <span style="color:red">hightlight</span><br />
-<a href="https://www.google.com">Paper</a> | 
-<a href="https://www.google.com">Video</a> |
-<a href="https://www.google.com">Code</a> |
-<a href="https://www.google.com">Project Page</a> |
-<a href="https://www.google.com">Demo</a>
+<a href="https://www.google.com" class="btn--research">Paper</a> | 
+<a href="https://www.google.com" class="btn--research">Video</a> |
+<a href="https://www.google.com" class="btn--research">Code</a> |
+<a href="https://www.google.com" class="btn--research">Project Page</a> |
+<a href="https://www.google.com" class="btn--research">Demo</a>
 <br />
 </font>
 </p>

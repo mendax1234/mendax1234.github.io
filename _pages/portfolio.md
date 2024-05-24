@@ -21,8 +21,8 @@ author_profile: true
 ∙ Sometimes it fixes some UI bugs for Logseq. <br />
 ∙ Top 10 most popular theme in Logseq. <br />
 2022 <br />
-<a href="https://github.com/logseq/awesome-logseq?tab=readme-ov-file#-css-themes">Website</a> |
-<a href="https://github.com/mendax1234/logseq-cusgit-theme">Code</a>
+<a href="https://github.com/logseq/awesome-logseq?tab=readme-ov-file#-css-themes" class="btn--research">Website</a> |
+<a href="https://github.com/mendax1234/logseq-cusgit-theme" class="btn--research">Code</a>
 <br />
 <br>
 </font>
@@ -37,8 +37,8 @@ author_profile: true
 ∙ Fully automative translation workflow using Transifex. <br />
 ∙ Practice Gracious Professionalism in FRC. <br />
 2022 <br />
-<a href="https://6940swerve-docs.readthedocs.io/en/latest/">Website</a> |
-<a href="https://github.com/mendax1234/6940Swerve-docs">Code</a>
+<a href="https://6940swerve-docs.readthedocs.io/en/latest/" class="btn--research">Website</a> |
+<a href="https://github.com/mendax1234/6940Swerve-docs" class="btn--research">Code</a>
 <br />
 <br>
 </font>
@@ -52,8 +52,8 @@ author_profile: true
 ∙ Coding for the fully functional Swerve Chassis. <br />
 ∙ Designing and implementing three sets of shooting while moving algorithm. <br />
 2022 <br />
-<a href="https://www.youtube.com/watch?v=DXP7FiZtLeo">Video</a> |
-<a href="https://github.com/Team6940/2022RapidReact">Code</a>
+<a href="https://www.youtube.com/watch?v=DXP7FiZtLeo" class="btn--research">Video</a> |
+<a href="https://github.com/Team6940/2022RapidReact" class="btn--research">Code</a>
 <br />
 </font>
 </p>
@@ -65,8 +65,8 @@ author_profile: true
 <font size="2">
 ∙ Designing an e-voting system based on Blockchain Technology using Python Django.<br />
 2021 <br />
-<a href="https://mendax1234.github.io/files/pdf/an_electronic_voting_system_based_on_blockchain.pdf">Paper</a> |
-<a href="https://github.com/mendax1234/Blockchain-based-E-Voting-Simulation">Code</a>
+<a href="https://mendax1234.github.io/files/pdf/an_electronic_voting_system_based_on_blockchain.pdf" class="btn--research">Paper</a> |
+<a href="https://github.com/mendax1234/Blockchain-based-E-Voting-Simulation" class="btn--research">Code</a>
 <br />
 </font>
 </p>
@@ -79,8 +79,8 @@ author_profile: true
 ∙ My first time to code for a simple but efficient competition robot.<br />
 ∙ Auto aiming using Limelight. <br />
 2021 <br />
-<a href="https://www.youtube.com/watch?v=Bt2EDzUbl5s">Video</a> |
-<a href="https://github.com/Team6940/2021FRC">Code</a>
+<a href="https://www.youtube.com/watch?v=Bt2EDzUbl5s" class="btn--research">Video</a> |
+<a href="https://github.com/Team6940/2021FRC" class="btn--research">Code</a>
 <br />
 </font>
 </p>
@@ -93,7 +93,7 @@ author_profile: true
 ∙ EFI boot files using Opencore for installing Hackintosh on Thinkpad X390. <br />
 ∙ Perfect support for all the drivers.<br />
 2020 <br />
-<a href="https://github.com/mendax1234/ThinkpadX390-Opencore-EFI">Code</a>
+<a href="https://github.com/mendax1234/ThinkpadX390-Opencore-EFI" class="btn--research">Code</a>
 <br />
 <a href="https://github.com/mendax955/ThinkpadX390-Opencore-EFI/releases">
   <img src="https://img.shields.io/github/downloads/mendax955/ThinkpadX390-Opencore-EFI/total?label=Download"/>
@@ -110,7 +110,7 @@ author_profile: true
 ∙ EFI boot files using Clover for installing Hackintosh on Thinkpad E40. <br />
 ∙ First time to install Hackintosh on laptops that only support MBR partition. <br />
 2020 <br />
-<a href="https://github.com/mendax1234/ThinkPadE40-Clover-EFI">Code</a>
+<a href="https://github.com/mendax1234/ThinkPadE40-Clover-EFI" class="btn--research">Code</a>
 <br />
 <a href="https://github.com/mendax1234/ThinkPadE40-Clover-EFI/releases">
   <img src="https://img.shields.io/github/downloads/mendax1234/ThinkPadE40-Clover-EFI/total?label=Download"/>
