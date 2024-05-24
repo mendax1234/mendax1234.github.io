@@ -32,22 +32,23 @@ Compute the score for each character
 ```
 **Useful Snippets**
 1. Compute the score of a string
-```
-int compute_score(string word)
-{
+```c
+    int compute_score(string word)
+    {
         // Keep track of score
         int score = 0;
 
         //Compute score for each character
-        for (int i = 0, len = strlen(word); i < l; i++) {
-                if (isupper(word[i]))
-                        score += POINTS[word[i] - 'A'];
-                else if (islower(word[i]))
-                        score += POINTS[word[i] - 'a'];
+        for (int i = 0, len = strlen(word); i < l; i++)
+        {
+            if (isupper(word[i]))
+                score += POINTS[word[i] - 'A'];
+            else if (islower(word[i]))
+                score += POINTS[word[i] - 'a'];
         }
 
         return score;
-}
+    }
 ```
 
 **Take-aways**
@@ -80,16 +81,17 @@ Print the grade level
 
 **Useful Snippets**
 1. `count_sentences()`
-```
-int count_sentences(string text)
-{
+```c
+    int count_sentences(string text)
+    {
         int count = 0;
-        for (int i = 0, len = strlen(text); i < len; i++) {
-                if (isalpha(text[i]) && (text[i+1] == '!' || text[i+1] == '?' || text[i+1] == '.'))
-                        count++;
+        for (int i = 0, len = strlen(text); i < len; i++)
+        {
+            if (isalpha(text[i]) && (text[i+1] == '!' || text[i+1] == '?' || text[i+1] == '.'))
+                count++;
         }
         return count;
-}
+    }
 ```
 
 **Take-aways**
@@ -115,44 +117,48 @@ For each character in the plaintext:
 
 **Useful Snippets**
 1. The command-line argument, `int argc, string argv[]` template
-```
-int main(int argc, string argv[])
-{
-        // ...
-}
+```c
+    int main(int argc, string argv[])
+    {
+            // ...
+    }
 ```
 2. Check whehter the input is a non-negative integer or not.
-```
-int only_digits(string s)
-{
+```c
+    int only_digits(string s)
+    {
         int i, l;
 
-        for (i = 0, l = strlen(s); i < l; i++) {
-                if (!isdigit(s[i]))
-                        return 0;
+        for (i = 0, l = strlen(s); i < l; i++)
+        {
+            if (!isdigit(s[i]))
+                return 0;
         }
         return 1;
-}
+    }
 ```
     Notice that the method we use here is to check whether each character is a digit or not.
 3. Rotate each alphabetical letter
-```
-char rotate(char c, int key)
-{
+```c
+    char rotate(char c, int key)
+    {
         if (!isalpha(c))
-                return c;
-        else {
-                if (isupper(c)) {
-                        int result = ((int) (c - 'A') + key) % 26 + (int) 'A';
-                        return (char) result;
-                }
-                else {
-                        c = toupper(c);
-                        int result = ((int) (c - 'A') + key) % 26 + (int) 'a';
-                        return (char) result;
-                }
+            return c;
+        else
+        {
+            if (isupper(c))
+            {
+                int result = ((int) (c - 'A') + key) % 26 + (int) 'A';
+                return (char) result;
+            }
+            else
+            {
+                c = toupper(c);
+                int result = ((int) (c - 'A') + key) % 26 + (int) 'a';
+                return (char) result;
+            }
         }
-}
+    }
 ```
     We can divide the `rotate()` into two parts, that is `offset + base`.
 
@@ -176,68 +182,74 @@ For each character in the plaintext:
 **Useful Snippets**
 1. Validate the `key`
     1. $$O(n^2)$$ method.
-    ```
+    ```c
     int validate_key(string key)
     {
         int i, l, j;
 
-        for (i = 0, l = strlen(key); i < l; i++) {
-                if (!isalpha(key[i]))
-                        return 1;
-                for (j = i+1; j < l; j++) {
-                        if (toupper(key[j]) == toupper(key[i]))
-                                return 1;
-                }
+        for (i = 0, l = strlen(key); i < l; i++)
+        {
+            if (!isalpha(key[i]))
+                return 1;
+            for (j = i+1; j < l; j++)
+            {
+                if (toupper(key[j]) == toupper(key[i]))
+                    return 1;
+            }
         }
 
         return 0;
     }
     ```
     2. $$O(n)$$ method
-    ```
+    ```c
     int validate_key(string key)
     {
-            int record[26] = {0};
+        int record[26] = {0};
 
-            for (int i = 0, l = strlen(key); i < l; i++) {
-                    int index = toupper(key[i]) - 'A';
-                    if (!isalpha(key[i]))
-                            return 1;
-                    else if (record[index] == 1)
-                            return 1;
-                    else
-                            record[index] = 1;
-            }
-            return 0;
+        for (int i = 0, l = strlen(key); i < l; i++)
+        {
+            int index = toupper(key[i]) - 'A';
+            if (!isalpha(key[i]))
+                return 1;
+            else if (record[index] == 1)
+                return 1;
+            else
+                record[index] = 1;
+        }
+        return 0;
     }
     ```
         The idea here is to keep track of the appearance of each letter.
 2. Encrypt the alphabetical character
-```
-char encrypt(char c, string key)
-{
+```c
+    char encrypt(char c, string key)
+    {
         int index;
         int case_indicator = 0;
 
         if (!isalpha(c))
-                return c;
-        else {
-                // calculate the index and record the case_indicator
-                if (isupper(c)) {
-                        index = (int) c - 'A';
-                        case_indicator = 1;
-                }
-                else if (islower(c)) {
-                        index = (int) c - 'a';
-                        case_indicator = 0;
-                }
+            return c;
+        else
+        {
+            // calculate the index and record the case_indicator
+            if (isupper(c))
+            {
+                index = (int) c - 'A';
+                case_indicator = 1;
+            }
+            else if (islower(c))
+            {
+                index = (int) c - 'a';
+                case_indicator = 0;
+            }
 
-                if (case_indicator)
-                        return toupper(key[index]);
-                else
-                        return tolower(key[index]);
+            if (case_indicator)
+                return toupper(key[index]);
+            else
+                return tolower(key[index]);
         }
-}
+    }
 ```
 
 **Take-aways**

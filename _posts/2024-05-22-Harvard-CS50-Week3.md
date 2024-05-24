@@ -245,28 +245,28 @@ For a specific candidate `j`, if with all the other candidates (iterating from `
 
 **Useful Snippets**
 1. `loop_check()`
-```
-bool loop_check(int start)
-{
-    visited[start]++;
-
-    // Termination check
-    for (int i = 0; i < candidate_count; i++)
+```c
+    bool loop_check(int start)
     {
-        if (visited[i] == 2)
-            return true;
-    }
+        visited[start]++;
 
-    for (int j = 0; j < candidate_count; j++)
-    {
-        if (locked[start][j] == true && (visited[j] == 0 || visited[j] == 1))
+        // Termination check
+        for (int i = 0; i < candidate_count; i++)
         {
-            if (loop_check(j))
+            if (visited[i] == 2)
                 return true;
         }
+
+        for (int j = 0; j < candidate_count; j++)
+        {
+            if (locked[start][j] == true && (visited[j] == 0 || visited[j] == 1))
+            {
+                if (loop_check(j))
+                    return true;
+            }
+        }
+        return false;
     }
-    return false;
-}
 ```
 
 **Take-aways**

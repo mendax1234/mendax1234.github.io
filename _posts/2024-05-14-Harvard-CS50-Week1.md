@@ -35,28 +35,30 @@ print_row()
 
 **Useful Snippets**
 1. Prompt the user until the input is valid.
-```
-// do-while loop
-int n;
-do {
+```c
+    // do-while loop
+    int n;
+    do 
+    {
         n = get_int("Height: ");
-} while (n < 1);
+    }
+    while (n < 1);
 ```
 
 2. Make the pyramid right-aligned
-```
-print_row(int bricks, int total)
-{
+```c
+    void print_row(int bricks, int total)
+    {
         int i;
 
         // Print whitespace
         for (i = 0; i < total - bricks; i++)
-                printf(" ");
+            printf(" ");
         // Print bricks
         for (j = 0; j < bricks; j++)
-                printf("#");
+            printf("#");
         printf("\n");
-}
+    }
 ```
 
 **Take-aways**
@@ -68,25 +70,25 @@ Using the same settings from the problem above, now the bricks pattern we want t
 
 **Useful Snippets**
 1. Change the `print_row` function to meet our requirements
-```
-print_row(int bricks, int total)
-{
+```c
+    void print_row(int bricks, int total)
+    {
         int i;
 
         // Print white spaces at the left
         for (i = 0; i < total - bricks; i++)
-                printf(" ");
+            printf(" ");
         // Print bricks at the left
         for (i = 0; i < bricks; i++)
-                printf("  ");
+            printf("  ");
         // Print the middle white space
         printf(" ");
         // Print the bricks at the right
         for (i = 0; i < bricks; i++)
-                printf("#");
+            printf("#");
         // End
         printf("\n");
-}
+    }
 ```
 
 **Take-aways**:
@@ -124,16 +126,17 @@ Given an initial owing (a certain number), we always try the first biggest cent 
 
 **Useful snippets**
 1. Implement the calculation using a specific function
-```
-int calculate_quarters(int cents)
-{
+```c
+    int calculate_quarters(int cents)
+    {
         int quarters = 0;
-        while (cents >= 25) {
-                quarters++;
-                cents = cents - 25;
+        while (cents >= 25)
+        {
+            quarters++;
+            cents = cents - 25;
         }
         return quarters;
-}
+    }
 ```
 
 **Take-aways**
@@ -162,7 +165,7 @@ Decide the type of the credit card
 
 **Useful Snippets**
 1. One `while` loop version
-    ```
+    ```c
     // Define and Initialize the variables
     long num_copy = num;
     int digit, sum1, indicator, length;
@@ -173,37 +176,42 @@ Decide the type of the credit card
 
     // Calculate sum and length
     while (num != 0) {
-            digit = num % 10;
-            if (indicator) {
-                    int temp = digit * 2;
-                    if (temp >= 10) {
-                            while (temp) {
-                                    sum1 += temp % 10;
-                                    temp /= 10;
-                            }
-                    }
-                    else {
-                            sum1 += temp;
-                    }
-                    indicator = 0;
+        digit = num % 10;
+        if (indicator)
+        {
+            int temp = digit * 2;
+            if (temp >= 10)
+            {
+                while (temp)
+                {
+                    sum1 += temp % 10;
+                    temp /= 10;
+                }
             }
-            else {
-                    sum1 += digit;
-                    indicator = 1;
+            else
+            {
+                sum1 += temp;
             }
-            length++;
-            num /= 10;
+            indicator = 0;
+        }
+        else
+        {
+            sum1 += digit;
+            indicator = 1;
+        }
+        length++;
+        num /= 10;
     }
-    ```
+```
 2. Calculate the first and second digit
-    1. Method 1
-    ```
+1. Method 1
+```c
     int first_digit = num_copy / pow(10, length - 1);
     int second_digit = (num_copy - first_digit * pow(10, length - 1)) / pow(10, length - 2);
-    ```
-        In this method, we will use the length of the number.
-    2. Method 2
-    ```
+```
+    In this method, we will use the length of the number.
+2. Method 2
+```c
     while (num < 100) {
             num /= 10;
     }
