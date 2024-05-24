@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "Introduction to Java Programming Chapter 1 Summary"
+title:  "Introduction to Java Programming Chapter 1 Review"
 header:
   teaser: posts/Intro_To_Java_Prog_Head.jpg
 categories: 
