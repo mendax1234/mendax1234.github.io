@@ -16,7 +16,7 @@ This blog will serve as the beginning of my notes while reading "Introduction to
 
 <br>
 
-# Chapter 1: Introduction to Computers, Programs, and Java
+# Chapter 1
 ## 1.1 - 1.5
 This part is too easy so there is not so much to mention.
 
