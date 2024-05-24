@@ -189,18 +189,25 @@ Just keep in mind the best and worst case time complexity of these three sort al
 ```
 
 2. Update preferences given one voter's ranks (`void record_preferences(int ranks[])`)
-```
-    Use a for loop to get the candidate from top rank to the lowest
-        // Update the preferences
-        denote index as ranks[i]
-        Use another for loop to increment the preferences[index][j]
-        // Deal with the Duplicate case
-        denote temp as i
-        while temp is greater than 0
-            preferences[index][rank[temp]]--
-            temp--
-    return
-```
+- Method 1
+    ```
+        Use a for loop to get the candidate from top rank to the lowest
+            // Update the preferences
+            denote index as ranks[i]
+            Use another for loop to increment the preferences[index][j]
+            // Deal with the Duplicate case
+            denote temp as i
+            while temp is greater than 0
+                preferences[index][rank[temp]]--
+                temp--
+        return
+    ```
+- Method 2
+    ```
+        Use a for loop to get the candidate from top rank to the lowest
+            Use another for loop to get the candidate below the rank above
+                Increment the corresponding preferences
+    ```
 
 3. Record pairs of candidates where one is preferred over the other (`void add_pairs(void)`)
 ```
