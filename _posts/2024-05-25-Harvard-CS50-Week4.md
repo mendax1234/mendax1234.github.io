@@ -13,7 +13,7 @@ tags:
 Welcome to CS50 again. This is Week 4 and I will go through my review of this week's content.
 
 # Lecture
-1. `malloc()` is just *memory allocate*, which will use the memory from the **heap**. And heap will grow downwards. There is also another section called **stack**, and function calls and the variables used will be stored in the stack. After the calling, the memory will be freed. Due to this reason, when we pass parameters by value, we just pass the copy and it won't affect the original value since after the function call, the memory will be freed. To affect the original value, we need to pass the address of the parameters.
+1. `malloc()` is just *memory allocate*, which will use the memory from the **heap**. And heap will grow downwards. There is also another section called **stack**, and **function calls and the variables** used will be stored in the stack. After the calling, the memory will be freed. Due to this reason, when we pass parameters by value, we just pass the copy and it won't affect the original value since after the function call, the memory will be freed. To affect the original value, we need to pass the address of the parameters.
 2. Use the idea of point 1, we can understand the why in `scanf()`, we need to pass the **address** of the variable we want to store the input. That's because if we don't pass the address, we can't change the variable, which means we can't store our input into the variable. For example,
 ```c
     // n won't store the number input
@@ -56,7 +56,7 @@ Welcome to CS50 again. This is Week 4 and I will go through my review of this we
     char p[4];
     scanf("%s", p);
 ```
-    For data type like `int`, it's okay for you not to initialize since it always has **valid space**. But for pointers, not initializing is dangerous because what p stores is a **garbage value** (If you don't initialize after declaring variables, what they have are all **garbage values**). This garbage value may represent an **invalid address** in the memory, so you can not write into that address.
+    For data type like `int`, it's okay for you not to initialize since it always has **valid space**, so we can always rewrite the value in that valid space safely. But for pointers, not initializing is dangerous because what p stores is a **garbage value** (If you don't initialize after declaring variables, what they have are all **garbage values**). This garbage value may represent an **invalid address** in the memory, so you can not write into that address.
 4. When using `scanf()` to read string, scanf won't stop, even if you have specified the length of the string. This is dangerous. But what `get_string()` in `cs50.h` does is to use `malloc()` repeatedly to allocate more and more memory space to get the string.
 5. In the lecture, I really apprecaite Prof Davaid's explanation about `*`(dereferencing). It can be viewed as "go to", for example
 ```c
