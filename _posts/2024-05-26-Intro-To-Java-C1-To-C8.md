@@ -66,7 +66,7 @@ Nothing important.
     **Note that** a constant must be declared and initialized in the same statement.
 
 # Chapter 3
-1. In Java, there is a `boolean` datatype and the boolean variable can be either `true` or `false`.
+1. In Java, there is a `boolean` datatype and the boolean variable can be either `true` or `false`. **You cannot regard nonzero value as true and zero as false**!
 ```java
     boolean lightsOn = true;
 ```
@@ -98,3 +98,41 @@ Nothing important.
     System.out.println(x == 0.5);
 ```
     In this code snippet, the final output is `false` since x actually is `0.50000001`. To avoid this problem, we can set $$\lvert x - y\rvert < \epsilon$$, where $$\epsilon$$ is a very small value, to test that whehter x is approximate to 0.5
+
+# Chapter 4
+1. The `Math` class is very useful. To use that class, you don't need to import. Just use `Math.method_name()` to invoke the method you want to use.
+2. In Java, character is always enclosed in single quotation marks `' '`. And string is always enclosed in double quotation marks `" "`. And a char in Java takes **2 bytes**.
+3. The `Character` class is also very useful, it contains some functions help you decide whether a character is uppercase or lowercase etc, which is a bit similar to `ctype.h` in C.
+4. In Java, there is a data type called `String` so that you can define the string as follows
+```java
+    String message = "Welcome to Java";
+```
+    The string methods can only be invoked from a specific string instance. For example
+```java
+    message.length();
+```
+5. In Java, `' '`, `\t`, `\f`, `\r` and `\n` are called **whitespace characters**.
+6. To read a string from console, we can use either `.next()` or `.nextLine()`. The difference is that `.next()` will read individual elements seperated by **whitespace characters** while the `.nextLine()` read elements seperated by an entire line only.
+
+# Chapter 5
+Loops in Java are totally the same with C. Nothing to record.
+
+# Chapter 6
+1. The meaning and use of method in Java is similar to the use of function in C.
+2. A "Call Stack", a.k.a *execution stack*, *runtime stack* or *machine stack*, is often shortened to just "the stack".
+3. In Java, the **overloading methods** enables you to define the methods with the same name as long as their parameter lists are different. For example,
+```java
+    // Method 1
+    public static int max(int num1, int num2) {
+        // ...
+    }
+    // Method 2
+    public static int max(double num1, double numb2) {
+        // ...
+    }
+    // Method 3
+    public static int max(double num1, double num2, double num3) {
+        // ...
+    }
+```
+    Due to this property, the compiler will find the method that best matches a method invocation. But the *ambiguous invocation* may also appear and the compiler will output a compile error if encounters the ambiguous invocation.
