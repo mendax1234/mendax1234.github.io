@@ -66,3 +66,24 @@ Welcome to CS50 again. This is Week 4 and I will go through my review of this we
     printf("%i", *p);
 ```
     In line 4, `*p` can be viewed as going to the value store in `p`, which is an address and get the value stored in that address.
+
+# Section
+1. A pointer usually stores address. For example,
+```c
+    int n = 1;
+    int *p = &n;
+```
+    In this code snippet, `p` is the name for the pointer and `int *` means the type is a pointer that points to `int`.
+2. Some key syntax about pointer:
+    - **type \*** is a pointer that stores the address of a **type**
+    - **\*x** takes a pointer **x** and gets the value stored at that address
+    - **&x** takes **x** and gets its address
+3. `fread()` explanation \
+    It takes four arguments, **To where (an address), what size (the size of a chunk), how many (how many chunkcs to read at a time), from where (an address)**. For example,
+    ```c
+    string filename = argv[1];
+    FILE *f = fopen(filename, "r");
+    uint8_t buffer[4];
+    fread(buffer, 1, 4, f);
+    ```
+    In this code snippet, the size of the chunk is one byte, and we want to read 4 chunks at a time from the file and read them to the `uint8_t` array called buffer.
