@@ -16,59 +16,94 @@ This is CS50 Week 3. I will go through my summary of Week 3's content.
 - Three methods to sort
     - Selection sort \
     Basically, this method starts at the beginning and select the smallest till the end and then swap it with the current selection.
-    ```
-        For i from 0 to n-1
-            Find smallest number between numbers[i] and numbers[n-1]
-            Swap smallest number with numbers[i]
-    ```
+        <pre id="selection-sort-01" class="pseudocode">
+            \begin{algorithm}
+            \caption{Selection Sort}
+            \begin{algorithmic}
+            \FOR{$i = 0$ to $n-1$}
+                \STATE Find the smallest number between numbers[i] and numbers[n-1]
+                \STATE Swap the smallest number with numbers[i]
+            \ENDFOR
+            \end{algorithmic}
+            \end{algorithm}
+        </pre>
     Its time complexity is $$O(n^2)$$. <br><br>
     **Inspiration from shorts:**
         - The idea behind selection sort: \
         The idea of selection sort is to **find the smallest unsorted element and add it to the end of the sorted list.**
         - In pseudocode:
-        ```
-            Repeat until no sorted elements remain:
-                Search the unsorted part of the data to find the smallest value
-                Swap the smallest found value with the firts element of the unsorted part
-        ```
+            <pre id="selection-sort-02" class="pseudocode">
+                \begin{algorithm}
+                \caption{Selection Sort}
+                \begin{algorithmic}
+                \REPEAT
+                    \STATE Search the unsorted part of the data to find the smallest value
+                    \STATE Swap the smallest found value with the first element of the unsorted part
+                \UNTIL{no unsorted elements remain}
+                \end{algorithmic}
+                \end{algorithm}
+            </pre>
 
     - Bubble sort \
     This method sorts the largest number to the end until the beginning.
-    ```
-        Repeat n-1 times
-            For i from 0 to n-2
-                If numbers[i] and numbers[i+1] out of order
-                    Swap them
-            If no swaps
-                Quit
-    ```
+        <pre id="bubble-sort-01" class="pseudocode">
+            \begin{algorithm}
+            \caption{Bubble Sort}
+            \begin{algorithmic}
+            \STATE Repeat n-1 times
+                \FOR{$i = 0$ to $n-2$}
+                    \IF{$numbers[i]$ and $numbers[i+1]$ out of order}
+                        \STATE Swap them
+                    \ENDIF
+                \ENDFOR
+                \IF{no swaps}
+                    \STATE Quit
+                \ENDIF
+            \end{algorithmic}
+            \end{algorithm}
+        </pre>
     Its time complexity is $$O(n^2)$$ also. <br><br>
     **Inspiration from shorts:**
         - The idea behind bubble sort: \
         The idea of bubble sort is to **move higher valued elements generally towards the right and lower value elements generally towards the left**.
         - In pseudocode:
-        ```
-            Set swap counter to a non-zero value (-1)
-            Repeat until the swap counter is 0:
-                Reset swap counter to 0
-                Look at each adjacent pair
-                    If two adjacent elements are not in order, swap them and add one to the swap counter
-        ```
+            <pre id="bubble-sort-02" class="pseudocode">
+                \begin{algorithm}
+                \caption{Bubble Sort}
+                \begin{algorithmic}
+                \STATE Set swap counter to a non-zero value
+                \REPEAT
+                    \STATE Reset swap counter to 0
+                    \STATE Look at each adjacent pair
+                        \IF{two adjacent elements are not in order}
+                            \STATE Swap them
+                            \STATE Add one to the swap counter
+                        \ENDIF
+                \UNTIL{swap counter is 0}
+                \end{algorithmic}
+                \end{algorithm}
+            </pre>
 
     - Merge sort \
     This method takes twice the memory space.
-    ```
-        If only one number
-            Quit
-        Else
-            Sort left half of numbers
-            Sort right half of numbers
-            Merge sorted halves.
-    ```
+        <pre id="merge-sort-01" class="pseudocode">
+            \begin{algorithm}
+            \caption{Merge Sort}
+            \begin{algorithmic}
+            \IF{only one number}
+                \STATE Quit
+            \ELSE
+                \STATE Sort left half of numbers
+                \STATE Sort right half of numbers
+                \STATE Merge sorted halves
+            \ENDIF
+            \end{algorithmic}
+            \end{algorithm}
+        </pre>
     Its time complexity is $$O(nlogn)$$.<br><br>
     **Inspiration from shorts:**
         - The idea behind merge sort: \
-        The idea of merge sort is to **sort smaller arrays and then combine those arrays together (merge them) in sorted order.
+        The idea of merge sort is to **sort smaller arrays and then combine those arrays together (merge them) in sorted order.**
 
 # Section
 - To debug recursive function more effectively, there is a field called **Call Stack**.
@@ -89,20 +124,36 @@ Just keep in mind the best and worst case time complexity of these three sort al
 2. We must print out all the candidates with `max` votes.
 
 **Divide and Conquer**
-1. `vote()`
-```
-    Iterate over each candidate
-        Check if candidate's name matches given name
-            If yes, increment candidate's votes and return true
-    If no matches after checking each candidate, return false 
-```
+1. Vote
+    <pre id="vote-01" class="pseudocode">
+        \begin{algorithm}
+        \caption{Vote}
+        \begin{algorithmic}
+        \PROCEDURE{vote}{}
+            \FOR{each candidate}
+                \IF{candidate's name matches given name}
+                    \STATE Increment candidate's votes
+                    \RETURN true
+                \ENDIF
+            \ENDFOR
+            \RETURN false
+        \ENDPROCEDURE
+        \end{algorithmic}
+        \end{algorithm}
+    </pre>
 
-2. `print_winners()`
-```
-    Find the maximum number of votes
-
-    Print the candidate (or candidates) with maximum votes
-```
+2. Print Winners
+    <pre id="print_winners" class="pseudocode">
+        \begin{algorithm}
+        \caption{Print Winners}
+        \begin{algorithmic}
+        \PROCEDURE{PrintWinners}{}
+            \STATE Find the maximum number of votes
+            \STATE Print the candidate (or candidates) with maximum votes
+        \ENDPROCEDURE
+        \end{algorithmic}
+        \end{algorithm}
+    </pre>
 
 **Take-aways**
 1. In the `print_winners()`, we need two loops, one for finding the max votes and another for printing all the candidates with that max votes if we don't want to increase the space complexity, like using an array to record the index of the candidates with max votes.
@@ -117,56 +168,111 @@ Just keep in mind the best and worst case time complexity of these three sort al
 
 **Divide and Conquer**
 1. Record preference if vote is valid (`bool vote(int voter, int rank, string name)`)
-```
-    Iterate through all the candidates
-        If candidate's name == name
-            record the candidate's index as preference[voter][rank]
-            return true
-    return false
-```
+    <pre id="vote-02" class="pseudocode">
+        \begin{algorithm}
+        \caption{Vote}
+        \begin{algorithmic}
+        \PROCEDURE{vote}{voter, rank, name}
+            \FOR{each candidate}
+                \IF{candidate's name matches given name}
+                    \STATE Record the candidate's index as preference[voter][rank]
+                    \RETURN true
+                \ENDIF
+            \ENDFOR
+            \RETURN false
+        \ENDPROCEDURE
+        \end{algorithmic}
+        \end{algorithm}
+    </pre>
 
 2. Tabulate votes for non-eliminated candidates (`void tabulate(void)`)
-```
-    Iterate through each voter
-        Iterate through each rank
-            If this candidate is not eliminated and is the voter's toppest choice
-                Increment this candidate's votes
-                break from the rank loop
-```
+    <pre id="tabulate" class="pseudocode">
+        \begin{algorithm}
+        \caption{Tabulate}
+        \begin{algorithmic}
+        \PROCEDURE{tabulate}{}
+            \FOR{each voter}
+                \FOR{each rank}
+                    \IF{candidate is not eliminated and is the voter's top choice}
+                        \STATE Increment candidate's votes
+                        \STATE Break
+                    \ENDIF
+                \ENDFOR
+            \ENDFOR
+        \ENDPROCEDURE
+        \end{algorithmic}
+        \end{algorithm}
+    </pre>
 
 3. Print the winner of the election, if there is one (`bool print_winner(void)`)
-```
-    Define winning indicator as voter count divides 2
-    Iterate through each candidate
-        if candidate's votes > winning indicator
-            print
-            return true
-    return false
-```
+    <pre id="print_winner-02" class="pseudocode">
+        \begin{algorithm}
+        \caption{Print Winner}
+        \begin{algorithmic}
+        \PROCEDURE{PrintWinner}{}
+            \STATE Define winning indicator as voter count divides 2
+            \FOR{each candidate}
+                \IF{candidate's votes > winning indicator}
+                    \STATE Print
+                    \RETURN true
+                \ENDIF
+            \ENDFOR
+            \RETURN false
+        \ENDPROCEDURE
+        \end{algorithmic}
+        \end{algorithm}
+    </pre>
 
 4. Return the minimum number of votes any remaining candidate has (`int find_min(void)`)
-```
-    Initialize the variable min to MAX_VOTERS + 1
-    Iterate through each candidate
-        If candidate's votes < min
-            Update min
-    return min
-```
+    <pre id="find_min" class="pseudocode">
+        \begin{algorithm}
+        \caption{Find Min}
+        \begin{algorithmic}
+        \PROCEDURE{FindMin}{}
+            \STATE Initialize the variable min to MAX_VOTERS + 1
+            \FOR{each candidate}
+                \IF{candidate's votes is less than min}
+                    \STATE Update min
+                \ENDIF
+            \ENDFOR
+            \RETURN min
+        \ENDPROCEDURE
+        \end{algorithmic}
+        \end{algorithm}
+    </pre>
 
 5. Decide whether the election is a tie (`bool is_tie(int min)`)
-```
-    Iterate through each candidate
-        If candidate's votes is greater than min
-            return false
-    return true
-```
+    <pre id="is_tie" class="pseudocode">
+        \begin{algorithm}
+        \caption{Is Tie}
+        \begin{algorithmic}
+        \PROCEDURE{IsTie}{min}
+            \FOR{each candidate}
+                \IF{candidate's votes > min}
+                    \RETURN false
+                \ENDIF
+            \ENDFOR
+            \RETURN true
+        \ENDPROCEDURE
+        \end{algorithmic}
+        \end{algorithm}
+    </pre>
 
 6. Eliminate the candidate (or candidates) in last place (`void eliminate(int min)`)
-```
-    Iterate through each candidate
-        If candidate's votes is equal to min
-            set this candidate's eliminated to be true
-```
+    <pre id="eliminate" class="pseudocode">
+        \begin{algorithm}
+        \caption{Eliminate}
+        \begin{algorithmic}
+        \PROCEDURE{Eliminate}{min}
+            \FOR{each candidate}
+                \IF{candidate's votes is equal to min}
+                    \STATE Set candidate's eliminated to be true
+                \ENDIF
+            \ENDFOR
+        \ENDPROCEDURE
+        \end{algorithmic}
+        \end{algorithm}
+    </pre>
 
 **Take-aways**
 1. Nothing much to take away since it is a very specific probelm. What I want to say is to follow the problem instructions carefully!
@@ -180,41 +286,79 @@ Just keep in mind the best and worst case time complexity of these three sort al
 
 **Divide and Conquer**
 1. Update ranks given a new vote (`bool vote(int rank, string name, int ranks[])`)
-```
-    Iterate through each candidate
-        if the current candidate name equals to the parameter name
-            ranks[rank] = the index of the current candidate
-            return true
-    return false
-```
+    <pre id="vote-03" class="pseudocode">
+        \begin{algorithm}
+        \caption{Vote}
+        \begin{algorithmic}
+        \PROCEDURE{Vote}{rank, name, ranks}
+            \FOR{each candidate}
+                \IF{candidate's name matches given name}
+                    \STATE Update ranks[rank] to be the candidate's index
+                    \RETURN true
+                \ENDIF
+            \ENDFOR
+            \RETURN false
+        \ENDPROCEDURE
+        \end{algorithmic}
+        \end{algorithm}
+    </pre>
 
 2. Update preferences given one voter's ranks (`void record_preferences(int ranks[])`)
 - Method 1
-    ```
-        Use a for loop to get the candidate from top rank to the lowest
-            // Update the preferences
-            denote index as ranks[i]
-            Use another for loop to increment the preferences[index][j]
-            // Deal with the Duplicate case
-            denote temp as i
-            while temp is greater than 0
-                preferences[index][rank[temp]]--
-                temp--
-        return
-    ```
+    <pre id="record_preferences-01" class="pseudocode">
+        \begin{algorithm}
+        \caption{Record Preferences}
+        \begin{algorithmic}
+        \PROCEDURE{RecordPreferences}{ranks}
+            \FOR{each candidate from top rank to the lowest}
+                \STATE Denote index as ranks[i]
+                \FOR{each candidate below the rank above}
+                    \STATE Increment the corresponding preferences
+                \ENDFOR
+                \STATE Denote temp as i
+                \WHILE{temp is greater than 0}
+                    \STATE preferences[index][rank[temp]]--
+                    \STATE temp--
+                \ENDWHILE
+            \ENDFOR
+        \ENDPROCEDURE
+        \end{algorithmic}
+        \end{algorithm}
+    </pre>
+
 - Method 2
-    ```
-        Use a for loop to get the candidate from top rank to the lowest
-            Use another for loop to get the candidate below the rank above
-                Increment the corresponding preferences
-    ```
+    <pre id="record_preferences-02" class="pseudocode">
+        \begin{algorithm}
+        \caption{Record Preferences}
+        \begin{algorithmic}
+        \PROCEDURE{RecordPreferences}{ranks}
+            \FOR{each candidate from top rank to the lowest}
+                \FOR{each candidate below the rank above}
+                    \STATE Increment the corresponding preferences
+                \ENDFOR
+            \ENDFOR
+        \ENDPROCEDURE
+        \end{algorithmic}
+        \end{algorithm}
+    </pre>
 
 3. Record pairs of candidates where one is preferred over the other (`void add_pairs(void)`)
-```
-    Use two for loops to iterate through each element in preferences[][]
-        if preferences[i][j] is greater than preferences[j][i]
-            Add i and j to a new pair
-```
+    <pre id="add_pairs" class="pseudocode">
+        \begin{algorithm}
+        \caption{Add Pairs}
+        \begin{algorithmic}
+        \PROCEDURE{AddPairs}{}
+            \FOR{$i$ from 0 to candidate_count - 1}
+                \FOR{$j$ from 0 to candidate_count - 1}
+                    \IF{preferences[i][j] > preferences[j][i]}
+                        \STATE Add $i$ and $j$ to a new pair
+                    \ENDIF
+                \ENDFOR
+            \ENDFOR
+        \ENDPROCEDURE
+        \end{algorithmic}
+        \end{algorithm}
+    </pre>
 Note that the condition to add a new pair is not `preferences[i][j]` greater than 0. It must be as stated in the pseudocode since only greater than 0 doesn't necessarily mean `i` is preferred over `j`.
 
 4. Sort pairs in decreasing order by strength of victory (`void sort_pairs(void)`) \
@@ -226,19 +370,46 @@ The criteria for comparison is `preferences[i][j]`, which is also the strength o
 This problem can be regarded as a very classic problem: determine whether there is a cycle in a directed graph. But in this probelm it's a little different, there is only one edge between two vertices.
 - Method 1 \
     This method will use DFS and Recursion to judge the cycle in the graph. (Note that this method may not apply to general directed graph).
-        1. `...lock_pairs(...)`
-        ```
-            Iterate through each pair
-                lock it first
-                if loop_check() returns true
-                    unlock the previous locked pair
-        ```
-        2. `loop_check(int start)`
-        ```
-            Update the visited array
-            Termination check (If a vertex is visited twice, return true)
-            Recursion part
-        ```
+        1. Lock the pairs (`...lock_pairs(...)`)
+            <pre id="lock_pairs-01" class="pseudocode">
+                \begin{algorithm}
+                \caption{Lock Pairs}
+                \begin{algorithmic}
+                \PROCEDURE{LockPairs}{}
+                    \FOR{each pair}
+                        \STATE Lock it first
+                        \IF{loop_check() returns true}
+                            \STATE Unlock the previous locked pair
+                        \ENDIF
+                    \ENDFOR
+                \ENDPROCEDURE
+                \end{algorithmic}
+                \end{algorithm}
+            </pre>
+        2. Check whether there is a loop in the graph (`loop_check(int start)`)
+            <pre id="loop_check-01" class="pseudocode">
+                \begin{algorithm}
+                \caption{Loop Check}
+                \begin{algorithmic}
+                \PROCEDURE{LoopCheck}{start}
+                    \STATE Update the visited array
+                    \FOR{each candidate}
+                        \IF{candidate is visited twice}
+                            \RETURN true
+                        \ENDIF
+                    \ENDFOR
+                    \FOR{each candidate}
+                        \IF{candidate is locked and not visited or visited once}
+                            \IF{loop_check(candidate)}
+                                \RETURN true
+                            \ENDIF
+                        \ENDIF
+                    \ENDFOR
+                    \RETURN false
+                \ENDPROCEDURE
+                \end{algorithmic}
+                \end{algorithm}
+            </pre>
 
 6. Print the winner of the election (`void print_winner(void)`)
 For a specific candidate `j`, if with all the other candidates (iterating from `i`), the `locked[j][i]` is false, then candidate `j` is the winner. Otherwise, there is no winner.
