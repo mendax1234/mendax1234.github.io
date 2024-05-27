@@ -22,16 +22,22 @@ This problem serves as the beginning of this course. Welcome to CS50!
 1. *"Re-prompt the user, again and again as needed, if their input is not greater than 0 or not an int altogether."*
 
 **Divide and Conquer**
-```
-main()
-Prompt the user for the pyramid's height
-Print a pyramid of that height using a for loop
-Print each row using function print_row()
-
-print_row()
-    print space
-    print bricks
-```
+<pre id="mario" class="pseudocode">
+    \begin{algorithm}
+    \caption{Mario}
+    \begin{algorithmic}
+    \PROCEDURE{Main}{$void$}
+        \STATE Prompt the user for the pyramid's height
+        \STATE Print a pyramid of that height using a for loop
+        \STATE Print each row using function \CALL{PrintRow}{}
+    \ENDPROCEDURE
+    \PROCEDURE{PrintRow}{}
+        \STATE Print space
+        \STATE Print bricks
+    \ENDPROCEDURE
+    \end{algorithmic}
+    \end{algorithm}
+</pre>
 
 **Useful Snippets**
 1. Prompt the user until the input is valid.
@@ -108,21 +114,24 @@ A greedy algorithm is one “that always takes the **best immediate, or local**,
 Given an initial owing (a certain number), we always try the first biggest cent until the remaining owing is smaller than this biggest-first cent. Then we move on to the secondest cent until the owing is 0. (Since our smallest cent is `1`, which means we can always find a solution to this problem)
 
 2. Design our structure
-    ```
-    Prompt the user for change owed, in cents
-
-    Calculate how many quarters you should give the customer
-    Subtract the value of those quarters from cents
-
-    Calculate how many dimes you should give the customer
-    Subtract the value of those dimes from cents
-
-    Calculate how many nickels you should give the customer
-    Subtract the value of those nickels from cents
-
-    Calculate how many pennies you should give the customer
-    Subtract the value of those pennies from cents
-    ```
+    <pre id="cash" class="pseudocode">
+        \begin{algorithm}
+        \caption{Cash}
+        \begin{algorithmic}
+        \PROCEDURE{Main}{$void$}        
+            \STATE Prompt the user for change owed, in cents
+            \STATE Calculate how many quarters you should give the customer
+            \STATE Subtract the value of those quarters from cents
+            \STATE Calculate how many dimes you should give the customer
+            \STATE Subtract the value of those dimes from cents
+            \STATE Calculate how many nickels you should give the customer
+            \STATE Subtract the value of those nickels from cents
+            \STATE Calculate how many pennies you should give the customer
+            \STATE Subtract the value of those pennies from cents
+        \ENDPROCEDURE
+        \end{algorithmic}
+        \end{algorithm}
+    </pre>
 
 **Useful snippets**
 1. Implement the calculation using a specific function
@@ -156,12 +165,20 @@ Notice that sometimes hackers will take use of this property, so we still need t
 1. The input should be `long`
 
 **Divide and Conquer**
-```
-For each digit in the number
-    calculate the checksum and get the length of the number
-Calculate the first and second digit
-Decide the type of the credit card
-```
+<pre id="credit" class="pseudocode">
+    \begin{algorithm}
+    \caption{Credit}
+    \begin{algorithmic}
+    \PROCEDURE{Main}{$void$}
+        \FOR{each digit in the number}
+            \STATE Calculate the checksum and get the length of the number
+        \ENDFOR
+    \STATE Calculate the first and second digit
+    \STATE Decide the type of the credit card
+    \ENDPROCEDURE
+    \end{algorithmic}
+    \end{algorithm}
+</pre>
 
 **Useful Snippets**
 1. One `while` loop version
