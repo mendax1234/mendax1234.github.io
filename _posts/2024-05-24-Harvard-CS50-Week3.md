@@ -229,9 +229,9 @@ Just keep in mind the best and worst case time complexity of these three sort al
         \caption{Find Min}
         \begin{algorithmic}
         \PROCEDURE{FindMin}{}
-            \STATE Initialize the variable min to MAX_VOTERS + 1
+            \STATE Initialize the variable min to MAX\_VOTERS + 1
             \FOR{each candidate}
-                \IF{candidate's votes is less than min}
+                \IF{candidate's votes < min}
                     \STATE Update min
                 \ENDIF
             \ENDFOR
@@ -304,43 +304,43 @@ Just keep in mind the best and worst case time complexity of these three sort al
     </pre>
 
 2. Update preferences given one voter's ranks (`void record_preferences(int ranks[])`)
-- Method 1
-    <pre id="record_preferences-01" class="pseudocode">
-        \begin{algorithm}
-        \caption{Record Preferences}
-        \begin{algorithmic}
-        \PROCEDURE{RecordPreferences}{ranks}
-            \FOR{each candidate from top rank to the lowest}
-                \STATE Denote index as ranks[i]
-                \FOR{each candidate below the rank above}
-                    \STATE Increment the corresponding preferences
+    - Method 1
+        <pre id="record_preferences-01" class="pseudocode">
+            \begin{algorithm}
+            \caption{Record Preferences}
+            \begin{algorithmic}
+            \PROCEDURE{RecordPreferences}{ranks}
+                \FOR{each candidate from top rank to the lowest}
+                    \STATE Denote index as ranks[i]
+                    \FOR{each candidate below the rank above}
+                        \STATE Increment the corresponding preferences
+                    \ENDFOR
+                    \STATE Denote temp as i
+                    \WHILE{temp is greater than 0}
+                        \STATE preferences[index][rank[temp]]--
+                        \STATE temp--
+                    \ENDWHILE
                 \ENDFOR
-                \STATE Denote temp as i
-                \WHILE{temp is greater than 0}
-                    \STATE preferences[index][rank[temp]]--
-                    \STATE temp--
-                \ENDWHILE
-            \ENDFOR
-        \ENDPROCEDURE
-        \end{algorithmic}
-        \end{algorithm}
-    </pre>
+            \ENDPROCEDURE
+            \end{algorithmic}
+            \end{algorithm}
+        </pre>
 
-- Method 2
-    <pre id="record_preferences-02" class="pseudocode">
-        \begin{algorithm}
-        \caption{Record Preferences}
-        \begin{algorithmic}
-        \PROCEDURE{RecordPreferences}{ranks}
-            \FOR{each candidate from top rank to the lowest}
-                \FOR{each candidate below the rank above}
-                    \STATE Increment the corresponding preferences
+    - Method 2
+        <pre id="record_preferences-02" class="pseudocode">
+            \begin{algorithm}
+            \caption{Record Preferences}
+            \begin{algorithmic}
+            \PROCEDURE{RecordPreferences}{ranks}
+                \FOR{each candidate from top rank to the lowest}
+                    \FOR{each candidate below the rank above}
+                        \STATE Increment the corresponding preferences
+                    \ENDFOR
                 \ENDFOR
-            \ENDFOR
-        \ENDPROCEDURE
-        \end{algorithmic}
-        \end{algorithm}
-    </pre>
+            \ENDPROCEDURE
+            \end{algorithmic}
+            \end{algorithm}
+        </pre>
 
 3. Record pairs of candidates where one is preferred over the other (`void add_pairs(void)`)
     <pre id="add_pairs" class="pseudocode">
@@ -348,8 +348,8 @@ Just keep in mind the best and worst case time complexity of these three sort al
         \caption{Add Pairs}
         \begin{algorithmic}
         \PROCEDURE{AddPairs}{}
-            \FOR{$i$ from 0 to candidate_count - 1}
-                \FOR{$j$ from 0 to candidate_count - 1}
+            \FOR{$i$ from 0 to candidate\_count - 1}
+                \FOR{$j$ from 0 to candidate\_count - 1}
                     \IF{preferences[i][j] > preferences[j][i]}
                         \STATE Add $i$ and $j$ to a new pair
                     \ENDIF
@@ -378,7 +378,7 @@ This problem can be regarded as a very classic problem: determine whether there 
                 \PROCEDURE{LockPairs}{}
                     \FOR{each pair}
                         \STATE Lock it first
-                        \IF{loop_check() returns true}
+                        \IF{LoopCheck() returns true}
                             \STATE Unlock the previous locked pair
                         \ENDIF
                     \ENDFOR
@@ -393,14 +393,16 @@ This problem can be regarded as a very classic problem: determine whether there 
                 \begin{algorithmic}
                 \PROCEDURE{LoopCheck}{start}
                     \STATE Update the visited array
+                    \COMMENT{Termination check}
                     \FOR{each candidate}
                         \IF{candidate is visited twice}
                             \RETURN true
                         \ENDIF
                     \ENDFOR
                     \FOR{each candidate}
+                        \COMMENT{DFS}
                         \IF{candidate is locked and not visited or visited once}
-                            \IF{loop_check(candidate)}
+                            \IF{\CALL{LoopCheck}{candidate}}
                                 \RETURN true
                             \ENDIF
                         \ENDIF
