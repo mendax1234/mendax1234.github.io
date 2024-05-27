@@ -19,17 +19,24 @@ Welcome to CS50 Week 2! As normal, I will be going through my summary of Week 1'
 2. Every letter that is not alpha carries 0 point.
 
 **Divide and Conquer**
-```
-Define a global variable array to store the points of each letter
-main()
-Prompt the user for two words
-Compute the score of each word using compute_word() function
-Print the winner
+<pre id="scrabble" class="pseudocode">
+    \begin{algorithm}
+    \caption{Scrabble}
+    \begin{algorithmic}
+    \STATE Define a global variable array to store the points of each letter
+    \PROCEDURE{Main}{$void$}
+        \STATE Prompt the user for two words
+        \STATE Compute the score of each word using \CALL{ComputeWord}{}
+        \STATE Print the winner
+    \ENDPROCEDURE
+    \PROCEDURE{ComputeWord}{}
+        \STATE Keep track of the score
+        \STATE Compute the score for each character
+    \ENDPROCEDURE
+    \end{algorithmic}
+    \end{algorithm}
+</pre>
 
-compute_word()
-Keep track of the score
-Compute the score for each character
-```
 **Useful Snippets**
 1. Compute the score of a string
 ```c
@@ -71,13 +78,19 @@ Compute the score for each character
 3. In `count_sentences()`, we only need to consider any sequence of characters that ends with a `.` or a `!` or a `?` to be a sentence.
 
 **Divide and Conquer**
-```
-main()
-Prompt the user for some text
-Count the number of letters, words, and sentences in the text
-Compute the Coleman-Liau index
-Print the grade level
-```
+<pre id="readability" class="pseudocode">
+    \begin{algorithm}
+    \caption{Readability}
+    \begin{algorithmic}
+    \PROCEDURE{Main}{$void$}
+        \STATE Prompt the user for some text
+        \STATE Count the number of letters, words, and sentences in the text
+        \STATE Compute the Coleman-Liau index
+        \STATE Print the grade level
+    \ENDPROCEDURE
+    \end{algorithmic}
+    \end{algorithm}
+</pre>
 
 **Useful Snippets**
 1. `count_sentences()`
@@ -106,14 +119,22 @@ Print the grade level
 2. The program must preserve case: capitalized letters, though rotated, must remain capitalized letters; lowercase letters, though rotated, must remain lowercase letters.
 
 **Divide and Conquer**
-```
-Make sure program was run with just one command-line argument
-Make sure every character in argv[1] is a digit
-Convert argv[1] from a `string` to an `int`
-Prompt user for plaintext
-For each character in the plaintext:
-    Rotate the character if it's a letter
-```
+<pre id="caesar" class="pseudocode">
+    \begin{algorithm}
+    \caption{Caesar}
+    \begin{algorithmic}
+    \PROCEDURE{Main}{$void$}
+        \STATE Make sure program was run with just one command-line argument
+        \STATE Make sure every character in $argv[1]$ is a digit
+        \STATE Convert $argv[1]$ from a $string$ to an $int$
+        \STATE Prompt user for plaintext
+        \FOR{each character in the plaintext}
+            \STATE Rotate the character if it's a letter
+        \ENDFOR
+    \ENDPROCEDURE
+    \end{algorithmic}
+    \end{algorithm}
+</pre>
 
 **Useful Snippets**
 1. The command-line argument, `int argc, string argv[]` template
@@ -170,14 +191,22 @@ For each character in the plaintext:
 1. Every character in the key must be alphabetical, case-sensitive and appear only once, which means `c` and `C` can not appear in the key at the same time.
 
 **Dividie and Conquer**
-```
-Make sure program was run with just one command-line argument
-Make sure the key(argv[1]) is valid
-Convert argv[1] from a `string` to an `int`
-Prompt user for plaintext
-For each character in the plaintext:
-    Find the corresponding encrypted character if it's a letter
-```
+<pre id="substitution" class="pseudocode">
+    \begin{algorithm}
+    \caption{Substitution}
+    \begin{algorithmic}
+    \PROCEDURE{Main}{$void$}
+        \STATE Make sure program was run with just one command-line argument
+        \STATE Make sure the $key(argv[1])$ is valid
+        \STATE Convert $argv[1]$ from a $string$ to an $int$
+        \STATE Prompt user for plaintext
+        \FOR{each character in the plaintext}
+            \STATE Find the corresponding encrypted character if it's a letter
+        \ENDFOR
+    \ENDPROCEDURE
+    \end{algorithmic}
+    \end{algorithm}
+</pre>
 
 **Useful Snippets**
 1. Validate the `key`
