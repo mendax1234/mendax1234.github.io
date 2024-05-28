@@ -4,10 +4,10 @@ title:  "Harvard CS50 Week2 Review"
 excerpt: Harvard CS50 Week2 Review
 header:
   teaser: posts/Harvard_CS50.png
-categories: 
-  - Harvard-CS50
+toc: true
 tags:
   - C
+  - Harvard-CS50
 ---
 
 Welcome to CS50 Week 2! As normal, I will be going through my summary of Week 1's content.

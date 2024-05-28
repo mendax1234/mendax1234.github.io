@@ -4,10 +4,10 @@ title:  "Harvard CS50 Week3 Review"
 excerpt: Harvard CS50 Week3 Review
 header:
   teaser: posts/Harvard_CS50.png
-categories: 
-  - Harvard-CS50
+toc: true
 tags:
   - C
+  - Harvard-CS50
 ---
 
 This is CS50 Week 3. I will go through my summary of Week 3's content.

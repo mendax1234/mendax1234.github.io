@@ -4,10 +4,10 @@ title:  "Guide to install Java SE 8"
 excerpt: Java 8 Installation Guide
 header:
   teaser: posts/Java_Logo.png
-categories: 
-  - Environment-Setup
+toc: true
 tags:
   - Java
+  - Environment-Setup
 ---
 # Windows
 ## Install JDK and JRE

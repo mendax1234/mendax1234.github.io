@@ -3,10 +3,10 @@ layout: single
 title:  "Introduction to Java Programming Chapter 1 to 8 Review"
 header:
   teaser: posts/Intro_To_Java_Prog_Head.jpg
-categories: 
-  - Introduction-To-Java-Programming
+toc: true
 tags:
   - Java
+  - Introduction-To-Java-Programming
 ---
 This blog will serve as the beginning of my notes while reading "Introduction to Java Programming and Data Structures" by Y Daniel Liang.
 

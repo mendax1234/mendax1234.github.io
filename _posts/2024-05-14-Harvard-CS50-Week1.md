@@ -4,9 +4,9 @@ title:  "Harvard CS50 Week1 Review"
 excerpt: Harvard CS50 Week1 Review
 header:
   teaser: posts/Harvard_CS50.png
-categories: 
-  - Harvard-CS50
+toc: true
 tags:
+  - Harvard-CS50
   - C
 ---
 
