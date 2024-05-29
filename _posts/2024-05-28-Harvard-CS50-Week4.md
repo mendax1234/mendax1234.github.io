@@ -137,3 +137,70 @@ When you call a function, the system sets aside space in memory for that functio
     - When a new function is called, a new frame is **pushed** onto the top of the stack and becomes the active frame.
     - When a function finishes, its frame is **popped** off the stack, and the frame below it becomes the active frame again.
 
+## File Pointers
+1. `fopen()`
+```c
+    // Usage
+    FILE *ptr = fopen(<filename>, <operation>)
+
+    // Operation: read
+    FILE *ptr = fopen("file1.txt", "r");
+
+    // Operation: write
+    FILE *ptr = fopen("file2.txt", "w");
+
+    // Operation: append
+    FILE *ptr = fopen("file2.txt", "a");
+```
+    Notice that **write** means writing from the beginning, which will erase all the existing data in that file. While **append** means appending at the end of the file, which won't destroy anything in that file.
+2. `fclose()`
+```c
+    //Usage
+    fclose(<file pointer>);
+```
+3. `fgetc()`
+```c
+    // Usage
+    char ch = fgetc(<file pointer>)
+```
+    Notice that the file pointer must be **read** mode, otherwise, it will return an error.
+    - Using `fgetc()` to implement `cat` command in Linux, which will print the content of the file.
+    ```c
+        char ch;
+        while ((ch = fgetc(ptr)) != EOF)
+            printf("%c", ch);
+    ```
+4. `fputc()`
+```c
+    // Usage
+    fputc(<character>, <file pointer>)
+```
+    Notice that the file pointer must be **write** or **append** mode, otherwise, it will return an error.
+    - Using `fputc()` to implement `cp` command in Linux, which will copy the content of one file to another file.
+    ```c
+        char ch;
+        while ((ch = fgetc(ptr1)) != EOF)
+            fputc(ch, ptr2);
+    ```
+5. `fread()`
+```c
+    // Usage
+    fread(<buffer>, <size>, <quantity>, <file pointer>)
+
+    // Example
+    double *arr2 = malloc(sizeof(double) * 80);
+    fread(arr2, sizeof(double), 80, ptr);
+```
+    - Reads **quantity** number of **size** bytes from the file and stores them in the **buffer**.
+    - Notice that the file pointer must be **read** mode, otherwise, it will return an error.
+6. `fwrite()`
+```c
+    // Usage
+    fwrite(<buffer>, <size>, <quantity>, <file pointer>)
+
+    // Example
+    double *arr2 = malloc(sizeof(double) * 80);
+    fwrite(arr2, sizeof(double), 80, ptr);
+```
+    - Writes **quantity** number of **size** bytes from the **buffer** to the file.
+    - Notice that the file pointer must be **write** or **append** mode, otherwise, it will return an error.
