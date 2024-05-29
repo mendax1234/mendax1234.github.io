@@ -126,3 +126,14 @@ Welcome to CS50 again. This is Week 4 and I will go through my review of this we
     float *heap_array = malloc(x * sizeof(float));
 ```
 2. Dynamically-allocated memory is **not** automatically returned to the system after finishing using it, so we need to use `free()` to free the dynamically-allocated memory. Otherwise, there will be a **memory-leak**. However, statically-allocated memory doesn't have this issue since it's stored on the stack and the memory will be freed after the function call.
+
+## Call Stack
+1. Stack frame \
+When you call a function, the system sets aside space in memory for that function to do its necessary work.
+    - We frequently call such chunk of memory **stack frames** or **function frames** (Not **stack only**).
+2. More than one function's stack frame may exist in memory at a given time.
+    - For example, if `main()` calls `move()`, which then calls `direction()`, all three functions have open frames.
+    - These frames are arranged in a **stack**. The frame for the most-recently called function is always on the top of the stack.
+    - When a new function is called, a new frame is **pushed** onto the top of the stack and becomes the active frame.
+    - When a function finishes, its frame is **popped** off the stack, and the frame below it becomes the active frame again.
+
