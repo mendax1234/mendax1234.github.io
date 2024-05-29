@@ -101,3 +101,9 @@ Welcome to CS50 again. This is Week 4 and I will go through my review of this we
     int *a, b, c;
 ```
 5. The size of a pointer is either $4$ or $8$ byte, depending on the system you are using. For example, in a $32$-bit system, the size of a pointer is $4$ byte, and in a $64$-bit system, the size of a pointer is $8$ byte.
+
+## Defining Custom Data Types
+1. In C, we use `typedef` to create a shorthand or rewritten name for data types. It's structure is below, which is very very important.
+```c
+    typedef <old name> <new name>
+```
