@@ -204,3 +204,28 @@ When you call a function, the system sets aside space in memory for that functio
 ```
     - Writes **quantity** number of **size** bytes from the **buffer** to the file.
     - Notice that the file pointer must be **write** or **append** mode, otherwise, it will return an error.
+
+# Problem Set 4
+## 01 Volume
+**Things to notice in the problem statement**
+1. The wav file has two parts, one is a 44 byte **header**, the other is the **sample** part.
+
+**Divide and Conquer**
+<pre id="volume" class="pseudocode">
+    \begin{algorithm}
+    \caption{Volume}
+    \begin{algorithmic}
+    \STATE Copy header from input file to output file
+    \STATE Create a buffer for a single sample
+    \COMMENT{Write updated data to output file}
+    \WHILE{Read a sample from the input file}
+        \STATE Update the sample
+        \STATE Write the updated sample to the output file
+    \ENDWHILE
+    \end{algorithmic}
+    \end{algorithm}
+</pre>
+
+**Take-aways**
+1. In `fopen()` and `fwrite()`, the opened file “remembers” the number of bytes that were successfully read, such that subsequent calls to this function for stream will return bytes after those already read.
+2. `fopen()` and `fwrite()` will return the number of items read/written.
