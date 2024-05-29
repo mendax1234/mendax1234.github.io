@@ -87,3 +87,17 @@ Welcome to CS50 again. This is Week 4 and I will go through my review of this we
     fread(buffer, 1, 4, f);
     ```
     In this code snippet, the size of the chunk is one byte, and we want to read 4 chunks at a time from the file and read them to the `uint8_t` array called buffer.
+
+# Shorts
+## Pointers
+1. In C, `NULL` pointer is the simplest pointer available to us. And the `NULL` pointer points to nothing.
+2. When you create a pointer and you don't set its value immediately, you should **always** set the value of the pointer to **NULL**.
+3. When you dereference a pointer that is **NULL**, you will get a **segmentation fault**.
+4. To define three pointers using one line, you should write
+```c
+    // Correct way
+    int *a, *b, *c;
+    // Wrong way
+    int *a, b, c;
+```
+5. The size of a pointer is either $4$ or $8$ byte, depending on the system you are using. For example, in a $32$-bit system, the size of a pointer is $4$ byte, and in a $64$-bit system, the size of a pointer is $8$ byte.
