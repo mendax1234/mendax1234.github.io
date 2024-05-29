@@ -107,3 +107,22 @@ Welcome to CS50 again. This is Week 4 and I will go through my review of this we
 ```c
     typedef <old name> <new name>
 ```
+
+## Dynamic Memory Allocation
+1. Statically and Dynamically
+```c
+    // statically obtain an integer
+    int x;
+
+    // dynamically obtain an integer
+    int *px = malloc(sizeof(int));
+```
+    In this code, `x` is stored on the **stack**. The pointer variable `px` is also stored on the stack but the memeory it points to is a block of memory on the **heap**. To further understand this, see this example,
+```c
+    // array of floats on the stack
+    float stack_array[x];
+
+    // array of floats on the heap
+    float *heap_array = malloc(x * sizeof(float));
+```
+2. Dynamically-allocated memory is **not** automatically returned to the system after finishing using it, so we need to use `free()` to free the dynamically-allocated memory. Otherwise, there will be a **memory-leak**. However, statically-allocated memory doesn't have this issue since it's stored on the stack and the memory will be freed after the function call.
