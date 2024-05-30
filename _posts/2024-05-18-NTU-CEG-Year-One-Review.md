@@ -5,6 +5,7 @@ excerpt: NTU Computer Engineering Year One Review
 header:
   teaser: posts/NTU_CCDS.png
 toc: true
+toc_sticky: true
 tags:
   - NTU
 ---

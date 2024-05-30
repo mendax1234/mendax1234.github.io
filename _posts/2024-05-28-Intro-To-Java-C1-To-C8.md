@@ -4,6 +4,7 @@ title:  "Introduction to Java Programming Chapter 1 to 8 Review"
 header:
   teaser: posts/Intro_To_Java_Prog_Head.jpg
 toc: true
+toc_sticky: true
 tags:
   - Java
   - Introduction-To-Java-Programming
