@@ -5,7 +5,6 @@ excerpt: NTU Computer Engineering Year One Review
 header:
   teaser: posts/NTU_CCDS.png
 toc: true
-toc_sticky: true
 tags:
   - NTU
 ---
@@ -171,4 +170,3 @@ As one of the most important and hardest core courses in NTU CCDS, this course n
 **Name: Introduction to Data Science & Artificial Intelligence** \
 **Grade:** \
 The course serves as an introduction to DSAI, I would say the quality is quite okay. If you take this course seriously, you will definitely learn a lot. And for this course, I think the best resource is [GitHub](https://www.github.com).
-
