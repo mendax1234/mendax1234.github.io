@@ -206,7 +206,7 @@ When you call a function, the system sets aside space in memory for that functio
     - Notice that the file pointer must be **write** or **append** mode, otherwise, it will return an error.
 
 # Problem Set 4
-## 01 Volume
+## [01 Volume](https://cs50.harvard.edu/x/2024/psets/4/volume/)
 **Things to notice in the problem statement**
 1. The wav file has two parts, one is a 44 byte **header**, the other is the **sample** part.
 
@@ -229,3 +229,258 @@ When you call a function, the system sets aside space in memory for that functio
 **Take-aways**
 1. In `fopen()` and `fwrite()`, the opened file “remembers” the number of bytes that were successfully read, such that subsequent calls to this function for stream will return bytes after those already read.
 2. `fopen()` and `fwrite()` will return the number of items read/written.
+
+## [02 Filter - Easy](https://cs50.harvard.edu/x/2024/psets/4/filter/less/)
+**Things to notice in the problem statement**
+1. The bmp file is made up of pixels and each pixel is composed of 3 Bytes, one for Red, one for Blue and one for Green.
+
+**Divide and Conquer**
+1. `grayscale()`
+    <pre id="filter-less-01" class="pseudocode">
+        \begin{algorithm}
+        \caption{Grayscale}
+        \begin{algorithmic}
+        \STATE Loop over all pixels
+        \STATE Take average of red, green and blue
+        \STATE Update pixel values
+        \end{algorithmic}
+        \end{algorithm}
+    </pre>
+2. `sepia()`
+    <pre id="filter-less-02" class="pseudocode">
+        \begin{algorithm}
+        \caption{Sepia}
+        \begin{algorithmic}
+        \STATE Loop over all pixels
+        \STATE Compute sepia values
+        \STATE Update pixel with sepia values
+        \end{algorithmic}
+        \end{algorithm}
+    </pre>
+3. `reflect()`
+    <pre id="filter-less-03" class="pseudocode">
+        \begin{algorithm}
+        \caption{Reflect}
+        \begin{algorithmic}
+        \STATE Loop over all pixels in the left side
+        \STATE Swap pixels
+        \end{algorithmic}
+        \end{algorithm}
+    </pre>
+4. `blur()`
+    <pre id="filter-less-04" class="pseudocode">
+        \begin{algorithm}
+        \caption{Blur}
+        \begin{algorithmic}
+        \STATE Create a copy of image
+        \STATE Loop over all pixels
+        \STATE Compute average of surrounding pixels using copied image
+        \STATE Update pixel with average
+        \end{algorithmic}
+        \end{algorithm}
+    </pre>
+
+**Useful Snippets**
+1. `reflect()`
+```c
+// Reflect image horizontally
+    void reflect(int height, int width, RGBTRIPLE image[height][width])
+    {
+        // Loop over the left side of pixels
+        for (int i = 0; i < height; i++)
+        {
+            for (int j = 0; j < width / 2; j++)
+            {
+                // Swap pixels
+                RGBTRIPLE temp;
+                temp = image[i][j];
+                image[i][j] = image[i][width - j - 1];
+                image[i][width - j - 1] = temp;
+            }
+        }
+        return;
+    }
+```
+    Notice that we only need to iterate over the left side of the pixels. And we **cannot** let j to be **<=** `width / 2` since one pixel will be swapped twice as the index starts from 0. Also, the index of the corresponding right pixel is needs another minus 1 from `width - j`.
+2. `blur()`
+```c
+    // Blur image
+    void blur(int height, int width, RGBTRIPLE image[height][width])
+    {
+        // Create a copy of image
+        RGBTRIPLE copy[height][width];
+        for (int i = 0; i < height; i++)
+        {
+            for (int j = 0; j < width; j++)
+            {
+                copy[i][j] = image[i][j];
+            }
+        }
+
+        // Blur
+        for (int i = 0; i < height; i++)
+        {
+            for (int j = 0; j < width; j++)
+            {
+                // Calculate blur
+                double times = 0;
+                double sumRed = 0;
+                double sumBlue = 0;
+                double sumGreen = 0;
+                for (int p = i - 1; p <= i + 1; p++)
+                {
+                    for (int q = j - 1; q <= j + 1; q++)
+                    {
+                        if (p >= 0 && p < height && q >= 0 && q < width)
+                        {
+                            times++;
+                            sumRed += copy[p][q].rgbtRed;
+                            sumBlue += copy[p][q].rgbtBlue;
+                            sumGreen += copy[p][q].rgbtGreen;
+                        }
+                    }
+                }
+                double averageRed = round(sumRed / times);
+                double averageBlue = round(sumBlue / times);
+                double averageGreen = round(sumGreen / times);
+
+                // Update pixels
+                image[i][j].rgbtRed = (int) averageRed;
+                image[i][j].rgbtBlue = (int) averageBlue;
+                image[i][j].rgbtGreen = (int) averageGreen;
+            }
+        }
+        return;
+    }
+```
+    Notice that the most consice way to calculate the blur is using a nested loop as shown in the code snippet above. Also, since we will update our image, we need to create a copy of the original image to calculate the blur. Otherwise, we may run into the resource conflict.
+
+## [02 Filter - Hard](https://cs50.harvard.edu/x/2024/psets/4/filter/more/)
+**Things to notice in the problem statement**
+1. The first three functions (`grayscale()`, `reflect()` and `blur()`) are the same as the previous question. So, in this part, I will only talk about the `edge()`.
+
+**Divide and Conquer**
+1. `edge()`
+    <pre id="filter-more-01" class="pseudocode">
+        \begin{algorithm}
+        \caption{Edge}
+        \begin{algorithmic}
+        \STATE Create a copy of image
+        \STATE Create a 3x3 array for Gx and Gy
+        \STATE Loop over all pixels
+        \STATE Compute Gx and Gy
+        \STATE Compute G from Gx and Gy
+        \STATE Update pixel with G
+        \end{algorithmic}
+        \end{algorithm}
+    </pre>
+
+**Useful Snippet**
+1. `edge()`
+```c
+    // Detect edges
+    void edges(int height, int width, RGBTRIPLE image[height][width])
+    {
+        // Create a copy of image
+        RGBTRIPLE copy[height][width];
+        for (int i = 0; i < height; i++)
+        {
+            for (int j = 0; j < width; j++)
+            {
+                copy[i][j] = image[i][j];
+            }
+        }
+
+        {% raw %}
+        // Create Gx and Gy
+        int Gx[3][3] = {{-1, 0, 1}, {-2, 0, 2}, {-1, 0, 1}};
+        int Gy[3][3] = {{-1, -2, -1}, {0, 0, 0}, {1, 2, 1}};
+        {% endraw %}
+
+        // Procedure
+        for (int i = 0; i < height; i++)
+        {
+            for (int j = 0; j < width; j++)
+            {
+                // Calculate Gx and Gy
+                double sumGxRed = 0;
+                double sumGyRed = 0;
+                double sumGxBlue = 0;
+                double sumGyBlue = 0;
+                double sumGxGreen = 0;
+                double sumGyGreen = 0;
+                for (int p = i - 1; p <= i + 1; p++)
+                {
+                    for (int q = j - 1; q <= j + 1; q++)
+                    {
+                        // Index for accessing Gx and Gy
+                        int x = p - (i - 1);
+                        int y = q - (j - 1);
+
+                        // Calculate the sumGx and sumGy rgb
+                        if (p >= 0 && p < height && q >= 0 && q < width)
+                        {
+                            sumGxRed += copy[p][q].rgbtRed * Gx[x][y];
+                            sumGyRed += copy[p][q].rgbtRed * Gy[x][y];
+                            sumGxBlue += copy[p][q].rgbtBlue * Gx[x][y];
+                            sumGyBlue += copy[p][q].rgbtBlue * Gy[x][y];
+                            sumGxGreen += copy[p][q].rgbtGreen * Gx[x][y];
+                            sumGyGreen += copy[p][q].rgbtGreen * Gy[x][y];
+                        }
+                    }
+                }
+                double finalRed = round(sqrt(pow(sumGxRed, 2) + pow(sumGyRed, 2)));
+                double finalBlue = round(sqrt(pow(sumGxBlue, 2) + pow(sumGyBlue, 2)));
+                double finalGreen = round(sqrt(pow(sumGxGreen, 2) + pow(sumGyGreen, 2)));
+
+                // Update pixels
+                image[i][j].rgbtRed = (finalRed > 255.0) ? 255 : (int) finalRed;
+                image[i][j].rgbtBlue = (finalBlue > 255.0) ? 255 : (int) finalBlue;
+                image[i][j].rgbtGreen = (finalGreen > 255.0) ? 255 : (int) finalGreen;
+            }
+        }
+        return;
+    }
+```
+    Notice that to use initializer to initialize a multi-dimension array, we need to use `{}` to enclose each row.
+
+## [03 Recover](https://cs50.harvard.edu/x/2024/psets/4/recover/)
+**Things to notice in the problem statement**
+1. Each JPEG starts with a distinct header
+    - First three bytes: `0xff`, `0xd8`, `0xff`
+    - Last Byte: `0xe0` to `0xef`
+2. JPEGs stored back-to-back in memory card
+
+**Divide and Conquer**
+<pre id="recover" class="pseudocode">
+    \begin{algorithm}
+    \caption{Recover}
+    \begin{algorithmic}
+    \STATE Open Memory Card
+    \REPEAT
+        \IF{Start of a new JPEG}
+            \IF{First JPEG}
+                \STATE ...
+            \ELSE
+                \STATE Close the previous file
+                \STATE ...
+            \ENDIF
+        \ELSE
+            \IF{Already found a JPEG}
+                \STATE Write the block to the file
+            \ELSE
+                \STATE Continue
+            \ENDIF
+        \ENDIF
+    \UNTIL{End of card}
+    \STATE Close any remaining files
+    \end{algorithmic}
+    \end{algorithm}
+</pre>
+
+**Take-aways**
+1. To make sure a byte start with `e` in this question, we can use the idea of **bitwise operation** to achieve this. In this problem, `(buffer[3] & 0xf0) == 0xe0` can serve this purpose very well.
+2. The File pointer (`FILE *`) is also allocated on the **heap**, so at the end of the program, remember to close the files you have opened. In this problem, don't forget to close the `card.raw`.
+
+
+
