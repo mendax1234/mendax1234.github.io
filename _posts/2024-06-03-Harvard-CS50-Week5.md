@@ -12,5 +12,5 @@ tags:
 
 Welcome to CS50! This is my review for Week 5's content.
 
-## Lecture
+# Lecture
 1. Nothing much to note down.
