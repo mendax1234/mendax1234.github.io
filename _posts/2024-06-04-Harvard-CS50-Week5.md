@@ -19,6 +19,7 @@ Welcome to CS50! This is my review for Week 5's content.
 1. There are two important parts in this line of code: `int *p = malloc(sizeof(int) * 4)`
     - `int *p`: This creates an int pointer on the **stack**
     - `malloc(sizeof(int) * 4)`: This allocates 4 integers on the **heap** and returns the address of the first integer. This address is then stored in the pointer `p`.
+2. Using `free(p)`, you just free the memory on the **heap**, which means the pointer `p` is still on available on the stack and now it points to `NULL`.
 
 # Shorts
 ## Singly Linked List
