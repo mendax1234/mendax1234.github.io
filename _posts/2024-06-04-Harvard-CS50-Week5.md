@@ -22,6 +22,16 @@ Welcome to CS50! This is my review for Week 5's content.
 
 # Shorts
 1. Singly Linked List
+    - Define a linked list node using `struct`
+    ```c
+        typedef struct node
+        {
+            int number;
+            struct node *next;
+        }
+        node;
+    ```
+        The `struct node` appearing twice here is important for the self-referencing.
     - Destroy the whole list using the idea of **recursion**:
         - If you've reached a `NULL` pointer, return. (Base case)
         - Delete the **rest of the list**
