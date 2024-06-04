@@ -54,4 +54,37 @@ Welcome to CS50! This is my review for Week 5's content.
         trie;
     ```
     - To search for an element in the trie, use successive digits to navigate from the root, and if you can make it to the end without hitting a dead end (a NULL pointer), you've found it. (This is similar to using the key to find the unique value)
-    
+
+# Problem Set 5
+## [01 Inheritance](https://cs50.harvard.edu/x/2024/psets/5/inheritance/)
+**Divide and Conquer**
+1. `create_family()`
+    <pre id="inheritance-01" class="pseudocode">
+        \begin{algorithm}
+        \caption{CreateFamily}
+        \begin{algorithmic}
+        \STATE Allocate memory for new person
+        \IF{there are still generations left to create}
+            \STATE Create two new parents for current person by recursively calling create\_family
+            \STATE Set parent pointers for current person
+            \STATE Randomly assign current person's alleles based on the alleles of their parents
+        \ELSE
+            \STATE Set parent pointers to NULL
+            \STATE Randomly assign alleles
+        \ENDIF
+        \RETURN current person
+        \end{algorithmic}
+        \end{algorithm}
+    </pre>
+
+2. `free_family()`
+    <pre id="inheritance-02" class="pseudocode">
+        \begin{algorithm}
+        \caption{FreeFamily}
+        \begin{algorithmic}
+        \STATE Handle base case
+        \STATE Free parents recursively
+        \STATE Free child
+        \end{algorithmic}
+        \end{algorithm}
+    </pre>
