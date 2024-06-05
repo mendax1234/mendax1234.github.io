@@ -89,3 +89,76 @@ Welcome to CS50! This is my review for Week 5's content.
         \end{algorithmic}
         \end{algorithm}
     </pre>
+
+## [02 Speller](https://cs50.harvard.edu/x/2024/psets/5/speller/)
+**Things to notice in the problem statement**
+1. The implementation of `check` must be **case-insensitive**.
+
+**Divide and Conquer**
+1. `check()` Check whehter the word is in the dictionary
+    <pre id="speller-01" class="pseudocode">
+        \begin{algorithm}
+        \caption{Check}
+        \begin{algorithmic}
+        \STATE Hash the word
+        \STATE Traverse the linked list at the hashed index
+        \STATE Compare the word with the words in the linked list
+        \end{algorithmic}
+        \end{algorithm}
+    </pre>
+2. `hash()` Hash the word to a number \
+    Design a good hash function makes this problem interesting and here is my design, which will use the first **two** characters to determine the hash code of a word. To use the first two characters, we need to know the idea of **base-26**.
+    <pre id="speller-02" class="pseudocode">
+        \begin{algorithm}
+        \caption{Hash}
+        \begin{algorithmic}
+        \STATE Set N to be $26 * 26$
+        \IF{the word has only one character}
+            \STATE Return the uppercase of that character minus 'A'
+        \ELSE
+            \STATE Return the uppercase of the first character minus 'A' then times 26 plus the uppercase of the second character minus 'A'
+        \ENDIF
+        \RETURN the hash code
+        \end{algorithmic}
+        \end{algorithm}
+    </pre>
+3. `load()` Load the dictionary into memory
+    <pre id="speller-03" class="pseudocode">
+        \begin{algorithm}
+        \caption{Load}
+        \begin{algorithmic}
+        \STATE Open the dictionary file
+        \WHILE{there are still words in the dictionary}
+            \STATE Read the word
+            \STATE Create a new node for the word
+            \STATE Hash the word
+            \STATE Insert the node into the linked list at the hashed index
+        \ENDWHILE
+        \STATE Close the dictionary file
+        \end{algorithmic}
+        \end{algorithm}
+    </pre>
+4. `size()` Return the number of words in the dictionary
+    <pre id="speller-04" class="pseudocode">
+        \begin{algorithm}
+        \caption{Size}
+        \begin{algorithmic}
+        \STATE Iterate through each element in the table
+        \STATE Iterate through the corresponding linked list
+        \end{algorithmic}
+        \end{algorithm}
+    </pre>
+5. `unload()` Unload the dictionary from memory
+    <pre id="speller-05" class="pseudocode">
+        \begin{algorithm}
+        \caption{Unload}
+        \begin{algorithmic}
+        \STATE Iterate through each element in the table
+        \STATE Iterate through the corresponding linked list
+        \STATE Free the node using two node pointers
+        \end{algorithmic}
+        \end{algorithm}
+    </pre>
+
+**Take-aways**
+1. To read the word from the dictionary, we need to use [fscanf()](https://manual.cs50.io/3/fscanf), which is very useful to read from file besides `fread()`.
