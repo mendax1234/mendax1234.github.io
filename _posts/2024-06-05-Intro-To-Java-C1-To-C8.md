@@ -147,6 +147,7 @@ Loops in Java are totally the same with C. Nothing to record.
     // Example
     double[] myList;
     ```
+        Note that when defining the reference variable, there is no need to specify the length of the array.
     2. Create the array. This is similar to allocate memory and then store the starting address of that memory in the pointer variable in C.
     ```java
     // Usage
@@ -198,3 +199,11 @@ Java supports a convenient way to iterate through the elements of an array. This
     In this example, we pass an **anonymous array** to the method `printArray()`.
 5. In Java, the `java.util.Array` class contains many useful methods, likeing sorting and searching.
 6. In Java, when you pass command-line arguments, these arguements are stored at the String array called `args` and you can use `args[index]` to access each argument and the index starts from 0.
+
+# Chapter 8
+1. To create a two-dimensional array using an array initializer, we can use the syntax below
+{% raw %}
+    ```java
+        elementType[][] arrayVar = {{row values}, ..., {row values}};
+    ```
+{% endraw %}
