@@ -85,3 +85,6 @@ tags:
     - For a variable of a reference type, the value is **a reference to where an object is located**.
     - In Java, the objects that are no longer useful are called **garbage**, and will be collected automatically by the Java Runtime system.
 
+## 9.6 Using Classes from the Java Library
+1. In the UML diagram, the **class name** is placed at the top, the **data field** in the middle, and the **methods** at the bottom.
+
