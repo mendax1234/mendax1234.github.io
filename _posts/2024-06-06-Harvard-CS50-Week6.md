@@ -14,3 +14,6 @@ Welcome to CS50 again! This blog will contain my review for Week 6's content abo
 
 # Lecture
 1. Nothing much to note down.
+
+# Section
+1. Nothing to note down. Try yourself and read the document is quite helpful.
