@@ -96,3 +96,6 @@ Nothing to say
     dict = {}
     dict[key] = value
 ```
+
+# Lecture - Week6.5
+1. In **reinforcement learning**, if the agent does well, you give them a reward, otherwise, punish them.
