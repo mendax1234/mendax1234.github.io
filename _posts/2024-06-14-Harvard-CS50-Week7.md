@@ -106,3 +106,9 @@ Hackers will use the property of the *comment* (--) in SQL to hack into the user
     ```sql
         .schema table_name
     ```
+
+# Shorts
+1. All our queries will refer to **rows** of the table since we specify all of the **columns** in that table.
+2. In a joint table, it is okay to establish a **joint primary key** - a combination of two columns that is always guaranteed to be unique. Otherwise, there will be duplicates if we only specify one column as the `PRIMARY KEY`
+3. In SQL, it is usally to define the `PRIMARY KEY` column as `INTEGER`. Otherwise, you need to configure that column to **autoincrement**.
+
