@@ -102,10 +102,31 @@ Hackers will use the property of the *comment* (--) in SQL to hack into the user
     ```sql
         DELETE FROM table WHERE condition;
     ```
-    - Show basic information about a table:
+        Note that `WHERE` is usaully used to filter rows. It should appear right after you `SELECT` your columns.
+    - Show basic information about a table (Usually the **column** information):
     ```sql
         .schema table_name
     ```
+    - Show all the tables in the database:
+    ```sql
+        .tables
+    ```
+    - Order the result you see:
+    ```sql
+        SELECT * FROM table ORDER BY column_name;
+    ```
+        Note that `ORDER BY` is usually at the end of the statement. You can specify the ordering by add `DESC` (descending) and `ASC` (ascending) right after the `column_name` after `ORDER BY`.
+    - Aggregate functions:
+        - `COUNT(*)`: Count the number of rows in the table.
+        - `SUM(column_name)`: Sum the values in the column.
+        - `MAX(column_name)`: Find the maximum value in the column.
+        - `MIN(column_name)`: Find the minimum value in the column.
+        - `AVG(column_name)`: Find the average value in the column.
+        - Usage:
+        ```sql
+            SELECT AVG(column_name) FROM table;
+        ```
+            This will output a number, which is the average of a specifc column from the table.
 
 # Shorts
 1. All our queries will refer to **rows** of the table since we specify all of the **columns** in that table.
