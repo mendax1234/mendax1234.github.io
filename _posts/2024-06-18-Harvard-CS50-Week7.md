@@ -133,3 +133,8 @@ Hackers will use the property of the *comment* (--) in SQL to hack into the user
 2. In a joint table, it is okay to establish a **joint primary key** - a combination of two columns that is always guaranteed to be unique. Otherwise, there will be duplicates if we only specify one column as the `PRIMARY KEY`
 3. In SQL, it is usally to define the `PRIMARY KEY` column as `INTEGER`. Otherwise, you need to configure that column to **autoincrement**.
 
+# Problem Set 7
+## [Songs](https://cs50.harvard.edu/x/2024/psets/7/songs/)
+Nothing more to note down.
+
+
