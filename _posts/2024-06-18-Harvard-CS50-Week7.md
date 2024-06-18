@@ -137,4 +137,40 @@ Hackers will use the property of the *comment* (--) in SQL to hack into the user
 ## [Songs](https://cs50.harvard.edu/x/2024/psets/7/songs/)
 Nothing more to note down.
 
-
+## [Movies](https://cs50.harvard.edu/x/2024/psets/7/movies/)
+1. In `ORDER BY`, we can specify more than one parameters and its order matters. For example, `ORDER BY column1 DESC, column2 ASC` will first sort the table by `column1` in descending order and then by `column2` in ascending order.
+2. `JOIN` must appear before `WHERE`. For example,
+```sql
+    SELECT title
+    FROM movies
+    JOIN ratings ON ratings.movie_id = id
+    WHERE id IN (
+        ---
+    );
+```
+3. We can use `INTERSECT` to get the intersection of two **columns**. For example,
+```sql
+    SELECT movie_id
+    FROM stars
+    WHERE person_id IN (
+        SELECT people.id
+        FROM people
+        WHERE name = 'Bradley Cooper'
+    )
+    -- INTERSECT two columns
+    INTERSECT
+    SELECT movie_id
+    FROM stars
+    WHERE person_id IN (
+        SELECT people.id
+        FROM people
+        WHERE name = 'Jennifer Lawrence'
+    )
+```
+4. In `WHERE` statement, you can specify more than one condition and use the `AND` or `OR` to connect them. For example,
+```sql
+    SELECT title
+    FROM movies
+    WHERE year = 2014 AND title = 'Harry Potter%'
+```
+5. In SQL, we can use `%` to match any string. For example, `'Harry Potter%'` will match any string that starts with `'Harry Potter'`.
