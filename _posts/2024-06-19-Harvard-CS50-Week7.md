@@ -174,3 +174,22 @@ Nothing more to note down.
     WHERE year = 2014 AND title = 'Harry Potter%'
 ```
 5. In SQL, we can use `%` to match any string. For example, `'Harry Potter%'` will match any string that starts with `'Harry Potter'`.
+
+## [Fiftyville](https://cs50.harvard.edu/x/2024/psets/7/fiftyville/)
+**Things to notice in the problem statement**
+1. In the `phone_calls` table, the unit of `duration` is **seconds**.
+
+**Divide and Conquer**
+<pre id="fiftyville" class="pseudocode">
+    \begin{algorithm}
+    \caption{Fiftyville}
+    \begin{algorithmic}
+    \STATE Get the description from the crime scene
+    \STATE Get the three interviews
+    \STATE Analyze these three interviews
+    \end{algorithmic}
+    \end{algorithm}
+</pre>
+
+**Useful Snippts**
+Will update at the end of this course. My `log.sql` is quite long
