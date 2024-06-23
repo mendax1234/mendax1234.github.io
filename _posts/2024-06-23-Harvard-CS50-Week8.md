@@ -44,3 +44,10 @@ Nothing much to note down since it's a really big topic. The best note from lect
     }
     ```
         To use it, you need to speficyf the `class="class_name"` in the html code.
+
+# Shorts
+## Internet Primer
+1. **IP Address**: The IP address is to unqiuely identify your device. And the addressing scheme used by computers is known as IP addressing.
+2. **DHCP**: Basically, the purpose of a DHCP server is to assign your device an IP address. Prior to the widespread promulgation of DHCP, the task of assigning IP addresses fell to a system administrator, who would need to manually assign such addresses.
+3. **DNS**: The Domain Name System (DNS) exists to help us translate IP addresses to more memorable names that are more human-comprehensive.
+4. **Access Points**: One of the ways we've dealt with IPv4 addressing problem is to start **assigning multiple devices to a single IP address**. This is done through the use of an access point. The IP address is assigned to a *router*, whose job is to act as a traffic cop that allows data requests from all of the devices on your local network (your home or business, e.g.) to be processed through a single IP address.
