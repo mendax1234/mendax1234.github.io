@@ -75,4 +75,9 @@ HTTP is an example of an *application layer* protocol, which specifically dictat
     <img src="/images/posts/HTTP-2.jpg">
 </div>
 
+## HTML
+1. HTML (Hypertext Markup Langugage) is a fundamental component of every website.
+2. HTML is a language, but it is <ins>not</ins> a programming language. It lacks components of variables, logic, functions, and the like.
+3. Rather, it is a **markup language**, using angle-bracket enclosed **tags** to semantically define the structure of a web page, causing the plain text inside of sets of **tags** to be interpreted by web browsers in different ways. So, **tags** is a very important concept in HTML.
+
 
