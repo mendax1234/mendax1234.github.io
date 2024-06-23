@@ -114,3 +114,33 @@ JavaScript File
         alert('You clicked on ' + trigger.innerHTML);
     }
 ```
+
+## Document Object Model
+1. What is a DOM (Document Object Model)
+    As we've seen, JavaScript objects are incredibly flexible, and can contain various fields, even when those fields are other objects.
+    The document object is one way of employing this paradigm, whereby that object organizes the entire content of a web page.
+2. DOM properties
+
+    | DOM Property | Description |
+    |--------------|-------------|
+    | innerHTML | Holds the HTML inside a set of HTML tags |
+    | nodeName | The name of an HTML element or element's attribute |
+    | id | The "id" attribute of an HTML element |
+    | parentNode | A reference to the node one level up in the DOM |
+    | childNodes | An array of references to the nodes one level down in the DOM |
+    | attributes | An array of attributes of an HTML element |
+    | style | An object encapsulating the CSS/HTML styling of an elemetn |
+
+3. DOM Methods
+
+    | DOM Method | Description |
+    |------------|-------------|
+    | getElementById(id) | Gets the element with a given ID below this point in the DOM |
+    | getElementsByTagName(tag) | Gets all elements with the given tag below this point in the DOM |
+    | appendchild(node) | Add the given node to the DOM below this point. |
+    | removeChild(node) | Remove the specified child node from the DOM |
+
+4. An JavaScript example containing DOM properties and DOM Methods
+```javascript
+    document.getElementById('colorDiv').style.backgroundColor = 'green';
+```
