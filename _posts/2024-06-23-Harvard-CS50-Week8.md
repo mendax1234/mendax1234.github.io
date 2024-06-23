@@ -60,3 +60,6 @@ The **Internet Protocol (IP)** enables networks to know how to communicate with 
 </div>
 
 Notice that IP is also known as a *connectionless* protocol. There is not necessarily a **defined path** from the sender to the receiver, and vice versa.
+
+## Transmission Control Protocol (TCP)
+TCP can be thought of as directing the transmitted packet to the correct program on the receiving machine. TCP also **guarantees delivery** of packets, which IP alone does not do. TCP does this by including information about **how many** packets the receiver should expect to get, and **in what order**, and transmitting that information alongside the data.
