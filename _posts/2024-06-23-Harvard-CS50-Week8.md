@@ -51,3 +51,12 @@ Nothing much to note down since it's a really big topic. The best note from lect
 2. **DHCP**: Basically, the purpose of a DHCP server is to assign your device an IP address. Prior to the widespread promulgation of DHCP, the task of assigning IP addresses fell to a system administrator, who would need to manually assign such addresses.
 3. **DNS**: The Domain Name System (DNS) exists to help us translate IP addresses to more memorable names that are more human-comprehensive.
 4. **Access Points**: One of the ways we've dealt with IPv4 addressing problem is to start **assigning multiple devices to a single IP address**. This is done through the use of an access point. The IP address is assigned to a *router*, whose job is to act as a traffic cop that allows data requests from all of the devices on your local network (your home or business, e.g.) to be processed through a single IP address.
+
+## Internet Protocol (IP)
+The **Internet Protocol (IP)** enables networks to know how to communicate with one another. However, connecting one network with every other network is tedious. To solve this problem, **routers** come back into play. Now, each network was connected to a limited number of routers (each of which was connected to other nearby routers), and each router had instructions built into it on how to move information toward its destination.
+
+<div style="text-align: center;">
+    <img src="/images/posts/Internet-Protocol-(IP).jpg">
+</div>
+
+Notice that IP is also known as a *connectionless* protocol. There is not necessarily a **defined path** from the sender to the receiver, and vice versa.
