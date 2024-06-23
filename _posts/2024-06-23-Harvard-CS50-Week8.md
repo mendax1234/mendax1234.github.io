@@ -80,4 +80,37 @@ HTTP is an example of an *application layer* protocol, which specifically dictat
 2. HTML is a language, but it is <ins>not</ins> a programming language. It lacks components of variables, logic, functions, and the like.
 3. Rather, it is a **markup language**, using angle-bracket enclosed **tags** to semantically define the structure of a web page, causing the plain text inside of sets of **tags** to be interpreted by web browsers in different ways. So, **tags** is a very important concept in HTML.
 
+## CSS
+CSS (Cascading Style Sheets) is a language we use to **customize** our website's look and feel. See the notes from section to fully understand.
 
+## JavaScript
+1. Unlike HTMl and CSS, JavaScript is a programming language.
+2. Loop in JavaScript
+```javascript
+    var wkArray = ['Monday', 'Tuesday', 'Wednestday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+
+    // Iterate each element in the array
+    for (var day of wkArray)
+    {
+        console.log(day);
+    }
+```
+3. In JavaScript, there is a special concept called **Event**. It is a response to user interaction with the web page. JavaScript has support for *event handlers*, which are callback functions that respond to HTML events. For example, \
+HTML File
+```html
+    <html>
+        <head>
+            <title>Event handlers</title>
+        </head>
+        <body>
+            <button onclick="alertName(event)">Button 1</button>
+            <button onclick="alertName(event)">Button 2</button>
+```
+JavaScript File
+```javascript
+    function alertName(event)
+    {
+        var trigger = event.srcElement;
+        alert('You clicked on ' + trigger.innerHTML);
+    }
+```
