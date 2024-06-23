@@ -63,3 +63,16 @@ Notice that IP is also known as a *connectionless* protocol. There is not necess
 
 ## Transmission Control Protocol (TCP)
 TCP can be thought of as directing the transmitted packet to the correct program on the receiving machine. TCP also **guarantees delivery** of packets, which IP alone does not do. TCP does this by including information about **how many** packets the receiver should expect to get, and **in what order**, and transmitting that information alongside the data.
+
+## Hypertext Transfer Protocol (HTTP)
+HTTP is an example of an *application layer* protocol, which specifically dictates the **format** by which clients <ins>request</ins> web pages from a server, and the format via which servers <ins>return</ins> information to clients. For example,
+
+<div style="text-align: center;">
+    <img src="/images/posts/HTTP-1.jpg">
+</div>
+
+<div style="text-align: center;">
+    <img src="/images/posts/HTTP-2.jpg">
+</div>
+
+
