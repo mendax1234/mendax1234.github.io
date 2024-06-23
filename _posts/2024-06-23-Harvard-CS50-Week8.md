@@ -144,3 +144,10 @@ JavaScript File
 ```javascript
     document.getElementById('colorDiv').style.backgroundColor = 'green';
 ```
+
+# Probelm Set 8
+## [Trivia](https://cs50.harvard.edu/x/2024/psets/8/trivia/)
+Nothing much to note down.
+
+## [Homepage](https://cs50.harvard.edu/x/2024/psets/8/homepage/)
+Nothing much to note down either. Don't want to spend time on designing websites. I believe copy paste from other well-designed blogs is enough. Designing from start is really useless. But if you have time, this is a very good web design practice.
