@@ -88,20 +88,20 @@ The second semester's workload is much heavier than the first sem because of the
 
 ## CC0001
 **Name: Inquiry & Communication in an Interdisciplinary World** \
-**Grade:** \
+**Grade: A-** \
 Personally speaking, I really like this course. It's a bit like writing composition in my high school. But the difference is that in high school I use Chinese, but in uni I use English. The main idea remains almost same, about fresh arguments, criticial thinking etc. I would say this course will be very interesting and not hard if you have a  very nice tutor. For my advice on this course:
 - Try to use the unbelievable resourses provided by NTU, that's [LCC](https://www.ntu.edu.sg/lcc). If you have any difficulty, whatever they are, consult LCC. They will give you much wonderful advice.
 
 ## CC0002
 **Name: Navigating the Digital World** \
-**Grade:** \
+**Grade: B+** \
 This is just a normal CC course, I would say your group members play a vital part.
 - For the poster part, I would say hope that you get good team members.
 - For the MCQ part, it's easy but you still need to pay attention to if you want to get good marks. Many of the questions are commonsense, so don't be to worried about the MCQ. Actually reviewing the MCQ only takes me about one day bruh.
 
 ## MH1812
 **Name: Discrete Mathematics** \
-**Grade:** \
+**Grade: A+** \
 Discrete Mathematics itself should be the very very important and fundamental course for the algorithm in computer science. But in NTU, seems that our discrete math doesn't serve that purpose well. Most of the course content are not much related to the algorithm, it's more about math itself. So, I strongly recommend you take some other school's discrete math if you want to improve your algorithm ability. Also, in NTU, the sem1 version and sem2 version are different and sem1 version seems to be harder.
 - For the two CAs in sem2 version, it's not hard. Just go through the slides is enough.
 - For the final, it's much harder. Some justification questions are not easy to think. But don't worry, just try your best to do that and make sure you truly understand the concepts and its application.
@@ -113,7 +113,7 @@ Discrete Mathematics itself should be the very very important and fundamental co
 
 ## SC1004
 **Name: Linear Algebra** \
-**Grade:** \
+**Grade: A+** \
 Linear Algebra is often considered useful in Artificial Intelligence. It is very important too. I would say NTU CCDS's Linear algebra is okie lah. But if you want to go deeper, I also strongly recommend you taking MIT Gilbert Strang's Linear Algebra.
 - For the two CAs, my version is easy. Take it as a piece of cake.
 - For the final, it's also not that hard. Don't worry.
@@ -125,7 +125,7 @@ Linear Algebra is often considered useful in Artificial Intelligence. It is very
 
 ## SC1006
 **Name: Computer Organisation & Architecture** \
-**Grade:** \
+**Grade: A+** \
 This course is divided into two parts, the first half is about ARM Assembly and the second half is about computer architecture. Usually, the first half is considered harder than the second half. The course is built on the basis of your Digital Logic and is usally the part that comes after Digital Logic on most classic books. It can help you understand the behind working principle of computer program and some computer hardware.
 - For the first half, usually it's hard for you to find the relevant books to refer to. I would say listen carefully about what Prof taught on the recorded lecture. That's very useful. If you want to get a deeper understanding about ARM assembly. I would recommend the two books/documents below for reference:
     - [ARM Compiler armasm User Guide](https://developer.arm.com/documentation/dui0473/latest/) \
@@ -161,12 +161,12 @@ This course is divided into two parts, the first half is about ARM Assembly and 
 
 ## SC1007
 **Name: Data Structures & Algorithms** \
-**Grade:** \
+**Grade: B+** \
 As one of the most important and hardest core courses in NTU CCDS, this course needs your strong self-learning ability (especially after the course coordinator has changed). To be honest, I am really not good at this course and don't think I got some useful advice. I would say as a very important course in Computer Science, it is far from enough if you only learn in NTU, so I strongly recommend you take some other school's DSA. Some of the resources I find useful are below:
 - The similar course notes from [Emory CS](https://www.cs.emory.edu/~cheung/Courses/253/Syllabus/). These materials are very useful for understanding how some algorithms work.
 - The [Hello Algorithm](https://www.hello-algo.com/en/) written in Chinese but available in English is also worth a look. It is very straigh forward.
 
 ## SC1015
 **Name: Introduction to Data Science & Artificial Intelligence** \
-**Grade:** \
+**Grade: A+** \
 The course serves as an introduction to DSAI, I would say the quality is quite okay. If you take this course seriously, you will definitely learn a lot. And for this course, I think the best resource is [GitHub](https://www.github.com).

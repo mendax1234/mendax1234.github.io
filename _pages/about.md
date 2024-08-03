@@ -7,16 +7,26 @@ redirect_from:
   - /about.html
 ---
 
-I am currently a first-year undergraduate at [the College of Computing and Data Science](https://www.ntu.edu.sg/computing), [Nanyang Technological University](https://www.ntu.edu.sg/), majoring in [Computer Engineering](https://www.ntu.edu.sg/education/undergraduate-programme/bachelor-of-engineering-in-computer-engineering).
+I am a first-year undergraduate at [the Department of Electrical and Computer Engineering](https://cde.nus.edu.sg/ece/), [National University of Singapore](https://nus.edu.sg/), majoring in [Computer Engineering](https://ceg.nus.edu.sg/). Prior to joining NUS, I completed my freshman year at [Nanyang Technological University, Singapore](https://www.ntu.edu.sg/), majoring in [Computer Engineering](https://www.ntu.edu.sg/education/undergraduate-programme/bachelor-of-engineering-in-computer-engineering) under [the College of Computing and Data Science](https://www.ntu.edu.sg/computing).
 
 Education
 ------
+
+<img style="float: left; margin:5px 10px" src="/images/education/NUS.jpg" width="160" height="140">
+### National University of Singapore
+<p style="line-height:1.0">
+<font size="2">
+Aug 2024 - May 2028<br />
+B.E. in Computer Engineering<br />
+</font>
+</p>
 
 <img style="float: left; margin:5px 10px" src="/images/education/NTU.png" width="160" height="140">
 ### Nanyang Technological University
 <p style="line-height:1.0">
 <font size="2">
-Aug 2023 - May 2027<br />
+Aug 2023 - Jul 2024<br />
+<strong>CGPA: 4.71 / 5.00</strong><br />
 B.E. in Computer Engineering<br />
 </font>
 </p>
