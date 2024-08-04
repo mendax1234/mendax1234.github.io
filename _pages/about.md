@@ -18,6 +18,7 @@ Education
 <font size="2">
 Aug 2024 - May 2028<br />
 B.E. in Computer Engineering<br />
+<br>
 </font>
 </p>
 
@@ -28,6 +29,18 @@ B.E. in Computer Engineering<br />
 Aug 2023 - Jul 2024<br />
 <strong>CGPA: 4.71 / 5.00</strong><br />
 B.E. in Computer Engineering<br />
+</font>
+</p>
+
+Research Experience
+---
+<img style="float: left; margin:15px 5px 10px" src="/images/education/Fudan.png" width="160" height="140">
+### Fudan University
+<p style="line-height:1.0">
+<font size="2">
+Jul 2024 - Aug 2024<br />
+Student Researcher<br />
+Supervisor: Prof. Zhou Zuo<br />
 </font>
 </p>
 
