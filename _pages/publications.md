@@ -18,7 +18,7 @@ author_profile: true
 -->
 
 <!--<img style="float: left; margin:5px 10px" src="/images/posts/Harvard_CS50.png" width="160" height="200">-->
-<video style="float: left; margin: 5px 10px" width="240" height="140" autoplay muted loop>
+<video style="float: left; margin: 5px 10px" width="160" height="140" autoplay muted loop>
     <source src="/files/videos/FDU_video.mp4" type="video/mp4">
 </video>
 ### AR-Enhanced Robot Control: Developing an Immersive Interface Using MRTK for Intuitive Teleoperation
