@@ -90,7 +90,9 @@
   }
 
   .archive__item-title {
-    text-decoration: none;
+    a {
+      text-decoration: underline;
+    }
   }
 }
 
