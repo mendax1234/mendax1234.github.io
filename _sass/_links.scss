@@ -15,3 +15,25 @@ a {
         color: $link-color-visited;
     }
 }
+
+// Specific styles for content area links
+.page__content {
+    a {
+        color: $link-color;
+        text-decoration: none;
+        
+        &:hover {
+            color: $link-color-hover;
+            text-decoration: underline;
+        }
+        
+        &:visited {
+            color: $link-color-visited;
+        }
+        
+        // Hide the URL
+        &::after {
+            content: none;
+        }
+    }
+}
