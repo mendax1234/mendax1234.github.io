@@ -45,6 +45,14 @@
   margin-bottom: 0.25em;
   font-family: $sans-serif-narrow;
 
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
   a + a {
     opacity: 0.5;
   }
@@ -82,7 +90,7 @@
   }
 
   .archive__item-title {
-    text-decoration: underline;
+    text-decoration: none;
   }
 }
 
