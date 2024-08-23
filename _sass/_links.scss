@@ -10,8 +10,4 @@ p a {
         color: $link-color-hover;
         text-decoration: underline; /* Underline on hover */
     }
-
-    &:visited {
-        color: $link-color-visited;
-    }
 }
