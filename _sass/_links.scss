@@ -1,0 +1,12 @@
+/* ==========================================================================
+   LINKS
+   ========================================================================== */
+p a {
+    color: $link-color;
+    text-decoration: none; /* No underline */
+
+    &:hover {
+        color: $link-color-hover;
+        text-decoration: underline; /* Underline on hover */
+    }
+}
