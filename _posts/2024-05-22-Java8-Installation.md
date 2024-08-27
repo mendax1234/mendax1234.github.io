@@ -53,6 +53,6 @@ Note that `x64` can be replaced to your architecture.
 2. Reload using `source ~/.bashrc`
 
 # References
-1. <https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html#A1097144>
-2. <https://docs.oracle.com/cd/E19215-01/820-2215/6ndr6ai1m/index.html>
-3. <https://media.pearsoncmg.com/ph/esm/ecs_liang_ijp_11/cw/content/supplements/Supplement1bInstallingJDK8.pdf>
+1. <a href='https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html#A1097144' style='word-wrap: break-word;'>https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html#A1097144</a>
+2. <a href='https://docs.oracle.com/cd/E19215-01/820-2215/6ndr6ai1m/index.html' style='word-wrap: break-word;'>https://docs.oracle.com/cd/E19215-01/820-2215/6ndr6ai1m/index.html</a>
+3. <a href='https://media.pearsoncmg.com/ph/esm/ecs_liang_ijp_11/cw/content/supplements/Supplement1bInstallingJDK8.pdf' style='word-wrap: break-word;'>https://media.pearsoncmg.com/ph/esm/ecs_liang_ijp_11/cw/content/supplements/Supplement1bInstallingJDK8.pdf</a>
