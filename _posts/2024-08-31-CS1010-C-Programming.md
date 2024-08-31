@@ -49,3 +49,9 @@ tags:
 
 - Skipping parenthesis
 > Use parenthesis
+
+# The CS1010 I/O Library
+Handbook is [here](https://nus-cs1010.github.io/2425-s1/guides/library.html).
+
+# C Style Guide
+Handbook is [here](https://nus-cs1010.github.io/2425-s1/guides/style.html#1-variable-declaration).
