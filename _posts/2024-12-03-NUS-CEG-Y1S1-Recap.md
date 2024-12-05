@@ -46,7 +46,7 @@ The most touching part was the final night of THOC. That evening, my friends and
 Still immersed in the moving speech, we were guided, with candles in our hand, to the Common Hall. In front of me stood two lines of people forming a human corridor that I had to walk through to reach the end. Along the way, my candle would be blown out by someone, only to be reignited by another person nearby. At the time, I just thought it was a fun activity, HAHAHA. But now, I feel like I’ve started to understand the thoughtful design behind it. 
 
 <p align="center">
-  <video width="750" controls muted>
+  <video style="width: 100%;" controls muted>
     <source src="../images/posts/NUS-CEG-Y1S1-Recap/THOC_Video.mp4" type="video/mp4">
   </video>
 </p>
