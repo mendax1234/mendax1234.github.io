@@ -17,7 +17,13 @@ I happened to hear this sentence by chance, but it left a lasting impression on 
 
 As a "special" student, I also have been in this "new" place (Singapore) for one year alr. However, how often do I get to pause my busy life, look back on the path I’ve traveled, and realize that along the way, there were so many moments to be grateful for? I feel guilty, regretting that I did not start this idea earlier. But it doesn’t seem too late now, does it?
 
-To be honest, Y1S1 in NUS CEG is not easy — or rather, it’s incredibly challenging. I still can remember that from midterms onward, there’s been at least one test every week, and in the second-to-last week, there was at least one test every single day. It feels as if I’ve been transported back to the intense days of preparing for my *GaoKao*. But unlike those days, first of all, this time, I’m living in the C BLK of Temasek Hall at NUS — a Hall known for its athletic spirit, but is also a warm, close-knit "family" collectively nurtured by all **Cblings**!
+To be honest, Y1S1 in NUS CEG is not easy — or rather, it’s incredibly challenging. That's why from the Lecture 1 in CS1010, we are told to "work hard" and not limited to that, we are told to "work very very hard".
+
+<p align="center">
+  <img src="../images/posts/NUS-CEG-Y1S1-Recap/CS1010_Word_of_Advice_3.png" width="350">
+</p>
+
+I still can remember that from midterms onward, there’s been at least one test every week, and in the second-to-last week, there was at least one test every single day. It feels as if I’ve been transported back to the intense days of preparing for my *GaoKao*. But unlike those days, first of all, this time, I’m living in the C BLK of Temasek Hall at NUS — a Hall known for its athletic spirit, but is also a warm, close-knit "family" collectively nurtured by all **Cblings**!
 
 # Temasek Hall (TH)
 For me, as an Internationsl Student, living in Temasek Hall is my second experience of Singapore’s hall culture. However, this time, it’s different — or more precisely speaking, considerably different. 
@@ -153,7 +159,7 @@ Once again, I would say this page is too short for me to include everything in. 
 Here, I sincerely wish everyone a happy holiday and a Happy New Year in advance! 🎉
 
 <p style="text-align: right;">
-  Dec 3rd at National University of Singapore, Kent Ridge Campus
+  Dec 3rd, 2024 at National University of Singapore, Kent Ridge Campus
 </p>
 
 > Thank you so much for spending your precious time reading my "nonsense"😂, you have read around 3000 words! That's super awesome!
