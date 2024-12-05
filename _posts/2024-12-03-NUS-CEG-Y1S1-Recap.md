@@ -20,7 +20,7 @@ As a "special" student, I also have been in this "new" place (Singapore) for one
 To be honest, Y1S1 in NUS CEG is not easy — or rather, it’s incredibly challenging. That's why from the Lecture 1 in CS1010, we are told to "work hard" and not limited to that, we are told to "work very very hard".
 
 <p align="center">
-  <img src="../images/posts/NUS-CEG-Y1S1-Recap/CS1010_Word_of_Advice_3.png" width="350">
+  <img src="../images/posts/NUS-CEG-Y1S1-Recap/CS1010_Word_of_Advice_3.png" width="550">
 </p>
 
 I still can remember that from midterms onward, there’s been at least one test every week, and in the second-to-last week, there was at least one test every single day. It feels as if I’ve been transported back to the intense days of preparing for my *GaoKao*. But unlike those days, first of all, this time, I’m living in the C BLK of Temasek Hall at NUS — a Hall known for its athletic spirit, but is also a warm, close-knit "family" collectively nurtured by all **Cblings**!
