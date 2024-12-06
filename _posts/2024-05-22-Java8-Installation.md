@@ -14,7 +14,7 @@ tags:
 1. Download the corresponding installer from [oracle](https://www.oracle.com/java/technologies/downloads/#java8-windows).
 
     <div style="text-align: center;">
-        <img src="/images/posts/Java_Install_Windows.png">
+        <img src="/images/posts/Java8-Installation/Java_Install_Windows.png">
     </div>
 
 2. Execute Installer to install. Quite easy. Note that the installer will install both the JDK and the corresponding JRE.
@@ -28,7 +28,7 @@ tags:
 1. Download the corresponding file from [oracle](https://www.oracle.com/java/technologies/downloads/#java8-linux). For Ubuntu users, please download the "Compressed Archive" File.
 
     <div style="text-align: center;">
-        <img src="/images/posts/Java_Install_Ubuntu.png">
+        <img src="/images/posts/Java8-Installation/Java_Install_Ubuntu.png">
     </div>
 
 2. Uncompress the `.tar.gz` using command `tar zxvf your-name.tar.gz`. Then move all the file to a new installation directory if you like. For me, it's `/usr/lib/jvm/jdk-1.8-oracle-x64`.
@@ -37,7 +37,7 @@ tags:
 1. Download the corresponding "Compressed Archive" file from [oracle](https://www.oracle.com/java/technologies/downloads/#java8-linux).
 
     <div style="text-align: center;">
-        <img src="/images/posts/JRE_Install_Ubuntu.png">
+        <img src="/images/posts/Java8-Installation/JRE_Install_Ubuntu.png">
     </div>
 
 2. Uncompress the file and move it to the installation directory. For me it's `/usr/lib/jvm/jre-1.8-oracle-x64`

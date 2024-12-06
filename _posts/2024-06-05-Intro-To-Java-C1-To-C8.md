@@ -12,7 +12,7 @@ tags:
 This blog will serve as the beginning of my notes while reading "Introduction to Java Programming and Data Structures" by Y Daniel Liang.
 
 <div style="text-align: center;">
-    <img src="/images/posts/Intro_To_Java_Prog_Post.jpg" width="160" height="140">
+    <img src="/images/posts/Intro-to-Java-Prog/Intro_To_Java_Prog_Post.jpg" width="160" height="140">
 </div>
 
 <br>

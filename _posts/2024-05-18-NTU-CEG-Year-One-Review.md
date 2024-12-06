@@ -46,13 +46,13 @@ The first semester in Year 1 for Comp Eng students at NTU is not that stressed. 
 - Python: As an introduction course, there is not so much difficulty. But if you want to understand more. I would recommend the book *[Python Crash Course](https://ehmatthes.github.io/pcc_3e/)*.
 
 <div style="text-align: center;">
-    <img src="/images/posts/Python_Crash_Course.jpg" width="160" height="140">
+    <img src="/images/posts/NTU-CEG-Y1-Recap/Python_Crash_Course.jpg" width="160" height="140">
 </div>
 
 - C: Also as an intruduction course, algorithms are seldom covered. But if you want to get a deeper understanding of C, I would stronly recommend you reading this book: *[C Programming: A Modern Approach](http://knking.com/books/c2/)*. It is very good for you to understand some concepts like pointers in C.a
 
 <div style="text-align: center;">
-    <img src="/images/posts/C_Programming.jpg" width="160" height="140">
+    <img src="/images/posts/NTU-CEG-Y1-Recap/C_Programming.jpg" width="160" height="140">
 </div>
 
 ## SC1005 
@@ -62,13 +62,13 @@ As a foundamental core course, this course is very important if you want to lear
 - For this course, I strongly recommend you reading the textbook: [Fundamentals of Digital Logic with Verilog Design](https://www.mheducation.com/highered/product/fundamentals-digital-logic-verilog-design-brown-vranesic/M9780073380544.html). This book is written so well that it can be either served as a book for preview or get a deeper understanding about Digital Logic and Verilog.
 
 <div style="text-align: center;">
-    <img src="/images/posts/Digital_Logic_Textbook.jpg" width="160" height="140">
+    <img src="/images/posts/NTU-CEG-Y1-Recap/Digital_Logic_Textbook.jpg" width="160" height="140">
 </div>
 
 - Another book I refer to is the [Digital Fundamentals](https://www.amazon.com/Digital-Fundamentals-11th-Thomas-Floyd/dp/0132737965). I remember that this book is also quite good for you to understand the concepts deeply.
 
 <div style="text-align: center;">
-    <img src="/images/posts/Digital_Fundamentals.jpg" width="160" height="140">
+    <img src="/images/posts/NTU-CEG-Y1-Recap/Digital_Fundamentals.jpg" width="160" height="140">
 </div>
 
 - For the first half of this course, the tutor has provided us a free online book, I think it is worth reading but I personally think the two books above are better.
@@ -80,7 +80,7 @@ Math 1 is not difficult for those who take PRC GaoKao to get into NTU, so my adv
 - I stronly recommend you reading the textbook: [Calculus: Early Transcendentals](https://www.amazon.com/Calculus-Early-Transcendentals-Metric-Edition/dp/0357113519).
 
 <div style="text-align: center;">
-    <img src="/images/posts/Calculus_Textbook.jpg" width="160" height="140">
+    <img src="/images/posts/NTU-CEG-Y1-Recap/Calculus_Textbook.jpg" width="160" height="140">
 </div>
 
 # Y1S2
@@ -108,7 +108,7 @@ Discrete Mathematics itself should be the very very important and fundamental co
 - The book for reference the I recommend is the textbook: [Discrete Mathematics and Its Applications](https://www.amazon.com/Discrete-Mathematics-Its-Applications-Seventh/dp/0073383090). It's a very classic book and is written very well. But you may select chapters to read since this sem's workload is much heavier.
 
 <div style="text-align: center;">
-    <img src="/images/posts/Discrete_Math_Textbook.jpg" width="160" height="140">
+    <img src="/images/posts/NTU-CEG-Y1-Recap/Discrete_Math_Textbook.jpg" width="160" height="140">
 </div>
 
 ## SC1004
@@ -120,7 +120,7 @@ Linear Algebra is often considered useful in Artificial Intelligence. It is very
 - For the book, I strongly recommend the textbook: [Linear Algebra and its applications](https://www.amazon.com/Linear-Algebra-Its-Applications-5th/dp/032198238X). This book is written very very well so it makes it much easier to understand the concepts. The working examples are also very useful.
 
 <div style="text-align: center;">
-    <img src="/images/posts/Linear_Algebra_Textbook.jpg" width="160" height="140">
+    <img src="/images/posts/NTU-CEG-Y1-Recap/Linear_Algebra_Textbook.jpg" width="160" height="140">
 </div>
 
 ## SC1006
@@ -132,14 +132,14 @@ This course is divided into two parts, the first half is about ARM Assembly and 
     This document provided by ARM is very very useful. If you are confused about some instructions in ARM, you can refer to the document. To be honest, it was not until the day before the test that I found this document very useful.
 
     <div style="text-align: center;">
-        <img src="/images/posts/ARM_User_Guide.png" width="160" height="140">
+        <img src="/images/posts/NTU-CEG-Y1-Recap/ARM_User_Guide.png" width="160" height="140">
     </div>
 
     - [Modern Assembly Language Programming with the ARM Processor](https://www.amazon.com/Modern-Assembly-Language-Programming-Processor/dp/0128036982) \
     This book is also not bad, but the coding style may be a little bit different from what you learn. The main idea remains the same however.
 
     <div style="text-align: center;">
-        <img src="/images/posts/ARM_Assembly_Reference.jpg" width="160" height="140">
+        <img src="/images/posts/NTU-CEG-Y1-Recap/ARM_Assembly_Reference.jpg" width="160" height="140">
     </div>
 
     You are also strongly recommended to use the VISUAL simulator to get a deeper understanding of the ARM assembly.
@@ -149,14 +149,14 @@ This course is divided into two parts, the first half is about ARM Assembly and 
     As the textbook for the second half, this book is written so well that you can understand the basic and fundamental principles of the computer architecture. Especially the one about memory and cache.
 
     <div style="text-align: center;">
-        <img src="/images/posts/Computer_Org_Arch.jpg" width="160" height="140">
+        <img src="/images/posts/NTU-CEG-Y1-Recap/Computer_Org_Arch.jpg" width="160" height="140">
     </div>
 
     - [Computer Organization and Embedded Systems](https://www.amazon.com/Computer-Organization-Professor-Electrical-Engineering/dp/0073380652). \
     This book can serve as a complement of the book above. It will discuss more at the logic gate level. For example, the principle of DRAM and SRAM etc.
 
     <div style="text-align: center;">
-        <img src="/images/posts/Computer_Org_Embedded.jpg" width="160" height="140">
+        <img src="/images/posts/NTU-CEG-Y1-Recap/Computer_Org_Embedded.jpg" width="160" height="140">
     </div>
 
 ## SC1007
