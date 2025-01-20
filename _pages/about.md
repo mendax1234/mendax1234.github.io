@@ -11,7 +11,7 @@ I am a first-year undergraduate at [the Department of Electrical and Computer En
 Education
 ------
 
-<img style="float: left; margin:10px 10px" src="/images/education/NUS.jpg" width="160" height="140">
+<img style="float: left; margin:15px 10px" src="/images/education/NUS.jpg" width="160" height="140">
 ### National University of Singapore
 <p style="line-height:1.0">
 <font size="2">
