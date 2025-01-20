@@ -18,6 +18,7 @@ Education
 Aug 2024 - May 2028<br />
 <strong>CGPA: 5.00 / 5.00</strong><br />
 B.E. in Computer Engineering<br />
+<br>
 </font>
 </p>
 
