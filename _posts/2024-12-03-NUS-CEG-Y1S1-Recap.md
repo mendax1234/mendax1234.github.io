@@ -1,7 +1,7 @@
 ---
 layout: single
-title:  "NUS Computer Engineering Y?S1 Recap"
-excerpt: NUS Computer Engineering Y?S1 Recap
+title:  "NUS Computer Engineering Y1S1 Recap"
+excerpt: NUS Computer Engineering Y1S1 Recap
 header:
   teaser: posts/NUS_SOC.jpg
 toc: true
