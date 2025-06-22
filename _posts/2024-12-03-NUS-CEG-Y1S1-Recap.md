@@ -159,7 +159,7 @@ Once again, I would say this page is too short for me to include everything in. 
 Here, I sincerely wish everyone a happy holiday and a Happy New Year in advance! 🎉
 
 <p style="text-align: right;">
-  Dec 3rd, 2024 at National University of Singapore, Kent Ridge Campus
+  Dec 3rd 2024, National University of Singapore, Kent Ridge Campus
 </p>
 
 > Thank you so much for spending your precious time reading my "nonsense"😂, you have read around 3000 words! That's super awesome!
