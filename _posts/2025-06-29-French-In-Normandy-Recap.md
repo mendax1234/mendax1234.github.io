@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "French in Normandy Recap (2025 Summer)"
+title:  "French in Normandy Recap 2025 Summer"
 excerpt: French in Normandy Recap 2025 Summer
 header:
   teaser: posts/French-in-Normandy-Recap/french-in-normandy.jpg
