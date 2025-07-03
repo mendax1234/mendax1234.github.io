@@ -60,6 +60,22 @@ To all my friends and teachers: **I legit look forward to meeting with you again
 
 **Au revoir!**
 
+## An unexpected but warming story
+On my flight home from Paris, I was incredibly grateful to be allowed into the cockpit of the Boeing 777. As someone passionate about aviation, it meant the world to me to have this opportunity -- especially on just my second flight log entry! It was a moment that filled me with awe and appreciation.
+
+<p align="center">
+  <img src="../images/posts/French-In-Normandy-Recap/visit_boeing777_cockpit.jpg" width="80%"><br>
+  <em style="font-size: 0.9em;">Figure: Visit the Boeing 777 Cockpit</em>
+</p>
+
+What made it even more meaningful was the journey behind it:
+
+> from simply having a passion for flight, to applying it in one of my [courses' projects](https://mendax1234.github.io/NUS-PF1101/), and now, finally, experiencing it firsthand in real life.
+
+It felt like a full-circle moment! And it's legit amazing!
+
+And then came another surprise! After a friendly chat in French with the crew, I discovered that both pilots were from Rouen! What a coincidence! When they asked me what stood out most about Rouen, the first thing that came to mind was my unforgettable adventure with French in Normandy!
+
 <p style="text-align: right;">
   Jun 29th 2025, Paris Charles de Gaulle Airport, Paris, France
 </p>
