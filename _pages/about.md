@@ -6,7 +6,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a first-year undergraduate at [the Department of Electrical and Computer Engineering](https://cde.nus.edu.sg/ece/), [National University of Singapore](https://nus.edu.sg/), majoring in [Computer Engineering](https://ceg.nus.edu.sg/). Prior to joining NUS, I completed my freshman year at [Nanyang Technological University, Singapore](https://www.ntu.edu.sg/), majoring in [Computer Engineering](https://www.ntu.edu.sg/education/undergraduate-programme/bachelor-of-engineering-in-computer-engineering) under [the College of Computing and Data Science](https://www.ntu.edu.sg/computing).
+I am a second-year undergraduate at [the Department of Electrical and Computer Engineering](https://cde.nus.edu.sg/ece/), [National University of Singapore](https://nus.edu.sg/), majoring in [Computer Engineering](https://ceg.nus.edu.sg/). Prior to joining NUS, I completed my freshman year at [Nanyang Technological University, Singapore](https://www.ntu.edu.sg/), majoring in [Computer Engineering](https://www.ntu.edu.sg/education/undergraduate-programme/bachelor-of-engineering-in-computer-engineering) under [the College of Computing and Data Science](https://www.ntu.edu.sg/computing).
 
 Education
 ------
