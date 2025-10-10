@@ -4,10 +4,11 @@ title:  "French in Normandy Recap (2025 Summer)"
 excerpt: French in Normandy Recap 2025 Summer
 header:
   teaser: posts/French-In-Normandy-Recap/french-in-normandy.jpg
-toc: true
 tags:
   - NUS
 ---
+
+{% include toc %}
 
 > Le temps file!
 

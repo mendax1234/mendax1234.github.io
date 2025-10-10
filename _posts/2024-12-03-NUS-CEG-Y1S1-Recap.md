@@ -4,10 +4,11 @@ title:  "NUS Computer Engineering Y1S1 Recap"
 excerpt: NUS Computer Engineering Y1S1 Recap
 header:
   teaser: posts/NUS_SOC.jpg
-toc: true
 tags:
   - NUS
 ---
+
+{% include toc %}
 
 > Nostalgic, legit nostalgic
 

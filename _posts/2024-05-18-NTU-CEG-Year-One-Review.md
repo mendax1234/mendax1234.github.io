@@ -4,10 +4,12 @@ title:  "NTU Computer Engineering Year One Review"
 excerpt: NTU Computer Engineering Year One Review
 header:
   teaser: posts/NTU_CCDS.png
-toc: true
 tags:
   - NTU
 ---
+
+{% include toc %}
+
 # Y1S1
 The first semester in Year 1 for Comp Eng students at NTU is not that stressed. It's likely that you have much free time to do things you like.
 

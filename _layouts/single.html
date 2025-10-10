@@ -51,17 +51,6 @@ layout: default
       {% endunless %}
 
       <section class="page__content" itemprop="text">
-        {% if page.toc %}
-          <aside class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
-            <nav class="toc">
-              <header><h4 class="nav__title"><i class="fas fa-{{ page.toc_icon | default: 'align-justify' }}"></i> {{ page.toc_label | default: site.data.ui-text[site.locale].toc_label | default: "On this page" }}</h4></header>
-              <!-- h_min: Minimum heading level appeared in toc (e.g., 1 for <h1>) -->
-              <!-- h_max: Maximum heading level appeared in toc (e.g., 2 for <h2>) -->
-              {% include toc.html sanitize=true html=content h_min=1 h_max=2 class="toc__menu" %}
-            </nav>
-          </aside>
-        {% endif %}
-
         {{ content }}
 
         {% if page.citation and page.paperurl %}

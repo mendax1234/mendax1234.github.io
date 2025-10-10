@@ -9,6 +9,8 @@ tags:
   - NUS
 ---
 
+{% include toc %}
+
 > Try new things, try crazy things. Throw the convention out of the window.
 
 Just as I wrote at the beginning of my DTK1234 DTJ blog, there's truly no better sentence to sum up my Y1S2 than this one above.  I still remember that during the winter vacation after Y1S1, I discussed with my CS1010 tutor, a very capable senior from the mathematics department, about which courses were good in our school. And during the discussion, I found that the senior agreed with one of my viewpoints, which was,

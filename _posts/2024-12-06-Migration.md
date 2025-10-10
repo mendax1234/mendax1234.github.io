@@ -4,7 +4,6 @@ title:  "Some Content Migration"
 excerpt: Some Content Migration
 header:
   teaser: posts/Harvard_CS50.png
-toc: false
 tags:
   - Harvard CS50
   - Java

@@ -4,10 +4,11 @@ title:  "Book Review: The Innovators"
 excerpt: Discover insights into innovation with Walter Isaacson's "The Innovators." Emphasizing collaboration and building on past ideas, this book explores the teamwork and historical foundations of technological advancements. Perfect for tech history enthusiasts.
 header:
   teaser: posts/Innovators_book_cover.jpg
-toc: true
 tags:
   - Book-Review
 ---
+
+{% include toc %}
 
 # Preface
 At the end of my AY23 S1, or more precisely speaking, just immediately after my Digital Logic Final, I didn't know what I was thinking about that time, I just rushed to the Library and tried to find some interesting book about technology to read. I remembered at that time, since I messed my last question in the Digital Logic paper, I wanted to relax myself by finding some books to read. (I know it's weird ah)
