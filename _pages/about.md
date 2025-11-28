@@ -16,6 +16,7 @@ Education
 <p style="line-height:1.0">
 <font size="2">
 Sep 2026 - Jun 2028<br />
+<strong>Double Degree Program with NUS</strong><br />
 Diplôme d'Ingénieur Généraliste<br />
 <br>
 </font>
