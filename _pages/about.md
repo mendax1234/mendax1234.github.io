@@ -11,7 +11,7 @@ I am a second-year undergraduate at [the Department of Electrical and Computer E
 Education
 ------
 
-<img style="float: left; margin:15px 10px" src="/images/education/CentraleSupelec.png" width="160" height="140">
+<img style="float: left; margin:15px 10px" src="/images/education/CentraleSupelec.jpeg" width="160" height="140">
 ### CentraleSupélec
 <p style="line-height:1.0">
 <font size="2">
