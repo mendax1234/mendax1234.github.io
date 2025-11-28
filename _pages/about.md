@@ -11,6 +11,17 @@ I am a second-year undergraduate at [the Department of Electrical and Computer E
 Education
 ------
 
+<img style="float: left; margin:15px 10px" src="/images/education/CentraleSupelec.png" width="160" height="140">
+### CentraleSupélec
+<p style="line-height:1.0">
+<font size="2">
+Sep 2026 - Jun 2028<br />
+Diplôme d'Ingénieur Généraliste<br />
+<br>
+</font>
+</p>
+
+
 <img style="float: left; margin:15px 10px" src="/images/education/NUS.jpg" width="160" height="140">
 ### National University of Singapore
 <p style="line-height:1.0">

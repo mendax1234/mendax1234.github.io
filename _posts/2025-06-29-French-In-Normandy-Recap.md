@@ -15,6 +15,7 @@ tags:
 This was a phrase our French teacher once introduced in class. She often brought it up right before the end of each lesson because, truly, time always seemed to fly by so quickly. And in my final week here, I finally feel the full weight of the Weber–Fechner law: the last few days have passed in the blink of an eye. And looking back, this entire month seems to have vanished so swiftly.
 
 # Arriving in Rouen
+
 I still clearly remember how I felt when I first arrived in Rouen. It was uneasy, and a little anxious to me. After all, it was my very first time setting foot in Europe, all by myself. I had come to a place nearly ten thousand kilometers away from home. And this is also an entirely unfamiliar place to me. I had no idea how I would manage in a foreign country, surrounded by a language I barely understood. I didn't know what challenges I would face. I truly didn't know.
 
 <p align="center">
@@ -25,6 +26,7 @@ I still clearly remember how I felt when I first arrived in Rouen. It was uneasy
 Carrying these feelings with me, I still remember that at start I just want this month to pass quickly. Life here felt incredibly inconvenient at first. Not only did I have to navigate the challenges within my host family, but I also had to keep up with daily reviews and reinforcement of the French lessons. During that first week, I felt utterly drained -- both physically and emotionally.
 
 ## Learning at Rouen
+
 Looking back now, I realize that the true highlight of this month-long journey was studying at French in Normandy. Above all, I feel incredibly lucky to have shared my classes with almost the same group of classmates throughout the month. Although the teachers changed each week, my classmates remained largely the same -- and for that, I'm truly grateful.
 
 Our group was very diverse, with students from all over the world. The chances of us meeting in any other context would have been so small, yet here we were, all brought together in Rouen this June by a shared goal:to learn French. I'm genuinely happy to have met each and every one of them.
@@ -43,6 +45,7 @@ I truly want to thank all the teachers who guided me during my time here: Fahame
 I also want to thank my fellow NUS classmates who came here to study French with me. I'm truly grateful for this opportunity to grow from unfamiliar to familiar and from familiar to friends! I sincerely hope we'll have the chance to explore France together again someday.
 
 ## Living at Rouen
+
 When it comes to my stay in Rouen, I think my feelings can be summed up in one simple truth:
 
 > In a foreign land, if I have a place to sleep and enough to eat, I should be grateful. And even if not, I should still be grateful.
@@ -55,6 +58,7 @@ This past month, I lived in what was perhaps the most challenging environment I'
 </p>
 
 # Farewell Rouen
+
 As I come to the end of this month-long journey learning French in Rouen, I realize that it has been nothing short of incredible. At the beginning, I was filled with fear, even the urge to run away. But by the end, all I feel is gratitude. And that transformation is nothing but magical.
 
 To all my friends and teachers: **I legit look forward to meeting with you again someday and somewhere**. Again, Thanks for meeting!
@@ -62,6 +66,7 @@ To all my friends and teachers: **I legit look forward to meeting with you again
 **Au revoir!**
 
 ## An unexpected but warming story
+
 On my flight home from Paris, I was incredibly grateful to be allowed into the cockpit of the Boeing 777. As someone passionate about aviation, it meant the world to me to have this opportunity -- especially on just my second flight log entry! It was a moment that filled me with awe and appreciation.
 
 <p align="center">

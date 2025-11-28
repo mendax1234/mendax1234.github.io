@@ -4,7 +4,6 @@ title:  "NUS Computer Engineering Y1S2 Recap"
 excerpt: NUS Computer Engineering Y1S2 Recap
 header:
   teaser: posts/NUS_SOC.jpg
-toc: true
 tags:
   - NUS
 ---
@@ -26,11 +25,13 @@ To put it simply, what I found most amazing, exciting and thrilling when buildin
 So, in short, apart from experiencing the high-quality courses at school, I am very grateful to have discovered that in my college life, I should also explore the connections between different things. This not only enables me to constantly enrich my skillset and improve this problem-solving framework, but also helps me to always keep a grateful heart, grateful for discovering such a wonderful world!
 
 # Build such a framework
+
 Many people would say that the common courses at NUS are boring or useless. However, in my opinion, every common course I have encountered so far seems to be closely linked. So when I find myself in one course, I can apply the knowledge I have learned in other courses, which makes me very excited and thrilled. But I think the most important thing is that it makes me see that every event I encounter in my life seems to be carefully arranged. Although I don't know the reason why it happens to me at the time, many times, it is precisely the time that tests my faith and obedience. Because after experiencing the event, I always seem to discover what I have learned from it, whether it is knowledge growth or spiritual growth. In short, I believe that the arrival of every event has a beautiful purpose!
 
 So, what exactly is this framework that I consider closely connected? To put it simply, I think the foundation of this framework is from coming up with crazy ideas to implementing the crazy ideas and then managing the crazy ideas in teams. It's not hard to notice that each part of this framework's foundation revolves around "crazy ideas". And when it comes to crazy ideas, the first thing that comes to my mind is a common course this semester -- DTK1234. Therefore, I would like to start with this course to talk about the first step in building this framework's foundation -- how to come up with crazy ideas.
 
 ## Come up with crazy ideas
+
 I have detailedly recorded my mental journey in the DTK1234 course on my [DTK Blog](https://mendax1234.github.io/NUS-DTK1234-DTJ/). To put it simply, the most important thing that DTK1234 has taught me is "how to come up with crazy ideas". I still remember using the 5 iteration steps in class to constantly improve my idea, and constantly asking "why" to discover the root cause of the problem, etc. In short, in this course, I not only needed to come up with a crazy idea, but also needed to simply implement this idea, and finally needed to get feedback from users to improve my final product. I think this is actually a microcosm of the case when I need to solve a more complex real-world problem.
 
 <p align="center">
@@ -49,6 +50,7 @@ I think that since DTK1234 serves as a microcosm for solving real-life problems,
 What I want to say is that DTK1234 is a very comprehensive course that trains and applies creative thinking to solve practical problems in real life. If we look at it from a higher perspective (the huge and complex problems in real life), I think the most important point that DTK1234 trains me is to come up with a crazy idea with creative thinking. This idea is very important, and its novelty largely determines the quality of the solution (for more details, please refer to my [PF1101 blog](https://mendax1234.github.io/NUS-PF1101/)). However, it must be admitted that crazy and great ideas are often not achieved at once. They still need to go through continuous iterations to grow into truly great ideas. And coming up with crazy ideas is only the first step in this framework.
 
 ## Implement crazy ideas
+
 The proposal of "Crazy Ideas" is indeed important, but it only remains at the stage of "fantasy". Therefore, turning the idea into reality is an indispensable part of this framework. It is worth being grateful that I find that in the implementation, the accumulation of various professional and technical knowledge is largely required. Thus, all the technical courses I have learned come in handy!
 
 A simple example is that when I have an idea to enhance the laundry experience for Hall users, to realize this idea, I might need to create an app. To create an app, I need to master programming skills. These programming skills are what I learned in CS1010 and CS2030S. Or, when I have an idea in the engineering discipline and want to make a device, I will find that I need basic mathematical modeling thinking and knowledge of physics to conduct theoretical feasibility analysis. Besides, I might also need to know 3D modeling skills so that I can turn my idea into reality through 3D printing. Such examples are everywhere in my life. In a word, I think it is to make me see the importance of these technical courses because these technical skills are actually enriching my skillset step by step, and I have to use this skillset to solve most of the practical problems in my life.
@@ -68,6 +70,7 @@ However, it is worth mentioning that I have discovered that these individual are
 In a nutshell, this is precisely one of those "elegant" connections I mentioned at the beginning of the article, namely, the connections among techinical knowledge from different aspects that exist in techinical courses! And I think, this may serve as another spark to learn more techical courses bah. 😂
 
 ## Manage crazy ideas
+
 A product born from implementing crazy ideas not only requires the initial implementation but also long-term maintenance. This maintenance is no longer something that can be effectively handled by an individual but rather demands a team. Just as I learned in CS2030S,
 
 > The software I write needs to have high maintainability and scalability/extensibility.
@@ -84,9 +87,11 @@ I have elaborated on how legendary this course was in another blog of mine. Howe
 > PF1101 is another compulsory common course in my major. And doesn't it better illustrate that not all common courses are so useless? 😂
 
 ## One more thing about the framework
+
 However, there is still a significant flaw in this framework's foundation. The flaw lies in the fact that this framework can only be applied to solve practical problems in real life, that is, functional problems. In [DTK1234 DTJ](https://mendax1234.github.io/NUS-DTK1234-DTJ/), I discussed an enlightening issue with a grand master. The issue was that not all the problems we encounter in life are practical and functional ones; there are also many other types of problems, such as human-centered ones. When it comes to these other types of problems, I think the framework introduced here may not be applicable. However, as mentioned earlier, learning is not about learning how to copy then apply, but about learning how to construct the thought process for solving problems. Just as we have constructed the thought process for solving practical and functional problems here. Therefore, even if the framework is no longer applicable, I have still learned the method of constructing a framework. This is already the most important and very much worth being grateful for!
 
 # Epilogue
+
 So far, I think the framework for how to innovatively solve a real-life, practical and functional problem has been roughly established. However, as the name suggests, this is just a simple and rough framework, and its true content still needs to be continuously improved. But, it is worth being grateful that I think, with this framework in place, I will gradually have a general direction in the following three years of  my uni study.
 
 <p align="center">
