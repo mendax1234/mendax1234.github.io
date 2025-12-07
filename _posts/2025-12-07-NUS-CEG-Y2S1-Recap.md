@@ -27,7 +27,7 @@ When the benchmark finally produced results through the UART onto my terminal, t
 But CG3207 was not just about computer architecture. It reshaped how I see my entire CEG journey at NUS. Through the eight levels of abstraction from [Harris & Harris’ DDCA](https://wenbo-notes.gitbook.io/ddca-notes/textbook/from-zero-to-one#abstraction), and through Dr. Rajesh’s clear explanations, I suddenly understood how the entire CEG curriculum is carefully structured around this hierarchy of computation. It also became the intellectual highlight of my semester.
 
 <p align="center">
-  <img src="../images/posts/NUS-CEG-Y2S1-Recap/8-levels-abstraction.png" width="40%"><br>
+  <img src="../images/posts/NUS-CEG-Y2S1-Recap/8-levels-abstraction.png" width="30%"><br>
 </p>
 
 From the physics and device level (CG2027, EE3431C), to analog circuits (EE3408C, EE4407, EE5507), to digital logic (EE2026, EE4415, EE5518), then to microarchitecture and architecture (CG2028, CG3207), followed by operating systems (CG2271), and finally application software (CS1010, CS2113) -- I finally saw the full picture. Step by step, layer by layer, we are being taught how a computer truly works -- from electrons to applications.
