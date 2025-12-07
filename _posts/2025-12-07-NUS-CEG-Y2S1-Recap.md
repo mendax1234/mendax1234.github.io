@@ -12,7 +12,7 @@ tags:
 
 > Good afternoon, folks!
 
-This was the sentence my CG3207 professor, Dr. Rajesh, said at the start of every amazing three-hour lecture every Wednesday at 6 p.m. To be honest, Dr. Rajesh is the best professor I have ever met in ECE. His passion and his depth of knowledge in computer architecture reminded me vividly of the excitement I first felt when studying SC1006 at NTU, where I was also blessed to meet another incredible educator -- Prof. Mohammed M. Sabry Aly.
+This was the sentence my CG3207 professor, Dr. Rajesh, said at the start of every amazing three-hour lecture every Wednesday at 6 p.m. To be honest, Dr. Rajesh is the best professor I have ever met in NUS ECE. His passion and his depth of knowledge in computer architecture reminded me vividly of the excitement I first felt when studying SC1006 at NTU, where I was also blessed to meet another incredible professor -- Prof. Mohammed M. Sabry Aly.
 
 Without a doubt, I can say that Dr. Rajesh’s enthusiasm, combined with my long-standing love for this field, made CG3207 the most inspiring module I have taken so far at NUS. More than that, this module opened the door to something entirely new in my Year 2 Semester 1 -- a connection that tied my past, present, and future together.
 
@@ -20,15 +20,14 @@ Without a doubt, I can say that Dr. Rajesh’s enthusiasm, combined with my long
 
 In CG3207, I ported the CoreMark benchmark onto a RISC-V pipelined processor that my teammate and I built from scratch using Verilog HDL on a Nexys4 FPGA. This moment brought me right back to my time in the NTU HPC Team, where I first encountered benchmarking -- but back then, we were benchmarking pre-built CPUs and GPUs.
 
-> This time was different.
-> This time, we benchmarked our own processor.
+> This time it was different, we benchmarked our own processor.
 
 When the benchmark finally produced results through the UART onto my terminal, the excitement I felt was indescribable. It was one of those rare moments where abstract knowledge suddenly became alive.
 
-But CG3207 was not just about computer architecture. It reshaped how I see my entire CEG journey at NUS. Through the eight levels of abstraction from [Harris & Harris’ DDCA](https://wenbo-notes.gitbook.io/ddca-notes/textbook/from-zero-to-one#abstraction), and through Dr. Rajesh’s clear explanations, I suddenly understood how the entire CEG curriculum is carefully structured around this hierarchy of computation. It became the intellectual highlight of my semester.
+But CG3207 was not just about computer architecture. It reshaped how I see my entire CEG journey at NUS. Through the eight levels of abstraction from [Harris & Harris’ DDCA](https://wenbo-notes.gitbook.io/ddca-notes/textbook/from-zero-to-one#abstraction), and through Dr. Rajesh’s clear explanations, I suddenly understood how the entire CEG curriculum is carefully structured around this hierarchy of computation. It also became the intellectual highlight of my semester.
 
 <p align="center">
-  <img src="../images/posts/NUS-CEG-Y2S1-Recap/8-levels-abstraction.png" width="80%"><br>
+  <img src="../images/posts/NUS-CEG-Y2S1-Recap/8-levels-abstraction.png" width="40%"><br>
 </p>
 
 From the physics and device level (CG2027, EE3431C), to analog circuits (EE3408C, EE4407, EE5507), to digital logic (EE2026, EE4415, EE5518), then to microarchitecture and architecture (CG2028, CG3207), followed by operating systems (CG2271), and finally application software (CS1010, CS2113) -- I finally saw the full picture. Step by step, layer by layer, we are being taught how a computer truly works -- from electrons to applications.
@@ -43,25 +42,27 @@ As a CEG undergraduate at NUS, I am deeply grateful for the opportunities I have
 
 # Sad moments
 
-Of course, not everything in life flows smoothly. This semester was also the most difficult one I have experienced so far.
+Of course, not everything in life flows smoothly. This semester, in particular, might have been the semester with the most sad moments I have experienced so far at NUS.
 
 ## Physical Injury
 
-In mid-September, I fell at a bus stop in NUS. My knees were injured, and worse, I broke a tooth. While the wounds healed, the broken tooth became a permanent mark on my life. Two months later, after long periods of intense work and sitting, I experienced hemorrhoids for the first time.
+In mid-September, I fell at a bus stop in NUS. My knees were injured, and worse, I broke a tooth. While the wounds healed, the broken tooth became a permanent mark on my life. Additionally, two months later, after long periods of intense work and sitting, I experienced hemorrhoids for the first time.
 
 > These two incidents forced me to stop and reflect deeply.
 
-I realized that my accident with my tooth taught me to let go of vanity. I was not created to look a specific way, but to be a specific way -- correct and true to my purpose. It shifted my focus from my appearance to the One who created me. Furthermore, my other health issues served as a stark reminder: solely focusing on study and work without caring for the body is unsustainable.
+I realized that my accident with my tooth taught me to let go of vanity. I was not created to be perfect in appearance, but to be created "right." This shifted my focus from the pursit of appearance to the gratitude for being healthy. Furthermore, the second injury served as a powerful reminder not to let my entire focus narrow to only my studies and work. Constantly pushing myself without proper movement or rest will eventually take a serious toll on my body.
 
 ## Academic Frustration
 
-In this semester, not every module brought the same joy as CG3207.
+This semester, not every course brought me the same sense of inspiration as CG3207. While most of my courses were meaningful and well-designed, there were also a few that turned into some of the most frustrating academic experiences I have had at NUS so far.
 
-In CS2113, teamwork did not go smoothly for me. I truly wanted the team to function well, but things repeatedly fell beyond my control. Looking back now, I realize that this experience taught me something essential:
+The first of these was CS2113, where I did not have a particularly smooth experience working with my team. I genuinely wanted the team to function well, yet time and again, unexpected issues arose -- many of which were beyond my control. Still, looking back now, I realize that CS2113 gave me something far more valuable than just technical skills: it gave me real exposure to working with very different kinds of people. Learning how to cooperate in such a team, despite differences and frustrations, is a lesson I know I must continue to learn and accept in my life.
 
-> how to work with different kinds of people -- even when it is uncomfortable.
+The second course was ES2631, which is probably the first "fluff" module I plan to S/U at NUS. From the very first tutorial, I felt a bit lost after being assigned to my group, where I ended up doing almost all the work for Assignment 1 -- a presentation -- and still received a grade that felt far below what I expected.
 
-In ES2631, I faced my most discouraging academic experience so far. This might also be the first module that I will use my S/U. From the first tutorial, I struggled with group dynamics, nearly carrying the entire first presentation alone -- only to receive a disappointing result. Besides, I tried to apply the creative thinking I learned from DTK1234 and proposed a shared umbrella system on campus, but it was quickly dismissed as "insignificant." But, how the way that "significance" is defined is very subjective and vague from my perspective. Beyond that, there are also a lot of things that make me really feel that this course is teaching me how to write the "eight-legged essay" in ths century of 21st, and even at NUS!
+During this course, I tried to apply the creative thinking I learned from DTK1234. For example, I proposed a sharing-umbrella system on campus to solve the problem of carrying an umbrella between classes. However, this idea was quickly dismissed simply because the problem was deemed “not significant enough.” From my perspective, the significance of a problem is highly subjective, and its criteria are often vague.
+
+Beyond that, I often felt that this course was less about meaningful innovation and more about teaching students how to write what felt like “eight-legged essays” in the 21st century -- even at NUS.
 
 ---
 
@@ -93,4 +94,8 @@ This connects the dots of my journey perfectly. Before starting at NUS, I chose 
 
 In all, the countless graces I have experienced this semester -- together with those from my past -- once again remind me of a profound truth: life is always surrounded by grace. At times, things may appear difficult, confusing, or even painful, yet I continue to place my trust in the One who holds my life in His hands. When I choose to surrender every decision to Him, I find a peace unlike any other -- one that no part of this world could ever give.
 
-As this semester comes to an end, I can feel taht I am standing at a point where the road ahead is still unknown. I may not clearly see what is waiting for me, though I can already sense that the coming one or two semesters may be extremely challenging and demanding. Yet despite the uncertainty, I know with conviction that my life is in His hands. To trust, to follow, and to remain faithful -- that is enough.
+As this semester comes to an end, I can feel that I am standing at a point where the road ahead is still unknown. I may not clearly see what is waiting for me, though I can already sense that the coming one or two semesters may be extremely challenging and demanding. Yet despite the uncertainty, I know with conviction that my life is in His hands. To trust, to follow, and to remain faithful -- that is enough.
+
+<p style="text-align: right;">
+  Dec 7th 2025, National University of Singapore, Kent Ridge Campus
+</p>
