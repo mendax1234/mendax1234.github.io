@@ -15,7 +15,7 @@ Education
 ### CentraleSupélec
 <p style="line-height:1.0">
 <font size="2">
-Sep 2026 - Jun 2028<br />
+Sep 2027 - Jun 2029<br />
 <strong>Double Degree Program with NUS</strong><br />
 Diplôme d'Ingénieur Généraliste<br />
 <br>
@@ -28,7 +28,7 @@ Diplôme d'Ingénieur Généraliste<br />
 <p style="line-height:1.0">
 <font size="2">
 Aug 2024 - May 2028<br />
-<strong>CGPA: 4.91 / 5.00</strong><br />
+<strong>CGPA: 4.9 / 5.00</strong><br />
 B.E. in Computer Engineering<br />
 <br>
 </font>
