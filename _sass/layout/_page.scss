@@ -38,7 +38,7 @@
   margin-top: 0;
   line-height: 1;
 
-  & + .page__meta {
+  &+.page__meta {
     margin-top: -0.5em;
   }
 }
@@ -55,7 +55,9 @@
     border-bottom: 1px solid var(--global-border-color);
   }
 
-  p, li, dl {
+  p,
+  li,
+  dl {
     font-size: 1em;
   }
 
@@ -64,8 +66,8 @@
     margin: 0 0 $indent-var;
 
     /* sibling indentation*/
-    @if $paragraph-indent == true {
-      & + p {
+    @if $paragraph-indent ==true {
+      &+p {
         text-indent: $indent-var;
         margin-top: -($indent-var);
       }
@@ -101,7 +103,7 @@
   }
 
   /* blockquote citations */
-  blockquote + .small {
+  blockquote+.small {
     margin-top: -1.5em;
     padding-left: 1.25rem;
   }
@@ -304,7 +306,7 @@
     border: 0;
   }
 
-  + .taxonomy__section {
+  +.taxonomy__section {
     margin-top: 2em;
   }
 }
@@ -378,6 +380,7 @@
   transition: $global-transition;
 
   &.disabled {
+
     input,
     button,
     textarea,
@@ -460,15 +463,17 @@
   padding-top: 1em;
   border-top: 1px solid var(--global-border-color);
   @include clearfix();
-  float: left;
+  clear: both;
+  float: none;
 
   @include breakpoint($large) {
-    float: right;
-    width: calc(100% - #{$right-sidebar-width-narrow});
+    @include span(10 of 12 last);
+    @include prefix(0.5 of 12);
+    @include suffix(2 of 12);
   }
 
   @include breakpoint($x-large) {
-    width: calc(100% - #{$right-sidebar-width});
+    @include prefix(0.5 of 12);
   }
 
   a {

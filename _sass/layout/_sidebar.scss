@@ -68,8 +68,8 @@
     float: right !important;
     top: 0;
     right: 0;
-    width: $right-sidebar-width-narrow;
-    margin-right: -1 * $right-sidebar-width-narrow;
+    width: $right-sidebar-width;
+    margin-right: -1 * $right-sidebar-width;
     padding-left: 1em;
     padding-top: 1em !important;
     z-index: 10;
@@ -78,14 +78,14 @@
       @include clearfix();
       position: -webkit-sticky;
       position: sticky;
-      top: 2em;
+      top: calc(#{$masthead-height} + 0.75rem);
       float: right;
 
       .toc {
         .toc__menu {
           overflow-y: auto;
           scrollbar-width: thin;
-          max-height: calc(100vh - 7em);
+          max-height: calc(100vh - #{$masthead-height} - 2.5rem);
           scrollbar-color: rgba(0, 0, 0, 0.3) transparent;
           &::-webkit-scrollbar {
             width: 8px;
