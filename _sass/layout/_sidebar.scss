@@ -62,48 +62,44 @@
 
 .sidebar__right {
   margin-bottom: 1em;
+  --toc-sticky-top: calc(#{$masthead-height} + 1.5rem);
+  --toc-align-offset: 0px;
 
   @include breakpoint($large) {
     position: sticky !important;
     float: right !important;
-    top: 0;
+    top: var(--toc-sticky-top);
     right: 0;
     width: $right-sidebar-width;
     margin-right: -1 * $right-sidebar-width;
-    padding-left: 1em;
-    padding-top: 1em !important;
-    z-index: 10;
+    margin-top: 0;
+    padding-left: 1.5em;
+    padding-top: 0 !important;
+    z-index: 20;
     
     &.sticky {
       @include clearfix();
       position: -webkit-sticky;
       position: sticky;
-      top: calc(#{$masthead-height} + 0.75rem);
+      top: var(--toc-sticky-top);
       float: right;
 
       .toc {
         .toc__menu {
-          overflow-y: auto;
-          scrollbar-width: thin;
-          max-height: calc(100vh - #{$masthead-height} - 2.5rem);
-          scrollbar-color: rgba(0, 0, 0, 0.3) transparent;
-          &::-webkit-scrollbar {
-            width: 8px;
-            height: 8px;
-          }
-          &::-webkit-scrollbar-track {
-            background: transparent;
-          }
-          &::-webkit-scrollbar-thumb {
-            background-color: rgba(0, 0, 0, 0.3); 
-            border-radius: 4px; 
-          }
-          &::-webkit-scrollbar-thumb:hover {
-            background-color: rgba(0, 0, 0, 0.5);
-          }
+          max-height: none;
         }
       }
     }
+  }
+
+  @include breakpoint(max-width $large) {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 40;
+    width: min(22rem, calc(100vw - 2rem));
+    margin: 0;
+    pointer-events: none;
   }
 }
 

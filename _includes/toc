@@ -1,6 +1,11 @@
-<aside class="sidebar__right sticky">
-<nav class="toc" markdown="1">
-<header><h4 class="nav__title"><i class="fa fa-{{ include.icon | default: 'file-text' }}"></i> {{ include.title | default: site.data.ui-text[site.locale].toc_label }}</h4></header>
+<aside class="sidebar__right sticky" data-toc-container>
+<button class="toc__toggle" type="button" aria-expanded="false" aria-controls="toc-panel">
+  <i class="fa fa-list-ul" aria-hidden="true"></i>
+  <span class="sr-only">{{ include.title | default: site.data.ui-text[site.locale].toc_label }}</span>
+</button>
+<button class="toc__backdrop" type="button" tabindex="-1" aria-hidden="true" hidden></button>
+<nav class="toc" id="toc-panel" aria-label="{{ include.title | default: site.data.ui-text[site.locale].toc_label }}" markdown="1">
+<header class="toc__header"><h4 class="nav__title"><i class="fa fa-{{ include.icon | default: 'file-text' }}"></i> {{ include.title | default: site.data.ui-text[site.locale].toc_label }}</h4><button class="toc__close" type="button" aria-label="Close table of contents"><i class="fa fa-times" aria-hidden="true"></i></button></header>
 *  Auto generated table of contents
 {:toc .toc__menu}
 </nav>
