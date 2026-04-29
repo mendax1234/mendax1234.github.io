@@ -398,8 +398,8 @@
     font-weight: 700;
     background: transparent;
     border-radius: 0;
-    padding: 0 0 0.75rem 0;
-    margin-bottom: 0.35rem;
+    padding: 0 0 0.4rem 0;
+    margin-bottom: 0.12rem;
     border-bottom: 0;
   }
 }
@@ -409,7 +409,7 @@
   padding: 0;
   width: 100%;
   list-style: none;
-  font-size: $type-size-5;
+  font-size: $type-size-5-5;
 
   a {
     display: block;
@@ -444,6 +444,7 @@
   > li > a {
     border-left: 0;
     padding-left: 0.1rem;
+    color: var(--global-text-color);
   }
 
   > li > a:hover,
@@ -471,7 +472,7 @@
     padding-left: 1rem;
     font-weight: 400;
     color: var(--global-text-color-light);
-    opacity: 0.82;
+    opacity: 0.68;
     font-size: inherit;
     border-radius: 0.45rem;
   }
