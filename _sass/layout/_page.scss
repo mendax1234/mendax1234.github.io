@@ -467,13 +467,10 @@
   float: none;
 
   @include breakpoint($large) {
-    @include span(10 of 12 last);
-    @include prefix(0.5 of 12);
-    @include suffix(2 of 12);
-  }
-
-  @include breakpoint($x-large) {
-    @include prefix(0.5 of 12);
+    /* Bypasses padding and exactly matches the content box width above */
+    float: right;
+    width: percentage(7.5 / 12);
+    margin-right: percentage(2 / 12);
   }
 
   a {
