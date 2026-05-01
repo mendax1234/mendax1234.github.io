@@ -12,6 +12,9 @@ I'm passionate about connecting ideas across different disciplines - electronics
 
 My research interests are in neural network accelerator design, high-performance CPU design, computer architecture, and VLSI chip design.
 
+<!-- Selected Publications
+------ -->
+
 Education
 ------
 
@@ -60,6 +63,5 @@ Education
   </article>
 </section>
 
-<!-- Selected Publications
-------
- -->
+<!-- Work Experience
+------ -->
