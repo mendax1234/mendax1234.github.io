@@ -2,7 +2,7 @@
 
 <section class="portfolio-list" aria-label="Portfolio projects">
   {% for project in projects %}
-    <article class="portfolio-card" style="--project-accent: {{ project.accent | default: '#52adc8' }};">
+    <article class="portfolio-card">
       <div class="portfolio-card__media">
         <img src="{{ project.image | relative_url }}" alt="{{ project.title }} logo or preview">
       </div>

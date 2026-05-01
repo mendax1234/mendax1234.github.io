@@ -1,0 +1,106 @@
+/*
+   Home
+   ========================================================================== */
+
+.institution-list {
+  display: grid;
+  gap: 1rem;
+  margin: 1.35rem 0 2rem;
+}
+
+.institution-card {
+  display: grid;
+  grid-template-columns: minmax(9rem, 12.5rem) minmax(0, 1fr);
+  overflow: hidden;
+  border: 1px solid rgba(127, 127, 127, 0.18);
+  border-radius: 1.25rem;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.08), rgba(127, 127, 127, 0.05)),
+    var(--global-bg-color);
+  box-shadow: 0 18px 52px rgba(0, 0, 0, 0.1);
+  transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
+
+  &:hover {
+    border-color: rgba(127, 127, 127, 0.34);
+    box-shadow: 0 22px 58px rgba(0, 0, 0, 0.16);
+    transform: translateY(-3px);
+  }
+}
+
+.institution-card__media {
+  display: grid;
+  min-height: 8.9rem;
+  place-items: center;
+  padding: clamp(0.7rem, 1.2vw, 0.95rem);
+  background: rgba(127, 127, 127, 0.08);
+
+  img {
+    width: min(100%, 8.5rem);
+    max-height: 7.5rem;
+    object-fit: contain;
+    filter: drop-shadow(0 10px 16px rgba(0, 0, 0, 0.12));
+  }
+}
+
+.institution-card__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(0.9rem, 1.8vw, 1.2rem);
+}
+
+.institution-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.42rem;
+
+  span {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid rgba(127, 127, 127, 0.28);
+    border-radius: 999px;
+    padding: 0.16rem 0.46rem;
+    color: var(--global-text-color);
+    background: rgba(127, 127, 127, 0.08);
+    font-size: 0.58rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+}
+
+.institution-card h3 {
+  margin: 0 0 0.35rem;
+  font-size: clamp(0.98rem, 1.75vw, 1.25rem);
+  line-height: 1.14;
+  letter-spacing: -0.025em;
+}
+
+.institution-card p {
+  margin: 0;
+  color: var(--global-text-color);
+  font-size: clamp(0.74rem, 1.05vw, 0.84rem);
+  line-height: 1.45;
+  opacity: 0.84;
+}
+
+.institution-card strong {
+  opacity: 1;
+}
+
+@include breakpoint(max-width $medium) {
+  .institution-card {
+    grid-template-columns: 1fr;
+  }
+
+  .institution-card__media {
+    min-height: 8rem;
+
+    img {
+      width: min(100%, 9rem);
+      max-height: 7rem;
+    }
+  }
+}

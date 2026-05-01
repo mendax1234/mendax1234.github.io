@@ -1,0 +1,16 @@
+- title: "AR-Enhanced Robot Control: Developing an Immersive Interface Using MRTK for Intuitive Teleoperation"
+  year: "2024"
+  type: "Poster"
+  venue: "Fudan University (FDU)"
+  media:
+    type: "video"
+    src: "/files/videos/FDU_video.mp4"
+  authors:
+    - name: "Wenbo Zhu*"
+      self: true
+    - name: "Shuai Zheng*"
+    - name: "Zhou Zuo*"
+  summary: "Developed an AR-enhanced robot control interface using MRTK to support more intuitive teleoperation and immersive human-robot interaction."
+  links:
+    - label: "Poster"
+      url: "https://mendax1234.github.io/files/pdf/FDU_paper1.pdf"

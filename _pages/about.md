@@ -11,38 +11,60 @@ I am a second-year undergraduate at [the Department of Electrical and Computer E
 Education
 ------
 
-<img style="float: left; margin:15px 10px" src="/images/education/NUS.png" width="160" height="140">
-### National University of Singapore
-<p style="line-height:1.0">
-<font size="2">
-Aug 2024 - May 2028<br />
-<strong>CGPA: 4.9 / 5.00</strong><br />
-B.E. in Computer Engineering<br />
-<br>
-</font>
-</p>
+<section class="institution-list" aria-label="Education">
+  <article class="institution-card">
+    <div class="institution-card__media">
+      <img src="/images/education/NUS.png" alt="National University of Singapore logo">
+    </div>
+    <div class="institution-card__body">
+      <div class="institution-card__meta">
+        <span>Education</span>
+        <span>2024 - 2028</span>
+      </div>
+      <h3>National University of Singapore</h3>
+      <p>Aug 2024 - May 2028</p>
+      <p><strong>CGPA: 4.9 / 5.00</strong></p>
+      <p>B.E. in Computer Engineering</p>
+    </div>
+  </article>
 
-<img style="float: left; margin:5px 10px" src="/images/education/NTU.png" width="160" height="140">
-### Nanyang Technological University
-<p style="line-height:1.0">
-<font size="2">
-Aug 2023 - Jul 2024<br />
-<strong>CGPA: 4.71 / 5.00</strong><br />
-B.E. in Computer Engineering<br />
-</font>
-</p>
+  <article class="institution-card">
+    <div class="institution-card__media">
+      <img src="/images/education/NTU.png" alt="Nanyang Technological University logo">
+    </div>
+    <div class="institution-card__body">
+      <div class="institution-card__meta">
+        <span>Education</span>
+        <span>2023 - 2024</span>
+      </div>
+      <h3>Nanyang Technological University</h3>
+      <p>Aug 2023 - Jul 2024</p>
+      <p><strong>CGPA: 4.71 / 5.00</strong></p>
+      <p>B.E. in Computer Engineering</p>
+    </div>
+  </article>
+</section>
 
 Research Experience
 ---
-<img style="float: left; margin:15px 5px 10px" src="/images/education/Fudan.png" width="160" height="140">
-### Fudan University
-<p style="line-height:1.0">
-<font size="2">
-Jul 2024 - Aug 2024<br />
-Student Researcher<br />
-Supervisor: Prof. Zhou Zuo<br />
-</font>
-</p>
+
+<section class="institution-list" aria-label="Research Experience">
+  <article class="institution-card">
+    <div class="institution-card__media">
+      <img src="/images/education/Fudan.png" alt="Fudan University logo">
+    </div>
+    <div class="institution-card__body">
+      <div class="institution-card__meta">
+        <span>Research</span>
+        <span>2024</span>
+      </div>
+      <h3>Fudan University</h3>
+      <p>Jul 2024 - Aug 2024</p>
+      <p><strong>Student Researcher</strong></p>
+      <p>Supervisor: Prof. Zhou Zuo</p>
+    </div>
+  </article>
+</section>
 
 Honors & Awards
 ------

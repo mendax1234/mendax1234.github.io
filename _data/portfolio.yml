@@ -2,7 +2,6 @@
   year: "2023"
   image: "/images/portfolio/mkdocs.svg"
   category: "Open Source"
-  accent: "#4f7cff"
   summary: "Contributed CI automation for the git-revision-data-localized plugin in Material for MkDocs. The work strengthened a widely used documentation ecosystem and made localization metadata easier to maintain."
   highlights:
     - text: "Created the CI configuration for the git-revision-data-localized plugin."
@@ -17,7 +16,6 @@
   year: "2022"
   image: "/images/portfolio/logseq.png"
   category: "UI Theme"
-  accent: "#7fd5d1"
   summary: "Designed a clean Logseq theme for bullet journaling and long-form knowledge work. The theme became one of the more popular community themes while staying calm, readable, and writing-first."
   highlights:
     - text: "Designed a clean theme for bullet journal and long-time writing workflows."
@@ -33,7 +31,6 @@
   year: "2022"
   image: "/images/portfolio/Wpilib.png"
   category: "Documentation"
-  accent: "#d83f50"
   summary: "Improved WPILib's FRC documentation translation workflow by fixing and optimizing Transifex automation. The goal was to make multilingual robotics docs more reliable for student teams."
   highlights:
     - text: "Fixed an error in the translation workflow using Transifex."
@@ -50,7 +47,6 @@
   year: "2022"
   image: "/images/portfolio/swerve.png"
   category: "Robotics"
-  accent: "#f2b84b"
   summary: "Wrote and maintained a practical swerve chassis whitepaper for FRC teams. The project combined Read the Docs publishing, translation automation, and a strong Gracious Professionalism spirit."
   highlights:
     - text: "Documented the whitepaper with Read the Docs so teams could get started quickly."
@@ -66,7 +62,6 @@
   year: "2022"
   image: "/images/portfolio/rapidreact_logo.png"
   category: "Robotics"
-  accent: "#7b5cff"
   summary: "Built competition robot software for Team 6940's 2022 RapidReact season. My work focused on the swerve chassis and multiple shooting-while-moving routines."
   highlights:
     - text: "Coded the fully functional swerve chassis."
@@ -81,7 +76,6 @@
   year: "2021"
   image: "/images/portfolio/e_voting_blockchain.png"
   category: "Research Prototype"
-  accent: "#59c28f"
   summary: "Created a Python Django prototype exploring blockchain-backed electronic voting. The project connected web engineering with a research question around transparency and trust."
   highlights:
     - text: "Designed an e-voting system based on blockchain technology using Python Django."
@@ -95,7 +89,6 @@
   year: "2021"
   image: "/images/portfolio/infiniterecharge_logo.png"
   category: "Robotics"
-  accent: "#4aa3ff"
   summary: "Developed my first compact competition robot codebase for FRC. The robot used Limelight-based auto aiming and taught me how much careful software can matter on the field."
   highlights:
     - text: "Built code for a simple but efficient competition robot."
@@ -110,7 +103,6 @@
   year: "2020"
   image: "/images/portfolio/hackintosh1.png"
   category: "Systems"
-  accent: "#a3b3c8"
   summary: "Prepared OpenCore EFI boot files for running Hackintosh on a ThinkPad X390. The project emphasized driver support, system compatibility, and careful low-level configuration."
   highlights:
     - text: "Prepared EFI boot files using OpenCore."
@@ -123,7 +115,6 @@
   year: "2020"
   image: "/images/portfolio/hackintosh2.png"
   category: "Systems"
-  accent: "#9d8cff"
   summary: "Built Clover EFI boot files for an older ThinkPad E40. The challenge was making Hackintosh work within MBR-only installation constraints on legacy hardware."
   highlights:
     - text: "Prepared EFI boot files using Clover."
