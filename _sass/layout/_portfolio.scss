@@ -10,11 +10,11 @@
 .portfolio-card {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(9rem, 12.5rem) minmax(0, 1fr);
-  min-height: 100%;
+  grid-template-columns: minmax(8rem, 10.5rem) minmax(0, 1fr);
+  // min-height: 100%;
   overflow: hidden;
   border: 1px solid rgba(127, 127, 127, 0.18);
-  border-radius: 1.55rem;
+  border-radius: 1.25rem;
   background:
     linear-gradient(145deg, rgba(255, 255, 255, 0.08), rgba(127, 127, 127, 0.05)),
     var(--global-bg-color);
@@ -31,15 +31,15 @@
 .portfolio-card__media {
   position: relative;
   display: grid;
-  min-height: 10.25rem;
+  min-height: 7.35rem;
   place-items: center;
-  padding: clamp(0.65rem, 1.2vw, 0.9rem);
+  padding: clamp(0.45rem, 0.8vw, 0.65rem);
   background: rgba(127, 127, 127, 0.08);
 
   img {
     position: relative;
-    width: min(100%, 9.25rem);
-    max-height: 8.6rem;
+    width: min(100%, 9rem);
+    max-height: 7rem;
     object-fit: contain;
     filter: drop-shadow(0 12px 18px rgba(0, 0, 0, 0.16));
   }
@@ -50,7 +50,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: clamp(1rem, 2.2vw, 1.45rem);
+  padding: clamp(0.75rem, 1.5vw, 0.95rem);
 }
 
 .portfolio-card__meta {
@@ -76,10 +76,10 @@
 }
 
 .portfolio-card h3 {
-  max-width: 48rem;
-  margin: 0 0 0.45rem;
-  font-size: clamp(1.05rem, 2vw, 1.45rem);
-  line-height: 1.16;
+  max-width: 52rem;
+  margin: 0 0 0.3rem;
+  font-size: clamp(0.94rem, 1.6vw, 1.18rem);
+  line-height: 1.14;
   letter-spacing: -0.025em;
 }
 
@@ -127,11 +127,11 @@
   }
 
   .portfolio-card__media {
-    min-height: 10rem;
+    min-height: 7.5rem;
 
     img {
-      width: min(100%, 10rem);
-      max-height: 8.75rem;
+      width: min(100%, 7.5rem);
+      max-height: 6.6rem;
     }
   }
 }

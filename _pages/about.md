@@ -43,27 +43,7 @@ Education
   </article>
 </section>
 
-Research Experience
----
-
-<section class="institution-list" aria-label="Research Experience">
-  <article class="institution-card">
-    <div class="institution-card__media">
-      <img src="/images/education/Fudan.png" alt="Fudan University logo">
-    </div>
-    <div class="institution-card__body">
-      <div class="institution-card__meta">
-        <span>Summer Research</span>
-      </div>
-      <h3>Fudan University</h3>
-      <p>Jul 2024 - Aug 2024</p>
-      <p><strong>Student Researcher</strong></p>
-      <p>Supervisor: Prof. Zhou Zuo</p>
-    </div>
-  </article>
-</section>
-
-Honors & Awards
+Awards
 ------
 - Dean's List Finalist in the 2022 FIRST Robotics Competition, 2022.
 - Outstanding Student of the Cyber Security Workstation of Shanghai Jiao Tong University, 2021

@@ -1,0 +1,44 @@
+{% include base_path %}
+
+{% if post.header.teaser %}
+  {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
+{% else %}
+  {% assign teaser = site.teaser %}
+{% endif %}
+
+{% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+
+<article class="blog-card" itemscope itemtype="http://schema.org/BlogPosting">
+  <a class="blog-card__link" href="{{ base_path }}{{ post.url }}" rel="permalink" aria-label="Read {{ title | strip_html }}">
+    {% if teaser %}
+      <div class="blog-card__media">
+        <img src=
+          {% if teaser contains "://" %}
+            "{{ teaser }}"
+          {% else %}
+            "{{ teaser | prepend: "/images/" | prepend: base_path }}"
+          {% endif %}
+          alt="">
+      </div>
+    {% endif %}
+
+    <div class="blog-card__body">
+      <h3 itemprop="headline">{{ title }}</h3>
+
+      <div class="blog-card__meta">
+        {% if post.date %}
+          <span>
+            <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+            <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time>
+          </span>
+        {% endif %}
+        {% if post.read_time %}
+          <span>
+            <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+            {% include read-time.html %}
+          </span>
+        {% endif %}
+      </div>
+    </div>
+  </a>
+</article>
