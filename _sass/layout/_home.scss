@@ -11,6 +11,8 @@
 .institution-card {
   display: grid;
   grid-template-columns: minmax(7.2rem, 10rem) minmax(0, 1fr);
+  content-visibility: auto;
+  contain-intrinsic-size: 9.5rem;
   overflow: hidden;
   border: 1px solid rgba(127, 127, 127, 0.18);
   border-radius: 1.25rem;
@@ -38,7 +40,6 @@
     width: min(100%, 9.25rem);
     max-height: 7.5rem;
     object-fit: contain;
-    filter: drop-shadow(0 10px 16px rgba(0, 0, 0, 0.12));
   }
 }
 
