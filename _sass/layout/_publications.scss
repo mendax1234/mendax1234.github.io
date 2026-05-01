@@ -10,7 +10,7 @@
 .publication-card {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(9rem, 12.5rem) minmax(0, 1fr);
+  grid-template-columns: minmax(8rem, 10.5rem) minmax(0, 1fr);
   overflow: hidden;
   border: 1px solid rgba(127, 127, 127, 0.18);
   border-radius: 1.25rem;
@@ -30,16 +30,16 @@
 .publication-card__media {
   position: relative;
   display: grid;
-  min-height: 8.9rem;
+  min-height: 7.35rem;
   place-items: center;
-  padding: clamp(0.55rem, 1vw, 0.75rem);
+  padding: clamp(0.45rem, 0.8vw, 0.65rem);
   background: rgba(127, 127, 127, 0.08);
 
   img,
   video {
     position: relative;
-    width: min(100%, 8rem);
-    max-height: 7.4rem;
+    width: min(100%, 9rem);
+    max-height: 7rem;
     border-radius: 0.35rem;
     object-fit: contain;
     box-shadow: 0 12px 22px rgba(0, 0, 0, 0.16);
@@ -51,14 +51,14 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: clamp(0.85rem, 1.8vw, 1.15rem);
+  padding: clamp(0.75rem, 1.5vw, 0.95rem);
 }
 
 .publication-card__meta {
   display: flex;
   flex-wrap: wrap;
   gap: 0.35rem;
-  margin-bottom: 0.42rem;
+  margin-bottom: 0.36rem;
 
   span {
     display: inline-flex;
@@ -78,15 +78,14 @@
 
 .publication-card h3 {
   max-width: 52rem;
-  margin: 0 0 0.35rem;
-  font-size: clamp(0.98rem, 1.75vw, 1.25rem);
+  margin: 0 0 0.3rem;
+  font-size: clamp(0.94rem, 1.6vw, 1.18rem);
   line-height: 1.14;
   letter-spacing: -0.025em;
 }
 
 .publication-card__authors,
-.publication-card__venue,
-.publication-card__summary {
+.publication-card__venue {
   max-width: 52rem;
   margin: 0;
   color: var(--global-text-color);
@@ -100,18 +99,11 @@
 }
 
 .publication-card__venue {
-  margin-bottom: 0.36rem;
+  margin-bottom: 0.52rem;
   font-size: clamp(0.72rem, 1vw, 0.82rem);
   font-weight: 700;
   line-height: 1.32;
   opacity: 0.88;
-}
-
-.publication-card__summary {
-  margin-bottom: 0.65rem;
-  font-size: clamp(0.74rem, 1.05vw, 0.84rem);
-  line-height: 1.45;
-  opacity: 0.82;
 }
 
 .publication-card__links {
@@ -149,12 +141,12 @@
   }
 
   .publication-card__media {
-    min-height: 8.75rem;
+    min-height: 7.5rem;
 
     img,
     video {
-      width: min(100%, 8.5rem);
-      max-height: 7.6rem;
+      width: min(100%, 7.5rem);
+      max-height: 6.6rem;
     }
   }
 }

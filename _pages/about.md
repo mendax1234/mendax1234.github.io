@@ -18,8 +18,7 @@ Education
     </div>
     <div class="institution-card__body">
       <div class="institution-card__meta">
-        <span>Education</span>
-        <span>2024 - 2028</span>
+        <span>Undergraduate</span>
       </div>
       <h3>National University of Singapore</h3>
       <p>Aug 2024 - May 2028</p>
@@ -34,8 +33,7 @@ Education
     </div>
     <div class="institution-card__body">
       <div class="institution-card__meta">
-        <span>Education</span>
-        <span>2023 - 2024</span>
+        <span>Undergraduate</span>
       </div>
       <h3>Nanyang Technological University</h3>
       <p>Aug 2023 - Jul 2024</p>
@@ -55,8 +53,7 @@ Research Experience
     </div>
     <div class="institution-card__body">
       <div class="institution-card__meta">
-        <span>Research</span>
-        <span>2024</span>
+        <span>Summer Research</span>
       </div>
       <h3>Fudan University</h3>
       <p>Jul 2024 - Aug 2024</p>

@@ -10,7 +10,7 @@
 
 .institution-card {
   display: grid;
-  grid-template-columns: minmax(9rem, 12.5rem) minmax(0, 1fr);
+  grid-template-columns: minmax(7.2rem, 10rem) minmax(0, 1fr);
   overflow: hidden;
   border: 1px solid rgba(127, 127, 127, 0.18);
   border-radius: 1.25rem;
@@ -31,12 +31,12 @@
   display: grid;
   min-height: 8.9rem;
   place-items: center;
-  padding: clamp(0.7rem, 1.2vw, 0.95rem);
+  padding: clamp(0.45rem, 0.9vw, 0.7rem);
   background: rgba(127, 127, 127, 0.08);
 
   img {
-    width: min(100%, 8.5rem);
-    max-height: 7.5rem;
+    width: min(100%, 9.25rem);
+    max-height: 8rem;
     object-fit: contain;
     filter: drop-shadow(0 10px 16px rgba(0, 0, 0, 0.12));
   }
@@ -99,8 +99,8 @@
     min-height: 8rem;
 
     img {
-      width: min(100%, 9rem);
-      max-height: 7rem;
+      width: min(100%, 10rem);
+      max-height: 7.5rem;
     }
   }
 }
