@@ -21,7 +21,10 @@ Education
 <section class="institution-list" aria-label="Education">
   <article class="institution-card">
     <div class="institution-card__media">
-      <img src="/images/education/EPFL.png" alt="EPFL logo">
+      <picture>
+        <source srcset="/images/education/EPFL-320.webp" type="image/webp">
+        <img src="/images/education/EPFL.png" alt="EPFL logo" loading="lazy" decoding="async" width="320" height="214">
+      </picture>
     </div>
     <div class="institution-card__body">
       <div class="institution-card__meta">
@@ -34,7 +37,10 @@ Education
 
   <article class="institution-card">
     <div class="institution-card__media">
-      <img src="/images/education/NUS.png" alt="National University of Singapore logo">
+      <picture>
+        <source srcset="/images/education/NUS-320.webp" type="image/webp">
+        <img src="/images/education/NUS.png" alt="National University of Singapore logo" loading="lazy" decoding="async" width="320" height="214">
+      </picture>
     </div>
     <div class="institution-card__body">
       <div class="institution-card__meta">
@@ -49,7 +55,10 @@ Education
 
   <article class="institution-card">
     <div class="institution-card__media">
-      <img src="/images/education/NTU.png" alt="Nanyang Technological University logo">
+      <picture>
+        <source srcset="/images/education/NTU-320.webp" type="image/webp">
+        <img src="/images/education/NTU.png" alt="Nanyang Technological University logo" loading="lazy" decoding="async" width="320" height="214">
+      </picture>
     </div>
     <div class="institution-card__body">
       <div class="institution-card__meta">

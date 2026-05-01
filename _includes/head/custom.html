@@ -3,7 +3,9 @@
 <!-- start custom head snippets -->
 
 <!-- Support for Academicons -->
-<link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css"/>
+{% if site.author.academia or site.author.arxiv or site.author.googlescholar or site.author.semantic or site.author.impactstory or site.author.orcid or site.author.pubmed or site.author.scopus or site.author.inspire-hep %}
+  <link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css"/>
+{% endif %}
 
 <!-- favicon from https://commons.wikimedia.org/wiki/File:OOjs_UI_icon_academic-progressive.svg -->
 <link rel="apple-touch-icon" sizes="180x180" href="{{ base_path }}/images/apple-touch-icon-180x180.png"/>

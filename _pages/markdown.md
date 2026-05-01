@@ -2,6 +2,8 @@
 permalink: /markdown/
 title: "Markdown"
 author_profile: true
+mathjax: true
+mermaid: true
 redirect_from: 
   - /md/
   - /markdown.html

@@ -23,6 +23,7 @@ repository               : "mendax1234/mendax1234.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
+  avatar_webp      : "profile-350.webp"
   name             : "Wenbo (Daniel) Zhu"
   pronouns         : # example: "she/her"  
   bio              : "Undergraduate at National University of Singapore"
@@ -154,7 +155,6 @@ analytics:
   provider               :  "false" # false (default), "google", "google-universal", "google-analytics-4", "custom"
   google:
     tracking_id          :
-
 
 # Reading Files
 include:

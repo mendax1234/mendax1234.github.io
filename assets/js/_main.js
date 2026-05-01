@@ -16,7 +16,7 @@ let determineComputedTheme = () => {
   if (themeSetting != "system") {
     return themeSetting;
   }
-  return (userPref && userPref("(prefers-color-scheme: dark)").matches) ? "dark" : "light";
+  return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
 };
 
 // detect OS/browser preference
@@ -51,14 +51,14 @@ var toggleTheme = () => {
    Plotly integration script so that Markdown codeblocks will be rendered
    ========================================================================== */
 
-// Read the Plotly data from the code block, hide it, and render the chart as new node. This allows for the 
-// JSON data to be retrieve when the theme is switched. The listener should only be added if the data is 
+// Read the Plotly data from the code block, hide it, and render the chart as new node. This allows for the
+// JSON data to be retrieve when the theme is switched. The listener should only be added if the data is
 // actually present on the page.
-import { plotlyDarkLayout, plotlyLightLayout } from './theme.js';
 let plotlyElements = document.querySelectorAll("pre>code.language-plotly");
 if (plotlyElements.length > 0) {
-  document.addEventListener("readystatechange", () => {
+  document.addEventListener("readystatechange", async () => {
     if (document.readyState === "complete") {
+      const { plotlyDarkLayout, plotlyLightLayout } = await import('./theme.js');
       plotlyElements.forEach((elem) => {
         // Parse the Plotly JSON data and hide it
         var jsonData = JSON.parse(elem.textContent);

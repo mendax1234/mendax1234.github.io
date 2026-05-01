@@ -8,9 +8,16 @@
 
   <div class="author__avatar">
     {% if author.avatar contains "://" %}
-    	<img src="{{ author.avatar }}" alt="{{ author.name }}"  fetchpriority="high" />
+    	<img src="{{ author.avatar }}" alt="{{ author.name }}" fetchpriority="high" decoding="async" width="175" height="175" />
     {% else %}
-    	<img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar" alt="{{ author.name }}"  fetchpriority="high" />
+      {% if author.avatar_webp %}
+        <picture>
+          <source srcset="{{ author.avatar_webp | prepend: "/images/" | prepend: base_path }}" type="image/webp">
+          <img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar" alt="{{ author.name }}" fetchpriority="high" decoding="async" width="175" height="175" />
+        </picture>
+      {% else %}
+    	  <img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar" alt="{{ author.name }}" fetchpriority="high" decoding="async" width="175" height="175" />
+      {% endif %}
     {% endif %}
   </div>
 

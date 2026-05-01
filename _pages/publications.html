@@ -3,6 +3,7 @@ layout: archive
 title: "Publications"
 permalink: /publications/
 author_profile: true
+mathjax: true
 ---
 
 {% if site.author.googlescholar %}
