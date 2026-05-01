@@ -1,0 +1,29 @@
+{% assign projects = site.data.portfolio %}
+
+<section class="portfolio-list" aria-label="Portfolio projects">
+  {% for project in projects %}
+    <article class="portfolio-card" style="--project-accent: {{ project.accent | default: '#52adc8' }};">
+      <div class="portfolio-card__media">
+        <img src="{{ project.image | relative_url }}" alt="{{ project.title }} logo or preview">
+      </div>
+
+      <div class="portfolio-card__body">
+        <div class="portfolio-card__meta">
+          <span>{{ project.category }}</span>
+          <span>{{ project.year }}</span>
+        </div>
+
+        <h3>{{ project.title }}</h3>
+        <p class="portfolio-card__summary">{{ project.summary }}</p>
+
+        {% if project.links %}
+          <div class="portfolio-card__links" aria-label="{{ project.title }} links">
+            {% for link in project.links %}
+              <a href="{{ link.url }}">{{ link.label }}</a>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+    </article>
+  {% endfor %}
+</section>
