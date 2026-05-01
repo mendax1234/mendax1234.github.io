@@ -8,10 +8,27 @@ redirect_from:
 
 I am a second-year undergraduate at [the Department of Electrical and Computer Engineering](https://cde.nus.edu.sg/ece/), [National University of Singapore](https://nus.edu.sg/), majoring in [Computer Engineering](https://ceg.nus.edu.sg/). Prior to joining NUS, I completed my freshman year at [Nanyang Technological University, Singapore](https://www.ntu.edu.sg/), majoring in [Computer Engineering](https://www.ntu.edu.sg/education/undergraduate-programme/bachelor-of-engineering-in-computer-engineering) under [the College of Computing and Data Science](https://www.ntu.edu.sg/computing).
 
+I'm passionate about connecting ideas across different disciplines - electronics, computer science, mathematics, physics, geography, and even music - to solve real-world engineering problems. I believe many breakthroughs emerge at the intersection of fields, where elegant techniques and design principles from one domain can be adapted to drive innovation in another.
+
+My research interests include neural network accelerator design, high-performance CPU design, computer architecture, and VLSI chip design.
+
 Education
 ------
 
 <section class="institution-list" aria-label="Education">
+  <article class="institution-card">
+    <div class="institution-card__media">
+      <img src="/images/education/EPFL.png" alt="EPFL logo">
+    </div>
+    <div class="institution-card__body">
+      <div class="institution-card__meta">
+        <span>Exchange</span>
+      </div>
+      <h3>École Polytechnique Fédérale de Lausanne</h3>
+      <p>Feb 2027 - Jun 2027</p>
+    </div>
+  </article>
+
   <article class="institution-card">
     <div class="institution-card__media">
       <img src="/images/education/NUS.png" alt="National University of Singapore logo">
@@ -43,7 +60,6 @@ Education
   </article>
 </section>
 
-Awards
+<!-- Selected Publications
 ------
-- Dean's List Finalist in the 2022 FIRST Robotics Competition, 2022.
-- Outstanding Student of the Cyber Security Workstation of Shanghai Jiao Tong University, 2021
+ -->
