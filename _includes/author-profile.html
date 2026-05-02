@@ -13,10 +13,10 @@
       {% if author.avatar_webp %}
         <picture>
           <source srcset="{{ author.avatar_webp | prepend: "/images/" | prepend: base_path }}" type="image/webp">
-          <img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar" alt="{{ author.name }}" fetchpriority="high" decoding="async" width="175" height="175" />
+          <img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" alt="{{ author.name }}" fetchpriority="high" decoding="async" width="175" height="175" />
         </picture>
       {% else %}
-    	  <img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar" alt="{{ author.name }}" fetchpriority="high" decoding="async" width="175" height="175" />
+        <img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" alt="{{ author.name }}" fetchpriority="high" decoding="async" width="175" height="175" />
       {% endif %}
     {% endif %}
   </div>

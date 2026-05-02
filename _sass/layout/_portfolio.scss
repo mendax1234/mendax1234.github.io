@@ -134,13 +134,13 @@
     min-height: 0;
 
     img {
-      inset: 0;
-      width: 100%;
-      max-width: 100%;
+      top: 0;
+      left: 50%;
+      width: auto;
+      max-width: none;
       height: 100%;
-      object-fit: cover;
-      transform: none;
       max-height: none;
+      transform: translateX(-50%);
     }
   }
 }
