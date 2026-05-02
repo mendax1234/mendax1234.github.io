@@ -27,11 +27,9 @@ Education
       </picture>
     </div>
     <div class="institution-card__body">
-      <div class="institution-card__meta">
-        <span>Exchange</span>
-      </div>
       <h3>École Polytechnique Fédérale de Lausanne</h3>
       <p>Feb 2027 - Jun 2027</p>
+      <p>Student Exchange Program with NUS</p>
     </div>
   </article>
 
@@ -43,9 +41,6 @@ Education
       </picture>
     </div>
     <div class="institution-card__body">
-      <div class="institution-card__meta">
-        <span>Undergraduate</span>
-      </div>
       <h3>National University of Singapore</h3>
       <p>Aug 2024 - May 2028</p>
       <p><strong>CGPA: 4.9 / 5.00</strong></p>
@@ -61,9 +56,6 @@ Education
       </picture>
     </div>
     <div class="institution-card__body">
-      <div class="institution-card__meta">
-        <span>Undergraduate</span>
-      </div>
       <h3>Nanyang Technological University</h3>
       <p>Aug 2023 - Jul 2024</p>
       <p><strong>CGPA: 4.71 / 5.00</strong></p>

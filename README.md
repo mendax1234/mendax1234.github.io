@@ -34,12 +34,12 @@ docker compose up
 
 Use optimized JPG, PNG, WebP, or MP4 files. Keep file sizes modest because these images appear in repeated card lists.
 
-| Surface | Recommended size | Ratio | Notes |
-| --- | ---: | ---: | --- |
-| Institution images | `1200 x 900 px` | `4:3` | Best for logos or campus/school marks. Prefer transparent PNG or SVG-like logo exports when possible. |
-| Publication media | `1200 x 675 px` | `16:9` | Used as a full-bleed left preview in publication cards. Important content should be centered because the card uses `object-fit: cover`. |
-| Portfolio media | `1200 x 675 px` | `16:9` | Used as a full-bleed left preview in portfolio cards. Center key visual details to avoid edge cropping. |
-| Blog post media | `1200 x 675 px` | `16:9` | Used in compact blog cards and social previews. Works best with clear subject matter and limited text. |
+| Surface | Ratio | Notes |
+| --- | ---: | --- |
+| Institution images | `3:2` | Best for logos or campus/school marks. Prefer transparent PNG or SVG-like logo exports when possible. |
+| Publication media | `1:1` | Used as a full-bleed left preview in publication cards. Important content should be centered because the card uses `object-fit: cover`. |
+| Portfolio media | `1:1` | Used as a full-bleed left preview in portfolio cards. Center key visual details to avoid edge cropping. |
+| Blog post media | `2:1` | Used in compact blog cards and social previews. Works best with clear subject matter and limited text. |
 
 For publication and portfolio cards, the left media panel stretches to the card height, while the card height is determined by the right-side content. On mobile, media stacks above the content with a fixed preview height.
 
