@@ -28,15 +28,14 @@
   background:
     linear-gradient(145deg, rgba(255, 255, 255, 0.08), rgba(127, 127, 127, 0.05)),
     var(--global-bg-color);
-  box-shadow: 0 18px 52px rgba(0, 0, 0, 0.1);
+  box-shadow: none;
   text-decoration: none;
-  transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
+  transition: border-color 0.22s ease, background-color 0.22s ease;
 
   &:hover {
     border-color: rgba(127, 127, 127, 0.34);
-    box-shadow: 0 22px 58px rgba(0, 0, 0, 0.16);
+    background-color: rgba(127, 127, 127, 0.08);
     text-decoration: none;
-    transform: translateY(-3px);
 
     h3 {
       color: var(--global-link-color);
