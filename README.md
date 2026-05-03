@@ -52,5 +52,7 @@ Push changes to the GitHub Pages branch for this repository. GitHub Pages builds
 This site is built from the Academic Pages/Minimal Mistakes ecosystem and customized for Wenbo (Daniel) Zhu's academic portfolio, writing, projects, and publications.
 
 <div align="center">
-  <a href='https://clustrmaps.com/site/1bwc7'  title='Visit tracker'><img src='//clustrmaps.com/map_v2.png?cl=ffffff&w=500&t=tt&d=Z-7P-c__jyKWkEFWv6kpimyIUKQSYn8vWo0XVWtk0gE'/></a>
+  <a href="https://clustrmaps.com/site/1bwc7" title="Visit tracker">
+    <img src="https://clustrmaps.com/map_v2.png?cl=ffffff&w=500&t=tt&d=Z-7P-c__jyKWkEFWv6kpimyIUKQSYn8vWo0XVWtk0gE" alt="ClustrMaps" />
+  </a>
 </div>
