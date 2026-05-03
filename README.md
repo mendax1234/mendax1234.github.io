@@ -37,8 +37,8 @@ Use optimized JPG, PNG, WebP, or MP4 files. Keep file sizes modest because these
 | Surface | Ratio | Notes |
 | --- | ---: | --- |
 | Institution images | `3:2` | Best for logos or campus/school marks. Prefer transparent PNG or SVG-like logo exports when possible. |
-| Publication media | `1:1` | Used as a full-bleed left preview in publication cards. Important content should be centered because the card uses `object-fit: cover`. |
-| Portfolio media | `1:1` | Used as a full-bleed left preview in portfolio cards. Center key visual details to avoid edge cropping. |
+| Publication media | `4:3` | Used as a full-bleed left preview in publication cards. Important content is centered automatically. |
+| Portfolio media | `4:3` | Used as a full-bleed left preview in portfolio cards. Center key visual details to avoid edge cropping. |
 | Blog post media | `2:1` | Used in compact blog cards and social previews. Works best with clear subject matter and limited text. |
 
 For publication and portfolio cards, the left media panel stretches to the card height, while the card height is determined by the right-side content. On mobile, media stacks above the content with a fixed preview height.
@@ -50,3 +50,9 @@ Push changes to the GitHub Pages branch for this repository. GitHub Pages builds
 ## Credits
 
 This site is built from the Academic Pages/Minimal Mistakes ecosystem and customized for Wenbo (Daniel) Zhu's academic portfolio, writing, projects, and publications.
+
+<div align="center">
+  <a href="https://clustrmaps.com/site/1bwc7" title="Visit tracker">
+    <img src="https://clustrmaps.com/map_v2.png?cl=ffffff&w=a&t=tt&d=Z-7P-c__jyKWkEFWv6kpimyIUKQSYn8vWo0XVWtk0gE" alt="Visit tracker" />
+  </a>
+</div>
