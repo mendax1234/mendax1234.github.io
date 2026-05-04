@@ -247,6 +247,30 @@ figure {
   }
 }
 
+img[src$="#only-dark"],
+p:has(> img[src$="#only-dark"]:only-child) {
+  display: none;
+}
+
+img[src$="#only-light"] {
+  display: inline;
+}
+
+html[data-theme="dark"] {
+  img[src$="#only-light"],
+  p:has(> img[src$="#only-light"]:only-child) {
+    display: none;
+  }
+
+  img[src$="#only-dark"] {
+    display: inline;
+  }
+
+  p:has(> img[src$="#only-dark"]:only-child) {
+    display: block;
+  }
+}
+
 /* Figure captions */
 
 figcaption {
