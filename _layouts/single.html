@@ -69,9 +69,11 @@ layout: default
         {% include page__taxonomy.html %}
       </footer>
 
-      {% if page.share %}{% include social-share.html %}{% endif %}
+      {% unless page.collection == "posts" %}
+        {% if page.share %}{% include social-share.html %}{% endif %}
 
-      {% include post_pagination.html %}
+        {% include post_pagination.html %}
+      {% endunless %}
     </div>
 
     {% if site.comments.provider and page.comments %}

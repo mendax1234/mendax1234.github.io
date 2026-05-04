@@ -318,6 +318,16 @@ body:hover .visually-hidden button {
   }
 }
 
+html[data-theme="dark"] {
+  .social-icons {
+    .fa-github,
+    .fa-github-alt,
+    .fa-github-square {
+      color: var(--global-text-color);
+    }
+  }
+}
+
 
 /*
    Navicons
