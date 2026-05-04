@@ -1,0 +1,40 @@
+/* ==========================================================================
+   Theme toggle
+   ========================================================================== */
+
+#theme-toggle {
+  .theme-toggle__icon {
+    display: none;
+    width: 1.05rem;
+    height: 1.05rem;
+    color: var(--global-masthead-link-color);
+    stroke: currentColor;
+    vertical-align: middle;
+  }
+
+  .theme-toggle__icon--system {
+    display: inline-block;
+  }
+}
+
+html[data-theme-setting="light"] #theme-toggle {
+  .theme-toggle__icon--system,
+  .theme-toggle__icon--dark {
+    display: none;
+  }
+
+  .theme-toggle__icon--light {
+    display: inline-block;
+  }
+}
+
+html[data-theme-setting="dark"] #theme-toggle {
+  .theme-toggle__icon--system,
+  .theme-toggle__icon--light {
+    display: none;
+  }
+
+  .theme-toggle__icon--dark {
+    display: inline-block;
+  }
+}

@@ -150,6 +150,13 @@
   }
 }
 
+.author__avatar,
+.author__avatar img,
+.author__name {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
 .author__content {
   display: table-cell;
   vertical-align: top;
