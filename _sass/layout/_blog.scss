@@ -45,7 +45,9 @@
 
 .blog-card__media {
   position: relative;
-  min-height: 6.15rem;
+  aspect-ratio: 2 / 1;
+  min-height: 0;
+  overflow: hidden;
   padding: 0;
   background: rgba(127, 127, 127, 0.08);
 

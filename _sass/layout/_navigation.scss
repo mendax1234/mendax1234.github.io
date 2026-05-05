@@ -192,10 +192,15 @@
     padding: 0 0.5rem;
     border: 0;
     outline: none;
-    background-color: var(--global-base-color);
-    color: #fff;
+    background-color: transparent;
+    color: var(--global-masthead-link-color);
     cursor: pointer;
     z-index: 100;
+
+    &:hover {
+      color: var(--global-masthead-link-color-hover);
+      background-color: rgba(127, 127, 127, 0.12);
+    }
   }
 
   .visible-links {

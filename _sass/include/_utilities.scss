@@ -337,7 +337,7 @@ html[data-theme="dark"] {
   position: relative;
   width: $navicon-width;
   height: $navicon-height;
-  background: #fff;
+  background: currentColor;
   margin: auto;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -349,7 +349,7 @@ html[data-theme="dark"] {
     left: 0;
     width: $navicon-width;
     height: $navicon-height;
-    background: #fff;
+    background: currentColor;
     -webkit-transition: 0.3s;
     transition: 0.3s;
   }
