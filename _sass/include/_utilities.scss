@@ -54,10 +54,11 @@ body:hover .visually-hidden button {
   font-size: 1em;
   font-weight: bold;
   padding: 15px 23px 14px;
-  background: #fff;
+  color: var(--global-text-color);
+  background: var(--global-bg-color);
   z-index: 100000;
   text-decoration: none;
-  box-shadow: 0 0 2px 2px rgba(0,0,0,.6);
+  box-shadow: 0 0 2px 2px var(--global-link-color);
 }
 
 
@@ -197,7 +198,7 @@ body:hover .visually-hidden button {
 
 .social-icons {
   .fa {
-    color: #000;
+    color: var(--global-text-color);
   }
 
   .fa-bluesky,
@@ -455,7 +456,7 @@ html[data-theme="dark"] {
   margin-top: -150px;
   min-height: 0;
   z-index: 9999;
-  background: #fff;
+  background: var(--global-bg-color);
   border: 1px solid var(--global-border-color);
   border-radius: $border-radius;
   box-shadow: $box-shadow;
