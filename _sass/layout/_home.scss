@@ -19,13 +19,12 @@
   background:
     linear-gradient(145deg, rgba(255, 255, 255, 0.08), rgba(127, 127, 127, 0.05)),
     var(--global-bg-color);
-  box-shadow: 0 18px 52px rgba(0, 0, 0, 0.1);
-  transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
+  box-shadow: none;
+  transition: border-color 0.22s ease, background-color 0.22s ease;
 
   &:hover {
     border-color: rgba(127, 127, 127, 0.34);
-    box-shadow: 0 22px 58px rgba(0, 0, 0, 0.16);
-    transform: translateY(-3px);
+    background-color: rgba(127, 127, 127, 0.08);
   }
 }
 
@@ -74,6 +73,7 @@
 
 .institution-card h3 {
   margin: 0 0 0.3rem;
+  color: var(--global-text-color);
   font-size: clamp(0.94rem, 1.6vw, 1.18rem);
   line-height: 1.14;
   letter-spacing: -0.025em;
