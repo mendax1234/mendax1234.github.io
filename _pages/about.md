@@ -43,7 +43,7 @@ Education
     <div class="institution-card__body">
       <h3>National University of Singapore</h3>
       <p>Aug 2024 - May 2028</p>
-      <p><strong>CGPA: 4.9 / 5.00</strong></p>
+      <p><strong>CGPA: 4.92 / 5.00</strong></p>
       <p>B.E. in Computer Engineering</p>
     </div>
   </article>
