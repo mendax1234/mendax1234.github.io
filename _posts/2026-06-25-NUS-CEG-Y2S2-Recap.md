@@ -10,7 +10,7 @@ tags:
 
 {% include toc %}
 
-> We need more people like you.
+> We need more people like you!
 
 This was what a principal research engineer from DSO, Singapore, told our group after I presented two of my projects with my teammates at the NUS ExCEllence 2026 project showcase. Now one of my group members is working at DSO, and the other is working at a famous international chip design company. And thankfully, I also manage to find something to do during this summer break.
 
@@ -22,7 +22,7 @@ I think this question came from the way our project connected ideas from several
 
 This question also shaped the way I want to structure this recap. Instead of simply listing what I did in Year 2 Sem 2, I want to write about the different "teachers" I encountered along the way. Some of them were professors. Some were courses. Some were projects. Some were teammates. Some were books. And most importantly, the biggest teacher in my life is HIM!
 
-# Teachers from ECE
+# Teachers From ECE
 
 This semester, I had the chance to take two truly amazing courses from NUS ECE: EE4218 Embedded Hardware System Design and EE4415 Integrated Digital Design. Together with CG3207, which I took last semester, these courses formed a very meaningful full circle moment for me. As Prof. Rajesh once told me during a post-lecture Q&A, there are deep connections among these three courses, even though each of them looks at hardware systems from a different angle. CG3207 taught me to think in terms of processors and instructions. EE4218 shifted my attention to embedded hardware systems and AI accelerators design. EE4415 then brought me deeper into integrated digital design, showing how high-level RTL design decisions can be shaped and optimized for power, performance, and area, while also giving us a glimpse into the lower-level transistor circuit design beneath those abstractions.
 
