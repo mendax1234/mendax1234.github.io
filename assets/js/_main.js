@@ -1,120 +1,102 @@
 /* ==========================================================================
-   Various functions that we want to use within the template
+   Optional diagrams and charts
    ========================================================================== */
 
-// Determine the expected state of the theme toggle, which can be "dark", "light", or
-// "system". Default is "system".
-let determineThemeSetting = () => {
-  let themeSetting = localStorage.getItem("theme");
-  return (themeSetting != "dark" && themeSetting != "light" && themeSetting != "system") ? "system" : themeSetting;
-};
+const MERMAID_URL = "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+const PLOTLY_URL = "https://cdn.jsdelivr.net/npm/plotly.js@3.6.0/dist/plotly.min.js";
 
-// Determine the computed theme, which can be "dark" or "light". If the theme setting is
-// "system", the computed theme is determined based on the user's system preference.
-let determineComputedTheme = () => {
-  let themeSetting = determineThemeSetting();
-  if (themeSetting != "system") {
-    return themeSetting;
-  }
-  return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-};
+function computedTheme() {
+  return document.documentElement.getAttribute("data-theme") === "dark" ? "dark" : "light";
+}
 
-// Set the theme on page load or when explicitly called
-let setTheme = (setting) => {
-  const use_setting = setting || determineThemeSetting();
-  const use_theme = use_setting === "system" ? determineComputedTheme() : use_setting;
-  $("html").attr("data-theme-setting", use_setting);
-  if (use_theme === "dark") {
-    $("html").attr("data-theme", "dark");
+const mermaidElements = document.querySelectorAll("pre > code.language-mermaid");
+if (mermaidElements.length > 0) {
+  const renderMermaid = function () {
+    const moduleScript = document.createElement("script");
+    moduleScript.type = "module";
+    moduleScript.textContent = `
+      import mermaid from '${MERMAID_URL}';
+      mermaid.initialize({ startOnLoad: true, theme: 'default' });
+      await mermaid.run({ querySelector: 'code.language-mermaid' });
+    `;
+    document.body.appendChild(moduleScript);
+  };
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", renderMermaid, { once: true });
   } else {
-    $("html").removeAttr("data-theme");
+    renderMermaid();
   }
-};
+}
 
-// Toggle the theme manually
-var toggleTheme = () => {
-  const settings = ["system", "light", "dark"];
-  const current_setting = determineThemeSetting();
-  const new_setting = settings[(settings.indexOf(current_setting) + 1) % settings.length];
-  localStorage.setItem("theme", new_setting);
-  setTheme(new_setting);
-};
+const plotlyElements = document.querySelectorAll("pre > code.language-plotly");
+let plotlyLayouts;
 
-/* ==========================================================================
-   Plotly integration script so that Markdown codeblocks will be rendered
-   ========================================================================== */
+function applyPlotlyTheme(element, jsonData) {
+  const theme = computedTheme() === "dark" ? plotlyLayouts.plotlyDarkLayout : plotlyLayouts.plotlyLightLayout;
+  if (jsonData.layout) {
+    jsonData.layout.template = jsonData.layout.template ?
+      { ...theme, ...jsonData.layout.template } :
+      theme;
+  } else {
+    jsonData.layout = { template: theme };
+  }
+  window.Plotly.react(element, jsonData.data, jsonData.layout);
+}
 
-// Read the Plotly data from the code block, hide it, and render the chart as new node. This allows for the
-// JSON data to be retrieve when the theme is switched. The listener should only be added if the data is
-// actually present on the page.
-let plotlyElements = document.querySelectorAll("pre>code.language-plotly");
-if (plotlyElements.length > 0) {
-  document.addEventListener("readystatechange", async () => {
-    if (document.readyState === "complete") {
-      const { plotlyDarkLayout, plotlyLightLayout } = await import('./theme.js');
-      plotlyElements.forEach((elem) => {
-        // Parse the Plotly JSON data and hide it
-        var jsonData = JSON.parse(elem.textContent);
-        elem.parentElement.classList.add("hidden");
-
-        // Add the Plotly node
-        let chartElement = document.createElement("div");
-        elem.parentElement.after(chartElement);
-
-        // Set the theme for the plot and render it
-        const theme = (determineComputedTheme() === "dark") ? plotlyDarkLayout : plotlyLightLayout;
-        if (jsonData.layout) {
-          jsonData.layout.template = (jsonData.layout.template) ? { ...theme, ...jsonData.layout.template } : theme;
-        } else {
-          jsonData.layout = { template: theme };
-        }
-        Plotly.react(chartElement, jsonData.data, jsonData.layout);
-      });
+function redrawPlotly() {
+  if (!window.Plotly || !plotlyLayouts) {
+    return;
+  }
+  plotlyElements.forEach(function (codeElement) {
+    const chartElement = codeElement.parentElement.nextElementSibling;
+    if (chartElement) {
+      applyPlotlyTheme(chartElement, JSON.parse(codeElement.textContent));
     }
   });
 }
 
+if (plotlyElements.length > 0) {
+  const loadPlotly = async function () {
+    plotlyLayouts = await import("./theme.js");
+    const script = document.createElement("script");
+    script.src = PLOTLY_URL;
+    script.async = true;
+    script.onload = function () {
+      plotlyElements.forEach(function (codeElement) {
+        const jsonData = JSON.parse(codeElement.textContent);
+        codeElement.parentElement.classList.add("hidden");
+        const chartElement = document.createElement("div");
+        codeElement.parentElement.after(chartElement);
+        applyPlotlyTheme(chartElement, jsonData);
+      });
+    };
+    document.head.appendChild(script);
+  };
+
+  if (document.readyState === "complete") {
+    loadPlotly();
+  } else {
+    window.addEventListener("load", loadPlotly, { once: true });
+  }
+  window.addEventListener("site-theme-change", redrawPlotly);
+}
+
 /* ==========================================================================
-   Actions that should occur when the page has been fully loaded
+   Actions that should occur after the page is ready
    ========================================================================== */
 
 $(document).ready(function () {
-  // SCSS SETTINGS - These should be the same as the settings in the relevant files 
-  const scssLarge = 925;          // pixels, from /_sass/_themes.scss
-  const scssMastheadHeight = 70;  // pixels, from the current theme (e.g., /_sass/theme/_default.scss)
+  const scssLarge = 925;
 
-  // If the theme is set to system, follow the OS preference
-  setTheme();
-  window.matchMedia('(prefers-color-scheme: dark)')
-        .addEventListener("change", (e) => {
-          if (determineThemeSetting() === "system") {
-            setTheme("system");
-          }
-        });
-
-  // Enable the theme toggle
-  $('#theme-toggle').on('click', toggleTheme);
-
-  // FitVids init
-  fitvids();
-
-  // Follow menu drop down
   $(".author__urls-wrapper button").on("click", function () {
-    $(".author__urls").fadeToggle("fast", function () { });
+    $(".author__urls").fadeToggle("fast");
     $(".author__urls-wrapper button").toggleClass("open");
   });
 
-  // Restore the follow menu if toggled on a window resize
-  jQuery(window).on('resize', function () {
-    if ($('.author__urls.social-icons').css('display') == 'none' && $(window).width() >= scssLarge) {
-      $(".author__urls").css('display', 'block')
+  $(window).on("resize", function () {
+    if ($(".author__urls.social-icons").css("display") === "none" && $(window).width() >= scssLarge) {
+      $(".author__urls").css("display", "block");
     }
   });
-
-  // Init smooth scroll, this needs to be slightly more than then fixed masthead height
-  $("a").smoothScroll({
-    offset: -scssMastheadHeight,
-    preventDefault: false,
-  });
-
 });

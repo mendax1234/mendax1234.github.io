@@ -27,6 +27,7 @@
     if (window.applySiteTheme) {
       window.applySiteTheme(setting);
     }
+    window.dispatchEvent(new CustomEvent("site-theme-change"));
     updateLabel();
   }
 
@@ -60,6 +61,7 @@
       var onPreferenceChange = function () {
         if (currentSetting() === "system" && window.applySiteTheme) {
           window.applySiteTheme("system");
+          window.dispatchEvent(new CustomEvent("site-theme-change"));
         }
       };
       if (mediaQuery.addEventListener) {

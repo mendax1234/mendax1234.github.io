@@ -4,8 +4,13 @@
 
 <!-- Support for Academicons -->
 {% if site.author.academia or site.author.arxiv or site.author.googlescholar or site.author.semantic or site.author.impactstory or site.author.orcid or site.author.pubmed or site.author.scopus or site.author.inspire-hep %}
-  <link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css"/>
+  <link rel="preload" href="{{ base_path }}/assets/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.min.css"></noscript>
 {% endif %}
+
+<!-- Load icon fonts without blocking the first render -->
+<link rel="preload" href="{{ base_path }}/assets/css/fontawesome.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="{{ base_path }}/assets/css/fontawesome.css"></noscript>
 
 <!-- favicon from https://commons.wikimedia.org/wiki/File:OOjs_UI_icon_academic-progressive.svg -->
 <link rel="apple-touch-icon" sizes="180x180" href="{{ base_path }}/images/apple-touch-icon-180x180.png"/>

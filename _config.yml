@@ -164,6 +164,7 @@ include:
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
+  - academicpages.github.io
   - .asset-cache
   - .bundle
   - .github
