@@ -18,6 +18,7 @@ DEFAULT_DIRECTORIES = (
     REPO_ROOT / "images" / "education",
     REPO_ROOT / "images" / "portfolio",
     REPO_ROOT / "images" / "posts",
+    REPO_ROOT / "images" / "publication",
 )
 SOURCE_EXTENSIONS = {".jpg", ".jpeg", ".png"}
 REFERENCE_EXTENSIONS = {".html", ".md", ".markdown", ".yml", ".yaml", ".json", ".scss", ".css"}
@@ -41,7 +42,7 @@ def parse_args() -> argparse.Namespace:
         "directories",
         nargs="*",
         type=Path,
-        help="Directories to scan (defaults to education, portfolio, and posts).",
+        help="Directories to scan (defaults to education, portfolio, posts, and publication).",
     )
     parser.add_argument("--quality", type=int, default=82, choices=range(1, 101))
     parser.add_argument(
@@ -119,7 +120,7 @@ def resolve_reference(url: str) -> Path | None:
     if "images/" in clean_url:
         relative = clean_url[clean_url.index("images/") :]
         return REPO_ROOT / relative
-    if clean_url.startswith(("posts/", "portfolio/", "education/")):
+    if clean_url.startswith(("posts/", "portfolio/", "education/", "publication/")):
         return REPO_ROOT / "images" / clean_url
     return None
 
@@ -145,17 +146,56 @@ def add_post_image_attributes(text: str) -> tuple[str, int]:
     return image_tag_pattern.sub(update_tag, text), updated_tags
 
 
-def update_references(converted_sources: set[Path]) -> tuple[int, int, int]:
+def add_post_video_attributes(text: str) -> tuple[str, int]:
+    """Prevent controlled post videos from downloading before playback."""
+    video_tag_pattern = re.compile(r"<video\b(?P<attributes>[^>]*?)>", re.IGNORECASE | re.DOTALL)
+    updated_tags = 0
+
+    def update_tag(match: re.Match[str]) -> str:
+        nonlocal updated_tags
+        attributes = match.group("attributes")
+        if re.search(r"\b(?:preload|autoplay)\b", attributes, re.IGNORECASE):
+            return match.group(0)
+        updated_tags += 1
+        return f'<video preload="none"{attributes}>'
+
+    return video_tag_pattern.sub(update_tag, text), updated_tags
+
+
+def collapse_redundant_webp_pictures(text: str) -> tuple[str, int]:
+    """Collapse a WebP-only picture with no media condition to its img fallback."""
+    picture_pattern = re.compile(
+        r"(?P<indent>^[ \t]*)<picture>\s*"
+        r"<source\b(?![^>]*\bmedia\s*=)[^>]*\bsrcset\s*=\s*"
+        r"(?P<source_quote>[\"'])[^\"']+\.webp(?P=source_quote)[^>]*"
+        r"\btype\s*=\s*(?P<type_quote>[\"'])image/webp(?P=type_quote)[^>]*>\s*"
+        r"(?P<img><img\b[^>]*\bsrc\s*=\s*(?P<img_quote>[\"'])"
+        r"[^\"']+\.webp(?P=img_quote)[^>]*>)\s*</picture>",
+        re.IGNORECASE | re.MULTILINE,
+    )
+    collapsed = 0
+
+    def replace(match: re.Match[str]) -> str:
+        nonlocal collapsed
+        collapsed += 1
+        return f"{match.group('indent')}{match.group('img')}"
+
+    return picture_pattern.sub(replace, text), collapsed
+
+
+def update_references(converted_sources: set[Path]) -> tuple[int, int, int, int, int]:
     source_lookup = {path.resolve(): path for path in converted_sources}
     webp_lookup = {path.with_suffix(".webp").resolve(): path for path in converted_sources}
     url_pattern = re.compile(
         r"(?P<url>(?:/|\.\./)*images/[^\s\"'<>)}\]]+?\.(?:png|jpe?g|webp)"
-        r"|(?:posts|portfolio|education)/[^\s\"'<>)}\]]+?\.(?:png|jpe?g|webp))",
+        r"|(?:posts|portfolio|education|publication)/[^\s\"'<>)}\]]+?\.(?:png|jpe?g|webp))",
         flags=re.IGNORECASE,
     )
     changed_files = 0
     changed_references = 0
     changed_image_tags = 0
+    changed_video_tags = 0
+    collapsed_pictures = 0
     files: list[Path] = []
 
     for root in REFERENCE_ROOTS:
@@ -191,16 +231,27 @@ def update_references(converted_sources: set[Path]) -> tuple[int, int, int]:
             return url
 
         updated = url_pattern.sub(replace, original)
+        updated, picture_updates = collapse_redundant_webp_pictures(updated)
         tag_updates = 0
+        video_updates = 0
         if path.is_relative_to(REPO_ROOT / "_posts"):
             updated, tag_updates = add_post_image_attributes(updated)
+            updated, video_updates = add_post_video_attributes(updated)
         if updated != original:
             path.write_text(updated, encoding="utf-8", newline="")
             changed_files += 1
             changed_references += replacements
             changed_image_tags += tag_updates
+            changed_video_tags += video_updates
+            collapsed_pictures += picture_updates
 
-    return changed_files, changed_references, changed_image_tags
+    return (
+        changed_files,
+        changed_references,
+        changed_image_tags,
+        changed_video_tags,
+        collapsed_pictures,
+    )
 
 
 def main() -> int:
@@ -247,13 +298,21 @@ def main() -> int:
     save_manifest(manifest)
 
     changed_files = changed_references = changed_image_tags = 0
+    changed_video_tags = collapsed_pictures = 0
     if args.update_references:
-        changed_files, changed_references, changed_image_tags = update_references(available_sources)
+        (
+            changed_files,
+            changed_references,
+            changed_image_tags,
+            changed_video_tags,
+            collapsed_pictures,
+        ) = update_references(available_sources)
 
     print(
         f"Done: {converted} converted, {skipped} unchanged, {failed} failed; "
         f"{changed_references} references and {changed_image_tags} image tags "
-        f"updated in {changed_files} files."
+        f"updated, {changed_video_tags} videos deferred, and "
+        f"{collapsed_pictures} redundant pictures collapsed in {changed_files} files."
     )
     return 1 if failed else 0
 

@@ -49,7 +49,7 @@ The most touching part was the final night of THOC. That evening, my friends and
 Still immersed in the moving speech, we were guided, with candles in our hand, to the Common Hall. In front of me stood two lines of people forming a human corridor that I had to walk through to reach the end. Along the way, my candle would be blown out by someone, only to be reignited by another person nearby. At the time, I just thought it was a fun activity, HAHAHA. But now, I feel like I’ve started to understand the thoughtful design behind it.
 
 <p align="center">
-  <video style="width: 100%;" controls muted>
+  <video preload="none" style="width: 100%;" controls muted>
     <source src="../images/posts/NUS-CEG-Y1S1-Recap/THOC_Video.mp4" type="video/mp4">
   </video>
 </p>
@@ -125,7 +125,7 @@ Lastly, I would like to once again thank every Prof and my TA of CS1010, as well
 CG1111A (Engineering Principles and Practice I) is another course that has legit surprised me! I didn’t expect it to be so enriching and useful! From the basic principles of circuit analysis to the fundamentals of analog circuits - Op-Amps and the final project the utilises all what we have learnd to build an "a-maze-running robot", the course content has been laid out in such a gradual and structured manner. At the same time, these topics have aligned perfectly with my future interest - chip design! How amazing it is!
 
 <p align="center">
-  <video width="250" controls>
+  <video preload="none" width="250" controls>
     <source src="../images/posts/NUS-CEG-Y1S1-Recap/CG1111A_Video.mp4" type="video/mp4">
   </video>
 </p>

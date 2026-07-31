@@ -49,6 +49,14 @@
     border-radius: 0;
     transform: translateX(-50%);
   }
+
+  img {
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    transform: none;
+  }
 }
 
 .publication-card__body {
@@ -159,6 +167,14 @@
       height: 100%;
       max-height: none;
       transform: translateX(-50%);
+    }
+
+    img {
+      left: 0;
+      width: 100%;
+      max-width: 100%;
+      object-fit: contain;
+      transform: none;
     }
   }
 }

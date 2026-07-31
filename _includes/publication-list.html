@@ -5,11 +5,11 @@
     <article class="publication-card">
       <div class="publication-card__media">
         {% if publication.media.type == "video" %}
-          <video autoplay muted loop playsinline aria-label="{{ publication.title }} preview">
+          <video controls preload="metadata" playsinline aria-label="{{ publication.title }} preview">
             <source src="{{ publication.media.src | relative_url }}" type="video/mp4">
           </video>
         {% else %}
-          <img src="{{ publication.media.src | relative_url }}" alt="{{ publication.title }} preview">
+          <img src="{{ publication.media.src | relative_url }}" alt="{{ publication.title }} preview" loading="lazy" decoding="async">
         {% endif %}
       </div>
 

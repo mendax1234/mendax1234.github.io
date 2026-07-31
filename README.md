@@ -49,11 +49,16 @@ Push changes to the GitHub Pages branch for this repository. GitHub Pages builds
 
 ## Image Optimization
 
-Images added under `images/education`, `images/portfolio`, or `images/posts`
-are automatically converted to WebP by GitHub Actions. The workflow keeps the
-original image as the source, creates a sibling `.webp` file, and updates site
-references whenever the WebP payload is smaller. Inline images in blog posts
-also receive native lazy loading and asynchronous decoding attributes.
+Raster images added under `images/education`, `images/portfolio`,
+`images/posts`, or `images/publication` are automatically converted to WebP
+by GitHub Actions. SVG files stay as SVG because they are already efficient
+vector assets. The workflow keeps the original raster image as the source,
+creates a sibling `.webp` file, and updates site references whenever the WebP
+payload is smaller. Inline images in blog posts also receive native lazy
+loading and asynchronous decoding attributes.
+Redundant WebP-only `<picture>` wrappers are collapsed automatically, and
+controlled post videos receive `preload="none"` so they download only when a
+visitor chooses to play them.
 
 The recommended workflow is to optimize locally before committing. Set up the
 local environment once:

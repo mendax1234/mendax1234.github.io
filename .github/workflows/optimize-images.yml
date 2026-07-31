@@ -12,7 +12,12 @@ on:
       - "images/posts/**/*.jpg"
       - "images/posts/**/*.jpeg"
       - "images/posts/**/*.png"
+      - "images/publication/**/*.jpg"
+      - "images/publication/**/*.jpeg"
+      - "images/publication/**/*.png"
       - "_posts/**/*.md"
+      - "_pages/**/*.md"
+      - "_data/publications.yml"
   workflow_dispatch:
 
 permissions:
