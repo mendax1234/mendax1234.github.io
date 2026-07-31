@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Optimize website images as WebP and optionally update site references."""
+"""Optimize website media and optionally update site references."""
 
 from __future__ import annotations
 
@@ -10,7 +10,7 @@ import re
 import sys
 from pathlib import Path
 
-from PIL import Image, ImageOps, UnidentifiedImageError
+from PIL import Image, ImageOps, ImageSequence, UnidentifiedImageError
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -20,7 +20,7 @@ DEFAULT_DIRECTORIES = (
     REPO_ROOT / "images" / "posts",
     REPO_ROOT / "images" / "publication",
 )
-SOURCE_EXTENSIONS = {".jpg", ".jpeg", ".png"}
+SOURCE_EXTENSIONS = {".gif", ".jpg", ".jpeg", ".png"}
 REFERENCE_EXTENSIONS = {".html", ".md", ".markdown", ".yml", ".yaml", ".json", ".scss", ".css"}
 REFERENCE_ROOTS = (
     REPO_ROOT / "_posts",
@@ -36,7 +36,7 @@ CONVERTER_VERSION = 1
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Incrementally convert website JPG/JPEG/PNG images to WebP."
+        description="Incrementally convert website GIF/JPG/JPEG/PNG images to WebP."
     )
     parser.add_argument(
         "directories",
@@ -103,16 +103,36 @@ def source_images(directories: list[Path]) -> list[Path]:
 
 def convert_image(source: Path, destination: Path, quality: int, max_width: int) -> None:
     with Image.open(source) as opened:
-        image = ImageOps.exif_transpose(opened)
-        if image.mode not in ("RGB", "RGBA"):
-            image = image.convert("RGBA" if "transparency" in image.info else "RGB")
-
-        if max_width and image.width > max_width:
-            height = round(image.height * max_width / image.width)
-            image = image.resize((max_width, height), Image.Resampling.LANCZOS)
-
         destination.parent.mkdir(parents=True, exist_ok=True)
-        image.save(destination, "WEBP", quality=quality, method=6)
+
+        def prepare(frame: Image.Image) -> Image.Image:
+            image = ImageOps.exif_transpose(frame.copy())
+            if image.mode not in ("RGB", "RGBA"):
+                image = image.convert("RGBA" if "transparency" in image.info else "RGB")
+            if max_width and image.width > max_width:
+                height = round(image.height * max_width / image.width)
+                image = image.resize((max_width, height), Image.Resampling.LANCZOS)
+            return image
+
+        if getattr(opened, "is_animated", False):
+            default_duration = opened.info.get("duration", 100)
+            frames = [prepare(frame) for frame in ImageSequence.Iterator(opened)]
+            durations = [
+                frame.info.get("duration", default_duration)
+                for frame in ImageSequence.Iterator(opened)
+            ]
+            frames[0].save(
+                destination,
+                "WEBP",
+                save_all=True,
+                append_images=frames[1:],
+                duration=durations,
+                loop=opened.info.get("loop", 0),
+                quality=quality,
+                method=6,
+            )
+        else:
+            prepare(opened).save(destination, "WEBP", quality=quality, method=6)
 
 
 def resolve_reference(url: str) -> Path | None:
@@ -187,8 +207,8 @@ def update_references(converted_sources: set[Path]) -> tuple[int, int, int, int,
     source_lookup = {path.resolve(): path for path in converted_sources}
     webp_lookup = {path.with_suffix(".webp").resolve(): path for path in converted_sources}
     url_pattern = re.compile(
-        r"(?P<url>(?:/|\.\./)*images/[^\s\"'<>)}\]]+?\.(?:png|jpe?g|webp)"
-        r"|(?:posts|portfolio|education|publication)/[^\s\"'<>)}\]]+?\.(?:png|jpe?g|webp))",
+        r"(?P<url>(?:/|\.\./)*images/[^\s\"'<>)}\]]+?\.(?:gif|png|jpe?g|webp)"
+        r"|(?:posts|portfolio|education|publication)/[^\s\"'<>)}\]]+?\.(?:gif|png|jpe?g|webp))",
         flags=re.IGNORECASE,
     )
     changed_files = 0
@@ -259,6 +279,11 @@ def main() -> int:
     directories = args.directories or list(DEFAULT_DIRECTORIES)
     manifest = load_manifest()
     images = source_images(directories)
+    stale_manifest_keys = [
+        key for key in manifest if not (REPO_ROOT / key).is_file()
+    ]
+    for key in stale_manifest_keys:
+        del manifest[key]
     settings = {
         "converter_version": CONVERTER_VERSION,
         "quality": args.quality,
@@ -310,6 +335,7 @@ def main() -> int:
 
     print(
         f"Done: {converted} converted, {skipped} unchanged, {failed} failed; "
+        f"{len(stale_manifest_keys)} stale manifest entries removed; "
         f"{changed_references} references and {changed_image_tags} image tags "
         f"updated, {changed_video_tags} videos deferred, and "
         f"{collapsed_pictures} redundant pictures collapsed in {changed_files} files."

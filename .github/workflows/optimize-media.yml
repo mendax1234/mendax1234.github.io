@@ -1,4 +1,4 @@
-name: Optimize website images
+name: Optimize website media
 
 on:
   push:
@@ -6,15 +6,19 @@ on:
       - "images/education/**/*.jpg"
       - "images/education/**/*.jpeg"
       - "images/education/**/*.png"
+      - "images/education/**/*.gif"
       - "images/portfolio/**/*.jpg"
       - "images/portfolio/**/*.jpeg"
       - "images/portfolio/**/*.png"
+      - "images/portfolio/**/*.gif"
       - "images/posts/**/*.jpg"
       - "images/posts/**/*.jpeg"
       - "images/posts/**/*.png"
+      - "images/posts/**/*.gif"
       - "images/publication/**/*.jpg"
       - "images/publication/**/*.jpeg"
       - "images/publication/**/*.png"
+      - "images/publication/**/*.gif"
       - "_posts/**/*.md"
       - "_pages/**/*.md"
       - "_data/publications.yml"
@@ -37,20 +41,20 @@ jobs:
           cache: pip
           cache-dependency-path: scripts/requirements.txt
 
-      - name: Install image tools
+      - name: Install media tools
         run: python -m pip install -r scripts/requirements.txt
 
-      - name: Generate WebP images and update references
-        run: python scripts/optimize_images.py --update-references
+      - name: Optimize media and update references
+        run: python scripts/optimize_media.py --update-references
 
-      - name: Commit optimized images
+      - name: Commit optimized media
         run: |
           if git diff --quiet && [ -z "$(git status --porcelain)" ]; then
-            echo "No image changes to commit."
+            echo "No media changes to commit."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add images _posts _portfolio _pages _includes _data _layouts
-          git commit -m "Optimize website images"
+          git commit -m "Optimize website media"
           git push

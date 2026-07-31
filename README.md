@@ -47,12 +47,13 @@ For publication and portfolio cards, the left media panel stretches to the card 
 
 Push changes to the GitHub Pages branch for this repository. GitHub Pages builds the Jekyll site automatically.
 
-## Image Optimization
+## Media Optimization
 
 Raster images added under `images/education`, `images/portfolio`,
 `images/posts`, or `images/publication` are automatically converted to WebP
 by GitHub Actions. SVG files stay as SVG because they are already efficient
-vector assets. The workflow keeps the original raster image as the source,
+vector assets. Animated GIFs are converted to animated WebP without dropping
+their frames. The workflow keeps the original raster image as the source,
 creates a sibling `.webp` file, and updates site references whenever the WebP
 payload is smaller. Inline images in blog posts also receive native lazy
 loading and asynchronous decoding attributes.
@@ -70,13 +71,13 @@ python -m venv .venv
 
 For each new post:
 
-1. Add the JPG, JPEG, or PNG under `images/posts`.
+1. Add the GIF, JPG, JPEG, or PNG under `images/posts`.
 2. Reference the original filename in the post and provide meaningful `alt`
    text for each image.
 3. Run:
 
    ```powershell
-   .\.venv\Scripts\python.exe scripts\optimize_images.py --update-references
+   .\.venv\Scripts\python.exe scripts\optimize_media.py --update-references
    ```
 
    A typical post image will then look like:
@@ -97,7 +98,7 @@ For each new post:
 Do not manually change the extension to `.webp`; the optimizer does so only
 when WebP is smaller. It skips unchanged files, uses WebP quality 82, and
 limits very wide images to 1920 pixels. Run
-`python scripts/optimize_images.py --help` for configuration options.
+`python scripts/optimize_media.py --help` for configuration options.
 
 GitHub Actions runs the same optimizer when source images or posts are pushed.
 This is a safety net when the local step is forgotten; normally it finds
