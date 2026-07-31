@@ -23,7 +23,7 @@ Education
     <div class="institution-card__media">
       <picture>
         <source srcset="/images/education/EPFL-320.webp" type="image/webp">
-        <img src="/images/education/EPFL.png" alt="EPFL logo" loading="lazy" decoding="async" width="320" height="214">
+        <img src="/images/education/EPFL.webp" alt="EPFL logo" loading="lazy" decoding="async" width="320" height="214">
       </picture>
     </div>
     <div class="institution-card__body">
@@ -37,7 +37,7 @@ Education
     <div class="institution-card__media">
       <picture>
         <source srcset="/images/education/NUS-320.webp" type="image/webp">
-        <img src="/images/education/NUS.png" alt="National University of Singapore logo" loading="lazy" decoding="async" width="320" height="214">
+        <img src="/images/education/NUS.webp" alt="National University of Singapore logo" loading="lazy" decoding="async" width="320" height="214">
       </picture>
     </div>
     <div class="institution-card__body">
@@ -52,7 +52,7 @@ Education
     <div class="institution-card__media">
       <picture>
         <source srcset="/images/education/NTU-320.webp" type="image/webp">
-        <img src="/images/education/NTU.png" alt="Nanyang Technological University logo" loading="lazy" decoding="async" width="320" height="214">
+        <img src="/images/education/NTU.webp" alt="Nanyang Technological University logo" loading="lazy" decoding="async" width="320" height="214">
       </picture>
     </div>
     <div class="institution-card__body">

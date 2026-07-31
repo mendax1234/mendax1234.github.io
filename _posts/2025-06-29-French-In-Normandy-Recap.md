@@ -3,7 +3,7 @@ layout: single
 title:  "French in Normandy Recap (2025 Summer)"
 excerpt: French in Normandy Recap 2025 Summer
 header:
-  teaser: posts/French-In-Normandy-Recap/french-in-normandy.jpg
+  teaser: posts/French-In-Normandy-Recap/french-in-normandy.webp
 tags:
   - NUS
 ---
@@ -19,7 +19,7 @@ This was a phrase our French teacher once introduced in class. She often brought
 I still clearly remember how I felt when I first arrived in Rouen. It was uneasy, and a little anxious to me. After all, it was my very first time setting foot in Europe, all by myself. I had come to a place nearly ten thousand kilometers away from home. And this is also an entirely unfamiliar place to me. I had no idea how I would manage in a foreign country, surrounded by a language I barely understood. I didn't know what challenges I would face. I truly didn't know.
 
 <p align="center">
-  <img src="../images/posts/French-In-Normandy-Recap/rouen.jpg" width="60%"><br>
+  <img loading="lazy" decoding="async" src="../images/posts/French-In-Normandy-Recap/rouen.webp" width="60%"><br>
   <em style="font-size: 0.9em;">Figure: Rouen Cathedrale</em>
 </p>
 
@@ -34,7 +34,7 @@ Our group was very diverse, with students from all over the world. The chances o
 And I won't forget hiking through Étretat with my Japanese classmate, the open-hearted conversations we had every Wednesday afternoon's *Discutez* with people from different corners of the globe, or the countless little presentations we tackled together in class with randomly assigned partners. Each moment stays with me and resonates with me!
 
 <p align="center">
-  <img src="../images/posts/French-In-Normandy-Recap/rouen-fin-class.jpg" width="80%"><br>
+  <img loading="lazy" decoding="async" src="../images/posts/French-In-Normandy-Recap/rouen-fin-class.webp" width="80%"><br>
   <em style="font-size: 0.9em;">Figure: My classmates!</em>
 </p>
 
@@ -53,7 +53,7 @@ When it comes to my stay in Rouen, I think my feelings can be summed up in one s
 This past month, I lived in what was perhaps the most challenging environment I've ever experienced, but I still feel deeply thankful. Not only because I had a place to sleep and enough food to eat, but also because I was surrounded by classmates from all around the world. We shared conversations, helped one another, and lived under the same roof as a small global community. These moments of connection, of mutual support, of shared laughter over dinner are what I'm truly grateful for.
 
 <p align="center">
-  <img src="../images/posts/French-In-Normandy-Recap/rouen-host-family.jpg" width="80%"><br>
+  <img loading="lazy" decoding="async" src="../images/posts/French-In-Normandy-Recap/rouen-host-family.webp" width="80%"><br>
   <em style="font-size: 0.9em;">Figure: Friends living together</em>
 </p>
 
@@ -70,7 +70,7 @@ To all my friends and teachers: **I legit look forward to meeting with you again
 On my flight home from Paris, I was incredibly grateful to be allowed into the cockpit of the Boeing 777. As someone passionate about aviation, it meant the world to me to have this opportunity -- especially on just my second flight log entry! It was a moment that filled me with awe and appreciation.
 
 <p align="center">
-  <img src="../images/posts/French-In-Normandy-Recap/visit_boeing777_cockpit.jpg" width="80%"><br>
+  <img loading="lazy" decoding="async" src="../images/posts/French-In-Normandy-Recap/visit_boeing777_cockpit.webp" width="80%"><br>
   <em style="font-size: 0.9em;">Figure: Visit the Boeing 777 Cockpit</em>
 </p>
 

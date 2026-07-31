@@ -19,3 +19,6 @@ package-lock.json
 
 # Ignore folders related to IDEs
 .vscode/
+
+# Ignore the local Python environment used by image optimization
+.venv/

@@ -3,7 +3,7 @@ layout: single
 title:  "Book Review: The Innovators"
 excerpt: Discover insights into innovation with Walter Isaacson's "The Innovators." Emphasizing collaboration and building on past ideas, this book explores the teamwork and historical foundations of technological advancements. Perfect for tech history enthusiasts.
 header:
-  teaser: posts/Innovators_book_cover.jpg
+  teaser: posts/Innovators_book_cover.webp
 tags:
   - Book-Review
 ---

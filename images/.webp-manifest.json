@@ -1,0 +1,428 @@
+{
+  "images/education/CentraleSupelec.png": {
+    "sha256": "c1ed3b2138f8216470841d216aebd7449cf74b65abce6fcb50757951bb3d7e31",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/education/EPFL.png": {
+    "sha256": "b5a2eb070f38ee01caf2543b424ec443044b5eed78a9a599638530ddc6b8f1f4",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/education/Fudan.png": {
+    "sha256": "bf7c5c5a73ca6dbfe9fc4ab37a8c836e7ff94f6945b9b63be4b03c645139196d",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/education/NTU.png": {
+    "sha256": "beb651359b4a60f5fd496ff3a1db550bb08b816b97fbd71c8f43fe84ac3d8426",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/education/NUS.png": {
+    "sha256": "052ebc726a25825dd61d453153f825ed0e1a93bbfe4ec70db9d1e2b039ebf47a",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/portfolio/Wpilib.png": {
+    "sha256": "dc48c511a755b33f623d353675b30103c803e77b477a24a07668d7ca3ec3b181",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/portfolio/e_voting_blockchain.png": {
+    "sha256": "8aea1b51c0d48a680a38b1e070d062c713bb0cd128e6bf3b112e75b12191363a",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/portfolio/hackintosh1.png": {
+    "sha256": "7d4f44400677524ef7f5da506b66339c896f93dc5fdfcaf654de1bb459ebc241",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/portfolio/hackintosh2.png": {
+    "sha256": "ecdcaf3bdb5267df38b46ecd19ab9972df1ddc5929c45ea98630f6958e858b54",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/portfolio/infiniterecharge_logo.png": {
+    "sha256": "89701e847aea96f83b617a79cbbf3c050f8bb4bf12527017d7ffa921534eb1d5",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/portfolio/logseq.png": {
+    "sha256": "54d549a388ec50d1ef2ae2f4737569b158d48ebfc1c870d5127df4c5363dd562",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/portfolio/rapidreact_logo.png": {
+    "sha256": "cee36b7513be2d67f7c04ddaedbef42cd419a8beaf3d047a003b26ab3c95f2c6",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/portfolio/swerve.png": {
+    "sha256": "d1815b5fb2a4f3b0929c8579872ce22790c820c0ba163ca080291f2404b52fd4",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/posts/French-In-Normandy-Recap/french-in-normandy.jpg": {
+    "sha256": "e5879abd4d8facc01d89b4601c9211004917e412da0b76890539fb84c8508e78",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/posts/French-In-Normandy-Recap/rouen-fin-class.jpg": {
+    "sha256": "2e07c58f5585c388f7ac86b0d85e4a9a934b3b055c0a6cec64cf860df43eec27",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/posts/French-In-Normandy-Recap/rouen-host-family.jpg": {
+    "sha256": "309a16c976e062b786139a503e9c4c741219c21fb998c5a0bb50af6dbe63c628",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/posts/French-In-Normandy-Recap/rouen.jpg": {
+    "sha256": "4db449ab8c6a962b6bde599e4efded78ab94ea8908039e63eeed0e45f9cca53b",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/posts/French-In-Normandy-Recap/visit_boeing777_cockpit.jpg": {
+    "sha256": "c37d6b0d5918b9d13ad7ae52c54a80e9fd1e501b11833db5a6befa56b482633f",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/posts/Harvard_CS50.png": {
+    "sha256": "afa614ec17c46df81ba90b332b62e3ca2ca95ea212b0cd823f464b899b7762e9",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/posts/Innovators_book_cover.jpg": {
+    "sha256": "996d8c56f761a5972592daa7adfb50a49bed838278b209bbe314bcc85571b84e",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/posts/NTU-CEG-Y1-Recap/ARM_Assembly_Reference.jpg": {
+    "sha256": "767d1520155edee5250dc58921660ba11e64542c5f7e0fd359147e8059bfb75c",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/posts/NTU-CEG-Y1-Recap/ARM_User_Guide.png": {
+    "sha256": "032581d7fd1c50a20341a0a6b305665a76a140483fbe6eea0bf2d84e578b18e6",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/posts/NTU-CEG-Y1-Recap/C_Programming.jpg": {
+    "sha256": "548b9f841a31641b7a295c80d6ea0506bde1c1c305f1d7f04802a9aa0f63f66b",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/posts/NTU-CEG-Y1-Recap/Calculus_Textbook.jpg": {
+    "sha256": "0065e7c73726278bee1a18bf8453e0158f5973dcfe3774929b041b951bf7a885",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/posts/NTU-CEG-Y1-Recap/Computer_Org_Arch.jpg": {
+    "sha256": "876ec62b72a8d2de0bfb7cb0880600e1b2f7e60347b132b964512d4ae3e717f2",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/posts/NTU-CEG-Y1-Recap/Computer_Org_Embedded.jpg": {
+    "sha256": "0c7491a6fdb9383728adeaf817bc5f5ae15d0565674361ac7f21d4f1e022ca2e",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/posts/NTU-CEG-Y1-Recap/Digital_Fundamentals.jpg": {
+    "sha256": "73476e5b494b578786b36814111b325dccede0395aac1e4ab009251547f02849",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/posts/NTU-CEG-Y1-Recap/Digital_Logic_Textbook.jpg": {
+    "sha256": "427fc7cddc3bac20f633d579e4f5b2b8756897f5aee02f5fe786b5cc4a835fef",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/posts/NTU-CEG-Y1-Recap/Discrete_Math_Textbook.jpg": {
+    "sha256": "7ddff2217f00ccc199159fb6e21a33e81dced3040264371472f68d60d4d67c07",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/posts/NTU-CEG-Y1-Recap/Linear_Algebra_Textbook.jpg": {
+    "sha256": "c2804d47a3653f48960fa13141e33fcac749ce70b05c309f47aaa1f6a20a08d5",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/posts/NTU-CEG-Y1-Recap/Python_Crash_Course.jpg": {
+    "sha256": "33a4ea60123610d64232cd08789d9b8a3731b264c50e408c7620d29f90e1a4d4",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/posts/NTU_CCDS.png": {
+    "sha256": "e758df923a25d7f4f4f06fb64d42020c914a157facb91a39066be0008fbb41b5",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/posts/NUS-CEG-Y1S1-Recap/AnM.png": {
+    "sha256": "fdc3d81800b2a4e556673e169007079ea27ad21d45bc458f9dcb4049461ec15d",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/posts/NUS-CEG-Y1S1-Recap/CG1111A.jpg": {
+    "sha256": "99f5ac5dcec54ee787e17a4707042fbfe775b804c9b936f320f8ed57d55c3f0e",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/posts/NUS-CEG-Y1S1-Recap/CG1111A_Bubble_tea.jpg": {
+    "sha256": "9af6ed4b90e5a6ad01f678d8f6ca3a9ae79196d3fd654abe6d304fabba465742",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/posts/NUS-CEG-Y1S1-Recap/CS1010_Thanks.jpg": {
+    "sha256": "1da073074cb3d5d0587082a69fd67d90a3165450483412393e7fd8722d4700cf",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/posts/NUS-CEG-Y1S1-Recap/CS1010_Word_of_Advice_1.jpg": {
+    "sha256": "bd516fedf79e1344dd2d6a17f3b6e7519e1b27b311d14c44fe50a10069dd5140",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/posts/NUS-CEG-Y1S1-Recap/CS1010_Word_of_Advice_2.png": {
+    "sha256": "62c13979bc2ab00a2b1985954635a8270d2cd25cca48c4f14d031b1a6020515b",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/posts/NUS-CEG-Y1S1-Recap/CS1010_Word_of_Advice_3.png": {
+    "sha256": "d598889eae81f3504d7a3cc3c0cde004f5df3ce09be6e3f4b397d7d078ad9311",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/posts/NUS-CEG-Y1S1-Recap/Fire_warden.jpg": {
+    "sha256": "5254ba1108556575c6e8720cee5404572ae8dc7f671364282b3230b7ec039d89",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/posts/NUS-CEG-Y1S1-Recap/HDL.jpg": {
+    "sha256": "8ae976bf4cf183848e066ae3dad580fffce687081449d16e4622db6e8fdb8226",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/posts/NUS-CEG-Y1S1-Recap/THOC.jpg": {
+    "sha256": "939131284f46e3fa0e1836e17fffa6f1309c07a38ffa72f9257692794c2e9709",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/posts/NUS-CEG-Y1S1-Recap/THOC_2.jpg": {
+    "sha256": "5902232d4f3e586eb4f3795a5a28275c4b97431704e89a0df7ac86091fe865a2",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/posts/NUS-CEG-Y1S2-Recap/cg2111a_eg1311.jpg": {
+    "sha256": "70a2da851baff0ec74442364226233df55254c7f461a29ac3b6508773eb5855d",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/posts/NUS-CEG-Y1S2-Recap/dtk1234_3d_print.jpg": {
+    "sha256": "42c447168bc7146541b4dfef1aa665b86f4e48908be9388fe69b50f52ee4b4a4",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/posts/NUS-CEG-Y1S2-Recap/dtk1234_solution_loop.png": {
+    "sha256": "c5e78ec9ec52dac38a5cfef90f8ae1a3750a6db0e624712f7863bd74057626ce",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/posts/NUS-CEG-Y1S2-Recap/functional-problem-solution-network-diagram.png": {
+    "sha256": "a8cd17d55479062b2c7ef561419e3f842d43e71b2aac41003b88bed0ee77d9ad",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/posts/NUS-CEG-Y2S1-Recap/8-levels-abstraction.png": {
+    "sha256": "a6192c0a85f787aa506af2b1727850924810052e7bdadf7683f44c13d7709af3",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/posts/NUS-CEG-Y2S2-Recap/excellence.jpg": {
+    "sha256": "c6d3942b5b28e237c3c8a98602d8099504dc13862f0322b37e548f28839604c8",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/posts/NUS-CEG-Y2S2-Recap/sabah.jpg": {
+    "sha256": "8375427ec23f1dd31c98b9328b77626cd4dc7e057c8cc16568bf8727596339cc",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/posts/NUS-CEG-Y2S2-Recap/yst-piano.jpg": {
+    "sha256": "c9ca7492ec6cf840b084f5e285ee8d134a4aae3830e6f02e5f2f961dc4cf8461",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/posts/NUS-DTK1234-DTJ/JTBD.png": {
+    "sha256": "369eeb130f17ccb931efd35105df1ec86787ca1646ae9eb52bc5b244303ab694",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/posts/NUS-DTK1234-DTJ/NUS_DTK1234.png": {
+    "sha256": "61f9ecafeb71c4b09fa44ee8d263f1af54041b37ddf39298054c3d60975ecb24",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/posts/NUS-DTK1234-DTJ/evaluation.png": {
+    "sha256": "0798d2930b1565dfff9314458299067ee1fadcc470e132057f5d0e85ae6bf01a",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/posts/NUS-DTK1234-DTJ/interview_insights.png": {
+    "sha256": "139459079f5be740c772bab97c716178b55c07420379d960d362bea6ce3f931f",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/posts/NUS-DTK1234-DTJ/make_shift.png": {
+    "sha256": "e5b1a0e73d3d721d162ee0c54edcc0f4476b3c9ec1e1c8af142239250c049779",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/posts/NUS-DTK1234-DTJ/quantity_over_quality.png": {
+    "sha256": "612082d502e75c61c0e30cea1afe2e4c590638db9b453603c983bf09a913df42",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/posts/NUS-DTK1234-DTJ/tesla_car_door_handle.jpg": {
+    "sha256": "acbfd2fb10f7aa04ab6558d0049d60bda7d2d081f80bf389d29e8b86c5de178c",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/posts/NUS-DTK1234-DTJ/tesla_vs_xiaomi.jpg": {
+    "sha256": "8fd521295e3ec0ca823608bb4346c4ff374e4b95830506f6468fc98ae2ca0330",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/posts/NUS-DTK1234-DTJ/think_differnet.jpg": {
+    "sha256": "5b35e38792646ea20908cf8025bed6ec01e1fb62b0fc717925fc413e2a6f08e4",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/posts/NUS-DTK1234-DTJ/traditional_car_door_handle.jpg": {
+    "sha256": "fecb5a202c9684597332c59134b3c0fbc1883b22b00e9b5d555ef064cb083ffc",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/posts/NUS-GEN2007/NUS_GEN2007.png": {
+    "sha256": "dcf4eb5aa82ff0325887786afda1e869ad41bdc8694e9fc2366f28e85af48fee",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/posts/NUS-GEN2007/birds.jpg": {
+    "sha256": "258a03aa451537a0768483a614231c5f373f6b31d539121284ba257e0dadf286",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/posts/NUS-GEN2007/kopel.png": {
+    "sha256": "dbf20aea6f7d11d9ba7e5c6c6f6c0a5f33cdd8c1bc6d8f42ecdfaf0a00a1b61a",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/posts/NUS-GEN2007/rainforest.jpg": {
+    "sha256": "602a8e9b577af1b4ed2da067758eef4fbbc01a976fb28835bfdca1075ae7c53b",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/posts/NUS-PF1101/AVCS_Design.png": {
+    "sha256": "ac402f543d38389f54593ec69384d42c0c53dd94149d4e1798482f3b1c21381f",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/posts/NUS-PF1101/AVCS_solve_gaps.png": {
+    "sha256": "8f5ad8f0dd18bc22e1c9aa32f60efbfe35343e0403ef0e113ff95b9a8a73893f",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/posts/NUS-PF1101/NUS_PF1101.jpeg": {
+    "sha256": "e2b3cf78224e0bc9851c1ebb58b7cf69a8d0dfbd6e045ca78c5bdc7b39249794",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/posts/NUS-PF1101/PM_925.jpg": {
+    "sha256": "fa0447fc4d99eec9b05c96615673e65714274eec0f92e96534fcc7078ceb7d69",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/posts/NUS-PF1101/VMS_workflow.png": {
+    "sha256": "db1c9b3207753b70845ed7930e7a259ca5272deb67446235b55debcab4737883",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  },
+  "images/posts/NUS_SOC.jpg": {
+    "sha256": "312f57e388d5a88cab608760f16910d522c2e3f6c12d7b495b4b91d4c33c370b",
+    "converter_version": 1,
+    "quality": 82,
+    "max_width": 1920
+  }
+}

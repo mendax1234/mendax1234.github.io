@@ -29,7 +29,7 @@
 
 - title: "FRC Documentation Translation"
   year: "2022"
-  image: "/images/portfolio/Wpilib.png"
+  image: "/images/portfolio/Wpilib.webp"
   category: "Documentation"
   summary: "Improved WPILib's FRC documentation translation workflow by fixing and optimizing Transifex automation. The goal was to make multilingual robotics docs more reliable for student teams."
   highlights:
@@ -45,7 +45,7 @@
 
 - title: "FRC Team 6940 Swerve Chassis Whitepaper"
   year: "2022"
-  image: "/images/portfolio/swerve.png"
+  image: "/images/portfolio/swerve.webp"
   category: "Robotics"
   summary: "Wrote and maintained a practical swerve chassis whitepaper for FRC teams. The project combined Read the Docs publishing, translation automation, and a strong Gracious Professionalism spirit."
   highlights:
@@ -60,7 +60,7 @@
 
 - title: "FRC Team 6940 Robot Code for 2022 RapidReact"
   year: "2022"
-  image: "/images/portfolio/rapidreact_logo.png"
+  image: "/images/portfolio/rapidreact_logo.webp"
   category: "Robotics"
   summary: "Built competition robot software for Team 6940's 2022 RapidReact season. My work focused on the swerve chassis and multiple shooting-while-moving routines."
   highlights:
@@ -74,7 +74,7 @@
 
 - title: "An e-voting system based on Blockchain Technology"
   year: "2021"
-  image: "/images/portfolio/e_voting_blockchain.png"
+  image: "/images/portfolio/e_voting_blockchain.webp"
   category: "Research Prototype"
   summary: "Created a Python Django prototype exploring blockchain-backed electronic voting. The project connected web engineering with a research question around transparency and trust."
   highlights:
@@ -87,7 +87,7 @@
 
 - title: "FRC Team 6940 Robot Code for 2021 Infinite Recharge"
   year: "2021"
-  image: "/images/portfolio/infiniterecharge_logo.png"
+  image: "/images/portfolio/infiniterecharge_logo.webp"
   category: "Robotics"
   summary: "Developed my first compact competition robot codebase for FRC. The robot used Limelight-based auto aiming and taught me how much careful software can matter on the field."
   highlights:
@@ -101,7 +101,7 @@
 
 - title: "Hackintosh on ThinkPad X390"
   year: "2020"
-  image: "/images/portfolio/hackintosh1.png"
+  image: "/images/portfolio/hackintosh1.webp"
   category: "Systems"
   summary: "Prepared OpenCore EFI boot files for running Hackintosh on a ThinkPad X390. The project emphasized driver support, system compatibility, and careful low-level configuration."
   highlights:
@@ -113,7 +113,7 @@
 
 - title: "Hackintosh on ThinkPad E40"
   year: "2020"
-  image: "/images/portfolio/hackintosh2.png"
+  image: "/images/portfolio/hackintosh2.webp"
   category: "Systems"
   summary: "Built Clover EFI boot files for an older ThinkPad E40. The challenge was making Hackintosh work within MBR-only installation constraints on legacy hardware."
   highlights:

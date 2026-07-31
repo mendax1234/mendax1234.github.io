@@ -3,7 +3,7 @@ layout: single
 title:  "NUS Computer Engineering Y1S1 Recap"
 excerpt: NUS Computer Engineering Y1S1 Recap
 header:
-  teaser: posts/NUS_SOC.jpg
+  teaser: posts/NUS_SOC.webp
 tags:
   - NUS
 ---
@@ -21,7 +21,7 @@ As a "special" student, I also have been in this "new" place (Singapore) for one
 To be honest, Y1S1 in NUS CEG is not easy — or rather, it’s incredibly challenging. That's why from the Lecture 1 in CS1010, we are told to "work hard" and not limited to that, we are told to "work very very hard".
 
 <p align="center">
-  <img src="../images/posts/NUS-CEG-Y1S1-Recap/CS1010_Word_of_Advice_3.png" width="550">
+  <img loading="lazy" decoding="async" src="../images/posts/NUS-CEG-Y1S1-Recap/CS1010_Word_of_Advice_3.webp" width="550">
 </p>
 
 I still can remember that from midterms onward, there’s been at least one test every week, and in the second-to-last week, there was at least one test every single day. It feels as if I’ve been transported back to the intense days of preparing for my *GaoKao*. But unlike those days, first of all, this time, I’m living in the C BLK of Temasek Hall at NUS — a Hall known for its athletic spirit, but is also a warm, close-knit "family" collectively nurtured by all **Cblings**!
@@ -43,7 +43,7 @@ THOC stands for Temasek Hall Orientation Camp, which is the largest activiy in T
 The most touching part was the final night of THOC. That evening, my friends and I were blindfolded and led to the open rooftop. When we removed the blindfolds we had been wearing for half a day, the first thing we saw was a breathtaking sight — that was the candles prepared for each of us by the seniors. It was such a moving moment! Then, our Block Head Yu Cheng delivered an impassioned speech that I still remember vividly. He reflected on the past few days and, more importantly, said, *"I know the past few days have been an unforgettable experience for each of you, but don’t forget, your uni life just begins! I hope each of your journey will be even more unforgettable. And remember, Temasek Hall will always be your home!"*
 
 <p align="center">
-  <img src="../images/posts/NUS-CEG-Y1S1-Recap/THOC_2.jpg" width="350">
+  <img loading="lazy" decoding="async" src="../images/posts/NUS-CEG-Y1S1-Recap/THOC_2.webp" width="350">
 </p>
 
 Still immersed in the moving speech, we were guided, with candles in our hand, to the Common Hall. In front of me stood two lines of people forming a human corridor that I had to walk through to reach the end. Along the way, my candle would be blown out by someone, only to be reignited by another person nearby. At the time, I just thought it was a fun activity, HAHAHA. But now, I feel like I’ve started to understand the thoughtful design behind it.
@@ -57,7 +57,7 @@ Still immersed in the moving speech, we were guided, with candles in our hand, t
 The lit candle seemed to represent our hope. Walking through the human corridor symbolized our uni life. Those who blew out our candles represented the challenges we encounter, each trying to extinguish our hope. Yet, there were always others around us, ready to use their candles to relight ours, reigniting our hope. And when we finally reached the end of the corridor, having completed this journey, we earned the right and had the obligation to help others — to relight the candles of those still making their way forward, helping them reignite their hope.
 
 <p align="center">
-  <img src="../images/posts/NUS-CEG-Y1S1-Recap/THOC.jpg" width="350">
+  <img loading="lazy" decoding="async" src="../images/posts/NUS-CEG-Y1S1-Recap/THOC.webp" width="350">
 </p>
 
 ## AnM
@@ -69,7 +69,7 @@ During the final revelation, I was deeply moved. Seeing so many people stand up 
 Looking back on this AnM journey, two moments stand out to me the most. Firstly, I finally got the chance to make up for last year's AnM regret in NTU Hall 12 by designing a website to challenge my darling(mortal) this time. Using the website as a platform, I was able to bring some of my small ideas to life — essentially it's just a simple "give-back gratitude" idea. I tried to channel the blessings I’ve received from the locals and pay them back through this small activity. I know there were many areas where I could have done better, so I’m especially grateful for my darling, Gwentella, for her understanding and patience!
 
 <p align="center">
-  <img src="../images/posts/NUS-CEG-Y1S1-Recap/AnM.png" width="700">
+  <img loading="lazy" decoding="async" src="../images/posts/NUS-CEG-Y1S1-Recap/AnM.webp" width="700">
 </p>
 
 Secondly, it is something I didn’t expect but discovered as I reflected on this AnM journey with my darling. Let me explain it in detail. The website I designed is about the theme *"Find your Happy Meal and find your Angel"*. Since one of AnM’s goals is to help us get through the challenging midterm period, I realized that this theme applies perfectly to my uni life as well!
@@ -81,7 +81,7 @@ In uni life, we may face countless moments of difficulty and stress. But through
 In addition to these two activities, I also participated in many other fun and team-building events organized by the C BLK Comm throughout this sem, such as the BLKOut, welfare events, and fire warden. So, I legit legit want to thank all the cute C BLK Comms for organizing so many wonderful activities this sem. I also legit appreciate your warm invitation for me, an IS, to join in — HAHAHAHAHA!
 
 <p align="center">
-  <img src="../images/posts/NUS-CEG-Y1S1-Recap/Fire_warden.jpg" width="350">
+  <img loading="lazy" decoding="async" src="../images/posts/NUS-CEG-Y1S1-Recap/Fire_warden.webp" width="350">
 </p>
 
 As an IS in Temasek Hall, I genuinely want to thank everyone here because this place has legit let me feel a sense of inclusiveness and warmth. Even though I’m far from home, the people and the environment here have made me feel like I’m living in another "HOME", just as Temasek Hall’s slogan says, *"Some call it a hostel, we call it a HOME!"*.  Here, I’ve gained many solid friendships, and **I’ll never forget the dinners we’ve shared, the games we’ve played, and the laughter we’ve experienced together as Cblings**. I love my HOME, and I love all the Cblings!
@@ -91,7 +91,7 @@ Although I don’t know how much longer I’ll be staying here, from the nervous
 Anyway, I don’t know if this will be my *LYLC*, but I’ll always treasure these beautiful memories forever!
 
 <p align="center">
-  <img src="../images/posts/NUS-CEG-Y1S1-Recap/HDL.jpg" width="350">
+  <img loading="lazy" decoding="async" src="../images/posts/NUS-CEG-Y1S1-Recap/HDL.webp" width="350">
 </p>
 
 # Courses
@@ -103,7 +103,7 @@ Now, after talking about the Hall Life here, I inevitably have to return to stud
 CS1010 (Programming Methodology) is legit a course that has shocked me! For someone like me with no competitive programming experience, this course is legit incredibly difficult. I still can’t forget how, before every PE (Practical Examination), I always thought I was well-prepared, only to feel like my confidence was completely destroyed after each PE (😭)! It was really, really frustrating. But what I’m truly grateful for is that this unique experience and feeling has given me a whole new perspective on certain things.
 
 <p align="center">
-  <img src="../images/posts/NUS-CEG-Y1S1-Recap/CS1010_Word_of_Advice_2.png" width="550">
+  <img loading="lazy" decoding="async" src="../images/posts/NUS-CEG-Y1S1-Recap/CS1010_Word_of_Advice_2.webp" width="550">
 </p>
 
 First, a very practical lesson I learned is that *coding is never something that can be mastered "in one go"*, especially practical coding, as opposed to theoretical tests. This is very different from the science education I had before. In many cases, practical coding is not just about theoretical derivations. It’s more about testing your proficiency. Only after you’ve practiced enough and gained a solid understanding of the algorithms and data structures required for certain problems can you quickly solve them within a limited time frame. That’s why I still remember what Prof. Ooi said in class, *"Don’t stop your hand doing the ‘dirty’ work!"* It’s such a useful piece of advice! Train your programming mindset every day, even if it’s just solving one problem.
@@ -111,13 +111,13 @@ First, a very practical lesson I learned is that *coding is never something that
 Secondly, what I found particularly impactful was one of the three pieces of advice Prof. Ooi shared with us in the first lecture of CS1010: *"Grade is not everything. Focus on: learning new skills, leveling up your skills, and enriching your experience."* Although this course has brought many challenges and pressures throughout the sem to me, it wasn’t until the last lecture, when Prof. Ooi recapped CS1010 with us, that I realized how many "Nostalgic Moments" I had experienced. I discovered that I had [learned so much](https://wenbo-notes.gitbook.io/cs1010-notes/lec-tut-lab-exes/lecture/lec-12-recap) throughout this sem! The emphasis for this word of advice lies in the second part — **what we should focus on is not the grade itself, but the progress and growth we experience during the learning process**! This has been incredibly useful and inspiring for me!
 
 <p align="center">
-  <img src="../images/posts/NUS-CEG-Y1S1-Recap/CS1010_Word_of_Advice_1.jpg" width="550">
+  <img loading="lazy" decoding="async" src="../images/posts/NUS-CEG-Y1S1-Recap/CS1010_Word_of_Advice_1.webp" width="550">
 </p>
 
 Lastly, I would like to once again thank every Prof and my TA of CS1010, as well as my dear "battle buddies" (classmates HAHAHA). Thank you for your patient guidance throughout the sem. Every time I attended the lecs/tuts/labs, I felt I gained a fresh perspective and valuable insights. This feeling is legit wonderful!
 
 <p align="center">
-  <img src="../images/posts/NUS-CEG-Y1S1-Recap/CS1010_Thanks.jpg" width="350">
+  <img loading="lazy" decoding="async" src="../images/posts/NUS-CEG-Y1S1-Recap/CS1010_Thanks.webp" width="350">
 </p>
 
 ## CG1111A
@@ -133,13 +133,13 @@ CG1111A (Engineering Principles and Practice I) is another course that has legit
 Besides the course content, what left the deepest impression on me in this course was my Prof Khoa, my TA Yijian, Telfer, and Lim, as well as my CEG classmates in the same lab. The warmest moment in this course came during the last class, after each group completed the Final Maze Running, Prof Khoa bought bubble tea for everyone! As I sipped the bubble tea and looked at the robot I had built with my teammates, a sense of deep gratitude and emotion filled my heart. In this course, I not only gained a lot of professional knowledge but also forged many friendships and experienced warmth. How moving it was! So much so that during the final group photo, I genuinely felt that we, along with the Prof, TAs, and Lab Manager, were one "big family" — **growing together, helping each other, and learning from one another**!
 
 <p align="center">
-  <img src="../images/posts/NUS-CEG-Y1S1-Recap/CG1111A_Bubble_tea.jpg" width="350">
+  <img loading="lazy" decoding="async" src="../images/posts/NUS-CEG-Y1S1-Recap/CG1111A_Bubble_tea.webp" width="350">
 </p>
 
 Therefore, in conclusion, I would like to sincerely thank the Prof, every TA, Lab Manager, and my classmates in CG1111A. Thank you for making this course incredibly warm and awesome! I wonder, one year from now, if I’ll recall this beautiful morning when we all enjoyed the bubble tea together, chatting and laughing with one another. *"Nostalgic, legit Nostalgic!"*
 
 <p align="center">
-  <img src="../images/posts/NUS-CEG-Y1S1-Recap/CG1111A.jpg" width="350">
+  <img loading="lazy" decoding="async" src="../images/posts/NUS-CEG-Y1S1-Recap/CG1111A.webp" width="350">
 </p>
 
 ## Other Courses

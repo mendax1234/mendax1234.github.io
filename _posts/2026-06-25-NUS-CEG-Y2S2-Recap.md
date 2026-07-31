@@ -3,7 +3,7 @@ layout: single
 title:  "NUS Computer Engineering Y2S2 Recap"
 excerpt: NUS Computer Engineering Y2S2 Recap
 header:
-  teaser: posts/NUS_SOC.jpg
+  teaser: posts/NUS_SOC.webp
 tags:
   - NUS
 ---
@@ -51,7 +51,7 @@ This idea resonated strongly with me. It also reminded me of something Prof. Mas
 These inspirations from Prof. Massimo, together with Prof. Rajesh's distinction between instruction-centric and data-centric thinking, became deeply connected in my mind. They helped me lead our team to develop VNN (Verilog Neural Network), a high-performance and energy-efficient RTL framework for writing a CNN accelerator. To me, VNN was not just a course project. It was a concrete embodiment of many ideas I had encountered across CG3207, EE4218, EE4415 and the classic textbooks on computer architecture I have read.
 
 <p align="center">
-  <img src="../images/posts/NUS-CEG-Y2S2-Recap/excellence.jpg" width="80%"><br>
+  <img loading="lazy" decoding="async" src="../images/posts/NUS-CEG-Y2S2-Recap/excellence.webp" width="80%"><br>
   <em style="font-size: 0.9em;">Figure: NUS ExCEllence Project Showcase</em>
 </p>
 
@@ -90,7 +90,7 @@ I was also very inspired by one of my group members, who was really good at syst
 To be honest, before this semester, I did not expect that I would have the chance to experience studying at YSTCM at NUS. And to be honest, it became one of the most refreshing parts of my semester. Prof. Koo is extremely passionate and very good at playing the piano. I still remember being able to listen to beautiful piano melodies during lectures every week. It felt very different from my usual engineering courses!
 
 <p align="center">
-  <img src="../images/posts/NUS-CEG-Y2S2-Recap/yst-piano.jpg" width="50%"><br>
+  <img loading="lazy" decoding="async" src="../images/posts/NUS-CEG-Y2S2-Recap/yst-piano.webp" width="50%"><br>
   <em style="font-size: 0.9em;">Figure: Pianos that I use at YSTCM </em>
 </p>
 
@@ -113,7 +113,7 @@ I think this course was a beautiful beginning for a "new" hobby. I really hope t
 GEN2007 was the first course I have ever taken from the Geography department at NUS, and it was truly one of the most amazing courses I have ever taken so far. I have already written a separate [blog](./2026-05-31-NUS-GEN2007.md) to recap my experience in GEN2007, but I still want to mention it here because it became such an important part of my semester.
 
 <p align="center">
-  <img src="../images/posts/NUS-CEG-Y2S2-Recap/sabah.jpg" width="100%"><br>
+  <img loading="lazy" decoding="async" src="../images/posts/NUS-CEG-Y2S2-Recap/sabah.webp" width="100%"><br>
   <em style="font-size: 0.9em;">Figure: River Cruise at Sabah</em>
 </p>
 

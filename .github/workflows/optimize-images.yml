@@ -1,0 +1,51 @@
+name: Optimize website images
+
+on:
+  push:
+    paths:
+      - "images/education/**/*.jpg"
+      - "images/education/**/*.jpeg"
+      - "images/education/**/*.png"
+      - "images/portfolio/**/*.jpg"
+      - "images/portfolio/**/*.jpeg"
+      - "images/portfolio/**/*.png"
+      - "images/posts/**/*.jpg"
+      - "images/posts/**/*.jpeg"
+      - "images/posts/**/*.png"
+      - "_posts/**/*.md"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  optimize:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: scripts/requirements.txt
+
+      - name: Install image tools
+        run: python -m pip install -r scripts/requirements.txt
+
+      - name: Generate WebP images and update references
+        run: python scripts/optimize_images.py --update-references
+
+      - name: Commit optimized images
+        run: |
+          if git diff --quiet && [ -z "$(git status --porcelain)" ]; then
+            echo "No image changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add images _posts _portfolio _pages _includes _data _layouts
+          git commit -m "Optimize website images"
+          git push

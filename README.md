@@ -47,6 +47,58 @@ For publication and portfolio cards, the left media panel stretches to the card 
 
 Push changes to the GitHub Pages branch for this repository. GitHub Pages builds the Jekyll site automatically.
 
+## Image Optimization
+
+Images added under `images/education`, `images/portfolio`, or `images/posts`
+are automatically converted to WebP by GitHub Actions. The workflow keeps the
+original image as the source, creates a sibling `.webp` file, and updates site
+references whenever the WebP payload is smaller. Inline images in blog posts
+also receive native lazy loading and asynchronous decoding attributes.
+
+The recommended workflow is to optimize locally before committing. Set up the
+local environment once:
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r scripts\requirements.txt
+```
+
+For each new post:
+
+1. Add the JPG, JPEG, or PNG under `images/posts`.
+2. Reference the original filename in the post and provide meaningful `alt`
+   text for each image.
+3. Run:
+
+   ```powershell
+   .\.venv\Scripts\python.exe scripts\optimize_images.py --update-references
+   ```
+
+   A typical post image will then look like:
+
+   ```html
+   <img
+     src="../images/posts/example/photo.webp"
+     width="550"
+     loading="lazy"
+     decoding="async"
+     alt="A meaningful description of the image">
+   ```
+
+4. Review and commit the original image, generated WebP, updated post, and
+   `images/.webp-manifest.json` together.
+5. Push the commit to GitHub.
+
+Do not manually change the extension to `.webp`; the optimizer does so only
+when WebP is smaller. It skips unchanged files, uses WebP quality 82, and
+limits very wide images to 1920 pixels. Run
+`python scripts/optimize_images.py --help` for configuration options.
+
+GitHub Actions runs the same optimizer when source images or posts are pushed.
+This is a safety net when the local step is forgotten; normally it finds
+nothing to change. When it does find changes, it creates a second automated
+commit, which causes another GitHub Pages deployment.
+
 ## Credits
 
 This site is built from the Academic Pages/Minimal Mistakes ecosystem and customized for Wenbo (Daniel) Zhu's academic portfolio, writing, projects, and publications.

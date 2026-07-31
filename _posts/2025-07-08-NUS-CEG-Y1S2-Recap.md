@@ -3,7 +3,7 @@ layout: single
 title:  "NUS Computer Engineering Y1S2 Recap"
 excerpt: NUS Computer Engineering Y1S2 Recap
 header:
-  teaser: posts/NUS_SOC.jpg
+  teaser: posts/NUS_SOC.webp
 tags:
   - NUS
 ---
@@ -35,7 +35,7 @@ So, what exactly is this framework that I consider closely connected? To put it 
 I have detailedly recorded my mental journey in the DTK1234 course on my [DTK Blog](https://mendax1234.github.io/NUS-DTK1234-DTJ/). To put it simply, the most important thing that DTK1234 has taught me is "how to come up with crazy ideas". I still remember using the 5 iteration steps in class to constantly improve my idea, and constantly asking "why" to discover the root cause of the problem, etc. In short, in this course, I not only needed to come up with a crazy idea, but also needed to simply implement this idea, and finally needed to get feedback from users to improve my final product. I think this is actually a microcosm of the case when I need to solve a more complex real-world problem.
 
 <p align="center">
-  <img src="../images/posts/NUS-CEG-Y1S2-Recap/dtk1234_solution_loop.png" width="80%"><br>
+  <img loading="lazy" decoding="async" src="../images/posts/NUS-CEG-Y1S2-Recap/dtk1234_solution_loop.webp" width="80%"><br>
   <em style="font-size: 0.9em;">Figure: DTK1234's rough loop to solve a practical problem</em>
 </p>
 
@@ -56,14 +56,14 @@ The proposal of "Crazy Ideas" is indeed important, but it only remains at the st
 A simple example is that when I have an idea to enhance the laundry experience for Hall users, to realize this idea, I might need to create an app. To create an app, I need to master programming skills. These programming skills are what I learned in CS1010 and CS2030S. Or, when I have an idea in the engineering discipline and want to make a device, I will find that I need basic mathematical modeling thinking and knowledge of physics to conduct theoretical feasibility analysis. Besides, I might also need to know 3D modeling skills so that I can turn my idea into reality through 3D printing. Such examples are everywhere in my life. In a word, I think it is to make me see the importance of these technical courses because these technical skills are actually enriching my skillset step by step, and I have to use this skillset to solve most of the practical problems in my life.
 
 <p align="center">
-  <img src="../images/posts/NUS-CEG-Y1S2-Recap/dtk1234_3d_print.jpg" width="60%"><br>
+  <img loading="lazy" decoding="async" src="../images/posts/NUS-CEG-Y1S2-Recap/dtk1234_3d_print.webp" width="60%"><br>
   <em style="font-size: 0.9em;">Figure: DTK1234's product with 3D printing</em>
 </p>
 
 However, it is worth mentioning that I have discovered that these individual areas of expertise are not isolated from each other. In other words, every course I have taken, including both techinical and common courses, is not isolated. This relationship is not hard to find among courses with prerequisites. However, I have also experienced this wonderful connection between common courses and specialized courses! For instance, in the common course EG1311 on robotics, I personally experienced that devices fixed with rubber bands instead of hot glue are more stable and reusable. In my technical course CG2111A on robotics, my team and I ingeniously applied this idea to our robot named Alexandra! Another typical example is that in CS1010, I learned to use the Divide and Conquer method to solve complex programming problems through recursion. When facing a large project in my DTK1234 and PF1101 courses, I also attempted to apply this idea! There are many more such examples.
 
 <p align="center">
-  <img src="../images/posts/NUS-CEG-Y1S2-Recap/cg2111a_eg1311.jpg" width="60%"><br>
+  <img loading="lazy" decoding="async" src="../images/posts/NUS-CEG-Y1S2-Recap/cg2111a_eg1311.webp" width="60%"><br>
   <em style="font-size: 0.9em;">Figure: Same inspirations but used in two courses!</em>
 </p>
 
@@ -95,7 +95,7 @@ However, there is still a significant flaw in this framework's foundation. The f
 So far, I think the framework for how to innovatively solve a real-life, practical and functional problem has been roughly established. However, as the name suggests, this is just a simple and rough framework, and its true content still needs to be continuously improved. But, it is worth being grateful that I think, with this framework in place, I will gradually have a general direction in the following three years of  my uni study.
 
 <p align="center">
-  <img src="../images/posts/NUS-CEG-Y1S2-Recap/functional-problem-solution-network-diagram.png" width="80%"><br>
+  <img loading="lazy" decoding="async" src="../images/posts/NUS-CEG-Y1S2-Recap/functional-problem-solution-network-diagram.webp" width="80%"><br>
   <em style="font-size: 0.9em;">Figure: The Network Diagram to solve functional problems</em>
 </p>
 

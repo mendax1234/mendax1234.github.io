@@ -4,7 +4,7 @@
   {% for project in projects %}
     <article class="portfolio-card">
       <div class="portfolio-card__media">
-        <img src="{{ project.image | relative_url }}" alt="{{ project.title }} logo or preview">
+        <img src="{{ project.image | relative_url }}" alt="{{ project.title }} logo or preview" loading="lazy" decoding="async">
       </div>
 
       <div class="portfolio-card__body">
