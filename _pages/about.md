@@ -10,7 +10,7 @@ I am a third-year undergraduate at [the Department of Electrical and Computer En
 
 I'm passionate about connecting ideas across different disciplines - electronics, computer science, mathematics, physics, geography, and even music - to solve real-world engineering problems. I believe many breakthroughs emerge at the intersection of fields, where elegant techniques and design principles from one domain can be adapted to drive innovation in another.
 
-My research interests are in neural network accelerator design, high-performance CPU design, computer architecture, and VLSI chip design.
+My research interests include neural network accelerator design, system-on-chip (SoC) design, high-performance CPU design, and VLSI chip design.
 
 <!-- Selected Publications
 ------ -->
