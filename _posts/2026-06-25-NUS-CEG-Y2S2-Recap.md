@@ -14,7 +14,7 @@ tags:
 
 This was what a principal research engineer from DSO, Singapore, told our group after I presented two of my projects with my teammates at the NUS ExCEllence 2026 project showcase. Now one of my group members is working at DSO, and the other is working at a famous international chip design company. And thankfully, I also manage to find something to do during this summer break.
 
-Later, the same pricipal research engineert from DSO asked me another question:
+Later, the same principal research engineer from DSO asked me another question:
 
 > Where do you learn all this from ?
 
